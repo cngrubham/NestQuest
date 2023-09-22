@@ -10,6 +10,7 @@ const methodOverride = require("method-override");
 /* Require the db connection, models, and seed data
 --------------------------------------------------------------- */
 const db = require("./models");
+const birds = require("./models/bird-seed");
 
 /* Require the routes in the controllers folder
 --------------------------------------------------------------- */
@@ -46,6 +47,27 @@ app.use(methodOverride("_method"));
 
 /* Mount routes
 --------------------------------------------------------------- */
+app.get("/", function (req, res) {
+  res.render("home");
+});
+
+// When a GET request is sent to `/seed`, the birds collection is seeded
+app.get("/seed", function (req, res) {
+  // Remove any existing birds list
+  db.Bird.deleteMany({}).then((removedBirds) => {
+    console.log(`Removed ${removedBirds.deletedCount} birds`);
+    // Seed the birds collection with the seed data
+    db.Bird.insertMany(db.seedBirds).then((addedBirds) => {
+      console.log(`Added ${addedBirds.length} birds to the collection`);
+      res.json(addedBirds);
+    });
+  });
+});
+
+// This tells our app to look at the `controllers/birds.js` file
+// to handle all routes that begin with `localhost:3000/books`
+app.use("/birds", birdsCtrl);
+app.use("/sightings", sightingsCtrl);
 
 // The "catch-all" route: Runs for any other URL that doesn't match the above routes
 //must go below all other routes including app.use
