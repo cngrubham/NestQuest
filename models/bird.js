@@ -1,0 +1,12 @@
+// Require the Mongoose package
+const mongoose = require("mongoose");
+const reviewSchema = require("./review.js");
+
+// Create a schema to define the properties of the bird collection
+const birdSchema = new mongoose.Schema({
+    sightings: [sightingSchema],
+})
+
+// Export the schema as a Monogoose model.
+// The Mongoose model will be accessed in `models/index.js`
+module.exports = mongoose.model("Bird", birdSchema);
