@@ -13,7 +13,7 @@ const db = require("../models");
 // Index Route (All sightings):
 // GET sightings/
 router.get("/", (req, res) => {
-  db.Bird.find({}, { sightings: true, _id: false }).then((bird) => {
+  db.Bird.find({}, { sightings: true, _id: false }).then((birds) => {
     // format query results to appear in one array,
     // rather than an array of objects containing arrays
     const flatList = [];
