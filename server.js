@@ -10,10 +10,12 @@ const methodOverride = require("method-override");
 /* Require the db connection, models, and seed data
 --------------------------------------------------------------- */
 const db = require("./models");
-const birds = require("./models/bird-seed");
+const birds = require("./models/seed");
 
 /* Require the routes in the controllers folder
 --------------------------------------------------------------- */
+const birdsCtrl = require("./controllers/birds");
+const sightingsCtrl = require("./controllers/sightings");
 
 /* Create the Express app
 --------------------------------------------------------------- */
