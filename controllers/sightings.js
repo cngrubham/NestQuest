@@ -23,10 +23,10 @@ router.get("/", (req, res) => {
     res.render("sightings/sightings-index", { sightings: flatList });
   });
 });
-
+// New Route: Get sightings/
 router.get("/new/:birdId", async (req, res) => {
   const bird = await db.Bird.findById(req.params.birdId);
-  res.render("sightings/new-form", { bird: bird });
+  res.render("sightings/new-sighting", { bird: bird });
 });
 
 // Create Route: POST sightings/
@@ -48,6 +48,26 @@ router.get("/:id", (req, res) => {
     // rather than an object containing an array of one object
     res.render("sightings/sighting-details", { sightings: bird.sightings[0] });
   });
+});
+// Edit Sighting Route (GET/Read)
+router.get("/sighting/:id/edit", (req, res) => {
+  db.Bird.findOne(
+    { "sightings._id": req.params.id },
+    { "sightings.$": true, _id: false }
+  ).then((bird) => {
+    if (bird && bird.sightings && bird.sightings.length > 0) {
+      const sighting = bird.sightings[0];
+      res.render("edit-sighting-form", { sighting: sighting });
+    } else {
+      res.status(404).send("Sighting not found.");
+    }
+  });
+});
+// Update Route (PUT/Update): This route receives the PUT request sent from the edit route
+router.put("/sightings/:id", (req, res) => {
+  db.Bird.findByIdAndUpdate(req.params.id, req.body, { new: true }).then(
+    (bird) => res.redirect("/sightings/" + bird._id)
+  );
 });
 
 // Destroy Route: DELETE localhost:3000/sightings/:id

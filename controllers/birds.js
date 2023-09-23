@@ -10,16 +10,12 @@ const db = require("../models");
 /* Routes
 --------------------------------------------------------------- */
 // //Index Route: display all birds
-// router.get("/", function (req, res) {
-//   db.Bird.find({}).then((birds) => res.render("bird-index", { birds: birds }));
-// });
-// bird-index route: display all birds
 router.get("/bird-index", function (req, res) {
   db.Bird.find({})
     .then((birds) => {
       res.render("bird-index", { birds: birds });
     })
-    .catch(() => res.send("404 Error: Page Not Found"));
+    .catch(() => res.send("404"));
 });
 
 //Show Route: display individual bird info
@@ -30,7 +26,7 @@ router.get("/:id", function (req, res) {
         bird: bird,
       });
     })
-    .catch(() => res.send("404 Error: Page Not Found"));
+    .catch(() => res.redirect("404"));
 });
 
 /* Export these routes so that they are accessible in `server.js`
