@@ -29,6 +29,9 @@ router.get("/:id", function (req, res) {
     .catch(() => res.redirect("404"));
 });
 
+//Bird/:id/sightings
+
+
 /* Export these routes so that they are accessible in `server.js`
 --------------------------------------------------------------- */
 module.exports = router;

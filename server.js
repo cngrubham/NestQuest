@@ -14,8 +14,8 @@ const birds = require("./models/seed");
 
 /* Require the routes in the controllers folder
 --------------------------------------------------------------- */
-const birdsCtrl = require("./controllers/birds");
-const sightingsCtrl = require("./controllers/sightings");
+const birdsCtrl = require("./controllers/birdsCtlr");
+const sightingsCtrl = require("./controllers/sightingCtlr");
 
 /* Create the Express app
 --------------------------------------------------------------- */
