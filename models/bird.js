@@ -4,7 +4,18 @@ const sightingSchema = require("./sighting.js");
 
 // Create a schema to define the properties of the bird collection
 const birdSchema = new mongoose.Schema({
-    name: "string",
+  sciName: String,
+  comName: String,
+  speciesCode: String,
+  category: String,
+  taxonOrder: Number,
+  bandingCodes: [String],
+  comNameCodes: [String],
+  sciNameCodes: [String],
+  order: String,
+  familyCode: String,
+  familyComName: String,
+  familySciName: String,
   sightings: [sightingSchema],
 });
 
