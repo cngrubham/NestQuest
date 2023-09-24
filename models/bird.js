@@ -9,14 +9,14 @@ const birdSchema = new mongoose.Schema({
   speciesCode: String,
   category: String,
   taxonOrder: Number,
-  bandingCodes: [String],
-  comNameCodes: [String],
-  sciNameCodes: [String],
+//   bandingCodes: [String],
+//   comNameCodes: [String],
+//   sciNameCodes: [String],
   order: String,
   familyCode: String,
   familyComName: String,
   familySciName: String,
-  sightings: [sightingSchema],
+//   sightings: [sightingSchema],
 });
 
 // Export the schema as a Monogoose model.

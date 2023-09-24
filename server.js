@@ -60,13 +60,13 @@ app.get("/seed", function (req, res) {
   const delPromises = [
     db.Bird.deleteMany({}),
     db.Sighting.deleteMany({}),
-    db.User.deleteMany({})
+    db.User.deleteMany({}),
   ];
   Promise.all(delPromises).then((listsOfRemovedItems) => {
     const insertPromises = [
       db.Bird.insertMany(db.seedBirds),
-      db.Sighting.insertMany(db.seedBirds),
-      db.User.insertMany(db.seedBirds)
+      db.Sighting.insertMany(db.seedSightings),
+      db.User.insertMany(db.seedUsers),
     ];
     Promise.all(insertPromises).then((listsOfInserted) => {
       res.send("Database seeded");

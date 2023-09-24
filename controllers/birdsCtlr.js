@@ -22,13 +22,17 @@ router.get("/bird-index", function (req, res) {
 router.get("/:id", function (req, res) {
   const birdId = req.params.id;
   //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all
-  Promise.all([db.Bird.findById(birdId), db.Sighting.find({ bird: birdId })])
+  Promise.all([
+    db.Bird.findOne({ speciesCode: birdId }),
+    db.Sighting.find({ bird: birdId }),
+  ])
     .then(([bird, sightings]) => {
       console.log(sightings);
-      res.render("bird-sightings", {
-        bird,
-        sightings,
-      });
+      // res.render("bird-details", {
+      //   bird,
+      //   sightings,
+      // });
+      res.json({ bird, sightings });
     })
     .catch(() => res.redirect("404"));
 });
