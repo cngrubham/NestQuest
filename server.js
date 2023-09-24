@@ -10,12 +10,13 @@ const methodOverride = require("method-override");
 /* Require the db connection, models, and seed data
 --------------------------------------------------------------- */
 const db = require("./models");
-const birds = require("./models/seed");
+const birds = require("./models/seeds/bird-seed");
 
 /* Require the routes in the controllers folder
 --------------------------------------------------------------- */
 const birdsCtrl = require("./controllers/birdsCtlr");
 const sightingsCtrl = require("./controllers/sightingCtlr");
+const regionsCtrl = require("./controllers/regionsCtlr");
 
 /* Create the Express app
 --------------------------------------------------------------- */
@@ -56,12 +57,19 @@ app.get("/", function (req, res) {
 // When a GET request is sent to `/seed`, the birds collection is seeded
 app.get("/seed", function (req, res) {
   // Remove any existing birds list
-  db.Bird.deleteMany({}).then((removedBirds) => {
-    console.log(`Removed ${removedBirds.deletedCount} birds`);
-    // Seed the birds collection with the seed data
-    db.Bird.insertMany(db.seedBirds).then((addedBirds) => {
-      console.log(`Added ${addedBirds.length} birds to the collection`);
-      res.json(addedBirds);
+  const delPromises = [
+    db.Bird.deleteMany({}),
+    db.Sighting.deleteMany({}),
+    db.User.deleteMany({})
+  ];
+  Promise.all(delPromises).then((listsOfRemovedItems) => {
+    const insertPromises = [
+      db.Bird.insertMany(db.seedBirds),
+      db.Sighting.insertMany(db.seedBirds),
+      db.User.insertMany(db.seedBirds)
+    ];
+    Promise.all(insertPromises).then((listsOfInserted) => {
+      res.send("Database seeded");
     });
   });
 });
@@ -70,6 +78,8 @@ app.get("/seed", function (req, res) {
 // to handle all routes that begin with `localhost:3000/books`
 app.use("/birds", birdsCtrl);
 app.use("/sightings", sightingsCtrl);
+app.use("/regions", regionsCtrl);
+//app.use("/user", userCtrl);
 
 // The "catch-all" route: Runs for any other URL that doesn't match the above routes
 //must go below all other routes including app.use

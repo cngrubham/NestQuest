@@ -7,4 +7,4 @@ const sightingSchema = new mongoose.Schema({
   dateAdded: { type: Date, default: Date.now },
 });
 
-module.exports = sightingSchema;
+module.exports = mongoose.model("Sighting", sightingSchema);

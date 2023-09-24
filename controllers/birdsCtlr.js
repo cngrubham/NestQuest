@@ -20,17 +20,31 @@ router.get("/bird-index", function (req, res) {
 
 //Show Route: display individual bird info
 router.get("/:id", function (req, res) {
-  db.Bird.findById(req.params.id)
-    .then((bird) => {
-      res.render("bird-details", {
-        bird: bird,
+  const birdId = req.params.id;
+  //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all
+  Promise.all([db.Bird.findById(birdId), db.Sighting.find({ bird: birdId })])
+    .then(([bird, sightings]) => {
+      console.log(sightings);
+      res.render("bird-sightings", {
+        bird,
+        sightings,
       });
     })
     .catch(() => res.redirect("404"));
 });
 
 //Bird/:id/sightings
-
+router.get("/:id/sightings", function (req, res) {
+  const birdId = req.params.id;
+  Promise.all([db.Bird.findById(birdId), db.Sighting.find({ bird: birdId })])
+    .then(([bird, sightings]) => {
+      res.render("bird-sightings", {
+        bird,
+        sightings,
+      });
+    })
+    .catch(() => res.redirect("404"));
+});
 
 /* Export these routes so that they are accessible in `server.js`
 --------------------------------------------------------------- */

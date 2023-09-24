@@ -12,5 +12,9 @@ db.on("connected", function () {
 
 module.exports = {
   Bird: require("./bird"),
-  seedBirds: require("./seed"),
+  seedBirds: require("./seeds/bird-seed"),
+  seedUsers: require("./seeds/user-seed"),
+  seedSightings: require("./seeds/sighting-seed"),
+  Sighting: require("./sighting"),
+  User: require("./user"),
 };
