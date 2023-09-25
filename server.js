@@ -40,9 +40,10 @@ app.set("views", path.join(__dirname, "views"));
 
 /* Middleware (app.use)
 --------------------------------------------------------------- */
-const publicPath = path.join(__dirname, "public");
-console.log(publicPath);
-app.use(express.static());
+// const publicPath = path.join(__dirname, "/public");
+// console.log(publicPath);
+// app.use(express.static());
+app.use("/public", express.static("public"));
 app.use(connectLiveReload());
 app.use("/imgs", express.static("imgs"));
 // Body parser: used for POST/PUT/PATCH routes:
