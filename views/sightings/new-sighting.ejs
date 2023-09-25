@@ -4,6 +4,8 @@
 <head>
     <%- include('./partials/head.ejs', {title: 'New Sighting | NestQuest' }) %>
         <link rel="stylesheet" href="/styles/form.css">
+        <%- include('./partials/nav.ejs') %>
+            <script src="/public/js/nav.js"></script>
 </head>
 
 <body>
@@ -17,7 +19,7 @@
         <div class="form-container">
             <form method="POST" action="/sighting">
                 <!-- might need to change link -->
-               
+
                 <!-- Details -->
                 <label for="content">Details:</label><br>
                 <textarea type="text" id="content" name="content" required></textarea><br>

@@ -13,13 +13,14 @@ const db = require("../models");
 //All regions GET
 router.get("/", async (req, res) => {
   const regionsData = await db.Region.find();
-  console.log(db.Region)
+  console.log(db.regionsData);
   res.render("regions-index", { regions: regionsData });
 });
 
 //Region byIds SHOW
 router.get("/:id", (req, res) => {
   const regionId = req.params.id;
+  // const region = await db.Region.findOne({}).populate("birds");
   db.Region.findById(regionId).then((region) => {
     res.render("region-details", { region });
   });

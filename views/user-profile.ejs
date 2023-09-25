@@ -4,30 +4,31 @@
 <head>
     <%- include('./partials/head.ejs', {title: 'NestQuest | User Sightings' }) %>
         <link rel="stylesheet" href="/styles/home.css">
+        <%- include('./partials/nav.ejs') %>
+            <script src="/public/js/nav.js"></script>
 </head>
 
 <body>
-    <%- include('./partials/nav.ejs') %>
 
-        <main>
-            <!-- check if logged in -->
-            <h1>User Sightings</h1>
-            <section class="user-sightings">
-                <!-- account info -->
-                <div class="sightings-card">
-                    <!-- for each sighting list details -->
-                    <ul>
-                        <li>
+    <main>
+        <!-- check if logged in -->
+        <h1>User Sightings</h1>
+        <section class="user-sightings">
+            <!-- account info -->
+            <div class="sightings-card">
+                <!-- for each sighting list details -->
+                <ul>
+                    <li>
 
-                        </li>
-                    </ul>
-                    <!-- edit sighting button/link-->
-                    <!-- delete sighting button-->
-                </div>
+                    </li>
+                </ul>
+                <!-- edit sighting button/link-->
+                <!-- delete sighting button-->
+            </div>
 
 
-            </section>
-        </main>
+        </section>
+    </main>
 </body>
 
 </html>

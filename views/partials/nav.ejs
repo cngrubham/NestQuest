@@ -1,11 +1,18 @@
 <header>
-    <nav class="nav-bar-links">
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="user/user-profile">User Profile</a></li>
-            <li><a href="/regions">Regions</a></li>
-            <li><a href="/user/logout"><button>Log Out</button></a></li>
-            <!-- <li><a href="/user-sightings">My Sightings</a></li> -->
-        </ul>
-    </nav>
+    <button id="nav-toggle" class="circle">
+        <i class="fas fa-bars"></i> <!-- Font Awesome bars icon -->
+    </button>
+    <div class="nav-container">
+        <nav class="nav-bar-links">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="user/user-profile">User Profile</a></li>
+                <li><a href="/regions">Regions</a></li>
+                <li><a href="/user/logout">Log Out</a></li>
+            </ul>
+            <button id="nav-collapse" class="nav-icon">
+                <i class="fas fa-times"></i> <!-- Font Awesome times icon -->
+            </button>
+        </nav>
+    </div>
 </header>

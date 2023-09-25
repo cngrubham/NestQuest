@@ -4,33 +4,34 @@
 <head>
     <%- include('./partials/head.ejs', {title: 'Edit Sighting | NestQuest' }) %>
         <link rel="stylesheet" href="/styles/form.css">
+        <%- include('./partials/nav.ejs') %>
+            <script src="./public/js/nav.js"></script>
 </head>
 
 <body>
-    <%- include('./partials/nav.ejs') %>
 
-        <section class="form-head">
-            <h2>Edit Sighting</h2>
-            <h1>You're editing a sighting for <%bird.comName%>
-            </h1>
-        </section>
-        <div class="form-container">
-            <form method="POST" action="/sighting">
-                <!-- might need to change link -->
-                <!-- Date -->
-                <!-- Region -->
-                <!-- Details -->
-                <label for="content">Details:</label><br>
-                <textarea type="text" id="content" name="content" required></textarea><br>
-                <!-- Bird Pic input -->
-                <label for="profile-pic" class="form-label">Picture:</label>
-                <input type="file" id="profile-pic" name="file" class="form-input">
-                <input type="submit" value="Submit">
-                <br>
+    <section class="form-head">
+        <h2>Edit Sighting</h2>
+        <h1>You're editing a sighting for <%bird.comName%>
+        </h1>
+    </section>
+    <div class="form-container">
+        <form method="POST" action="/sighting">
+            <!-- might need to change link -->
+            <!-- Date -->
+            <!-- Region -->
+            <!-- Details -->
+            <label for="content">Details:</label><br>
+            <textarea type="text" id="content" name="content" required></textarea><br>
+            <!-- Bird Pic input -->
+            <label for="profile-pic" class="form-label">Picture:</label>
+            <input type="file" id="profile-pic" name="file" class="form-input">
+            <input type="submit" value="Submit">
+            <br>
 
-            </form>
-            </form>
-        </div>
+        </form>
+        </form>
+    </div>
 </body>
 
 </html>

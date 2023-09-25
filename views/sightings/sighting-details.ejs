@@ -5,23 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NestQuest | Sighting Details</title>
+    <%- include('./partials/nav.ejs') %>
+        <script src="./public/js/nav.js"></script>
 </head>
 
 <body>
     <h1>Details</h1>
-  
+
     <ul>
         <% birds.forEach((bird)=> { %>
             <li>
-                    <%= bird.comName %>
-                        <span style="font-style: italic;">
-                            <%= bird.sciName %>
-                        </span>
+                <%= bird.comName %>
+                    <span style="font-style: italic;">
+                        <%= bird.sciName %>
+                    </span>
             </li>
-            <li> <%= bird.familyComName %></li>
+            <li>
+                <%= bird.familyComName %>
+            </li>
             <% }); %>
-            <!-- Sighting Details -->
-            <!-- user
+                <!-- Sighting Details -->
+                <!-- user
             date
             region
             Details 

@@ -8,7 +8,7 @@ function toggleModal() {
 }
 
 function submitUserDetails() {
-    const inputName = document.getElementById("name-input").value 
-    alert(`Thanks ${inputName} for reaching out!`);
-    toggleModal();
+  const inputName = document.getElementById("name-input").value;
+  alert(`Thanks ${inputName} for signing up!`);
+  toggleModal();
 }

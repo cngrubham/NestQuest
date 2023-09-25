@@ -1,0 +1,90 @@
+/* Styles for the navigation bar */
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    padding: 10px;
+    transition: width 0.3s ease;
+    overflow: hidden;
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+.nav-container {
+    width: 40%;
+    position: relative;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+}
+
+
+.nav-bar-links {
+    display: none;
+    background-color: #333;
+    padding: 10px;
+    width: auto;
+    height: 160px;
+}
+
+.nav-bar-links ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    position: absolute;
+    left: 30px;
+}
+
+.nav-bar-links ul li {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.nav-bar-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+
+#nav-toggle.expanded {
+    border-radius: 10px;
+
+}
+
+
+.nav-icon {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+
+
+}
+
+
+.nav-bar-links .nav-icon {
+    display: block;
+    float: left;
+}
+
+@media (max-width: 700px) {
+    .nav-container {
+        width: 100%;
+    }
+}
