@@ -6,6 +6,7 @@ const express = require("express");
 const livereload = require("livereload");
 const connectLiveReload = require("connect-livereload");
 const methodOverride = require("method-override");
+const cookieParser = require("cookie-parser");
 
 /* Require the db connection, models, and seed data
 --------------------------------------------------------------- */
@@ -18,10 +19,15 @@ const birdsCtrl = require("./controllers/birdsCtlr");
 const sightingsCtrl = require("./controllers/sightingCtlr");
 const regionsCtrl = require("./controllers/regionsCtlr");
 const userCtrl = require("./controllers/userCtlr");
+const authMiddleware = require("./middleware/auth");
 
 /* Create the Express app
 --------------------------------------------------------------- */
 const app = express();
+
+/* Attach db to app
+--------------------------------------------------------------- */
+app.set("db", db);
 
 /* Configure the app to refresh the browser when nodemon restarts
 --------------------------------------------------------------- */
@@ -51,10 +57,11 @@ app.use("/imgs", express.static("imgs"));
 // into an object that can be accessed in the request parameter as a property called body (req.body).
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
+app.use(cookieParser());
 
 /* Mount routes
 --------------------------------------------------------------- */
-app.get("/", function (req, res) {
+app.get("/", authMiddleware, function (req, res) {
   res.render("home");
 });
 
@@ -82,9 +89,9 @@ app.get("/seed", function (req, res) {
 
 // This tells our app to look at the `controllers/birds.js` file
 // to handle all routes that begin with `localhost:3000/books`
-app.use("/birds", birdsCtrl);
-app.use("/sightings", sightingsCtrl);
-app.use("/regions", regionsCtrl);
+app.use("/birds", authMiddleware, birdsCtrl);
+app.use("/sightings", authMiddleware, sightingsCtrl);
+app.use("/regions", authMiddleware, regionsCtrl);
 app.use("/user", userCtrl);
 
 // The "catch-all" route: Runs for any other URL that doesn't match the above routes
