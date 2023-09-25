@@ -14,6 +14,7 @@ This application will allow users to record and organize the bird species they e
 - home page login modal
 - featured page
 - user profile if not logged in redirect to log in
+- css links
 
 ## Stretch Goal
 
