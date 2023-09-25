@@ -28,11 +28,11 @@ router.get("/:id", function (req, res) {
   ])
     .then(([bird, sightings]) => {
       console.log(sightings);
-      // res.render("bird-details", {
-      //   bird,
-      //   sightings,
-      // });
-      res.json({ bird, sightings });
+      res.render("bird-details", {
+        bird,
+        sightings,
+      });
+      // res.json({ bird, sightings });
     })
     .catch(() => res.redirect("404"));
 });

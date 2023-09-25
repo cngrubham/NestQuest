@@ -23,6 +23,7 @@ router.get("/", (req, res) => {
     res.render("sightings/sightings-index", { sightings: flatList });
   });
 });
+
 // New Route: Get sightings/
 router.get("/new/:birdId", async (req, res) => {
   const bird = await db.Bird.findById(req.params.birdId);
