@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <%- include('./partials/head.ejs', {title: 'New Sighting | NestQuest' }) %>
+        <link rel="stylesheet" href="/styles/form.css">
 </head>
+
 <body>
-    <h1>New sighting</h1>
+    <%- include('./partials/nav.ejs') %>
+
+        <section class="form-head">
+            <h2>New Sighting!</h2>
+            <h1>You're creating a sighting for <%bird.comName%>
+            </h1>
+        </section>
+        <div class="form-container">
+            <form method="POST" action="/sighting">
+                <!-- might need to change link -->
+               
+                <!-- Details -->
+                <label for="content">Details:</label><br>
+                <textarea type="text" id="content" name="content" required></textarea><br>
+                <!-- Bird Pic input -->
+                <label for="profile-pic" class="form-label">Picture:</label>
+                <input type="file" id="profile-pic" name="file" class="form-input">
+                <input type="submit" value="Submit">
+                <br>
+
+            </form>
+            </form>
+        </div>
 </body>
+
 </html>

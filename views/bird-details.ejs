@@ -4,15 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NestQuest | Bird Details</title>
 </head>
 
 <body>
-    <h1>bird-details</h1>
+    <h1>Details</h1>
+  
     <ul>
-        <li>
-            
-        </li>
+        <% birds.forEach((bird)=> { %>
+            <li>
+                    <%= bird.comName %>
+                        <span style="font-style: italic;">
+                            <%= bird.sciName %>
+                        </span>
+            </li>
+            <li> <%= bird.familyComName %></li>
+            <% }); %>
+
     </ul>
 </body>
 

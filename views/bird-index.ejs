@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Birds Index</title>
+    <%- include('./partials/head.ejs', {title: 'NestQuest | Birds by Region' }) %>
+        <link rel="stylesheet" href="/styles/home.css">
 </head>
 
+
 <body>
-    <h1>Bird Index</h1>
+    <h1>Birds by Region</h1>
     <ul>
         <% birds.forEach((bird)=> { %>
             <li>
