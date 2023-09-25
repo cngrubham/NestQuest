@@ -57,7 +57,7 @@ router.get("/sighting/:id/edit", (req, res) => {
   ).then((bird) => {
     if (bird && bird.sightings && bird.sightings.length > 0) {
       const sighting = bird.sightings[0];
-      res.render("edit-sighting-form", { sighting: sighting });
+      res.render("/sightings/edit-sighting", { sighting: sighting });
     } else {
       res.status(404).send("Sighting not found.");
     }

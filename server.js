@@ -58,12 +58,14 @@ app.get("/", function (req, res) {
 app.get("/seed", function (req, res) {
   // Remove any existing birds list
   const delPromises = [
+    // db.Region.deleteMany({}),
     db.Bird.deleteMany({}),
     db.Sighting.deleteMany({}),
     db.User.deleteMany({}),
   ];
   Promise.all(delPromises).then((listsOfRemovedItems) => {
     const insertPromises = [
+    //   db.Region.insertMany(db.seedRegions),
       db.Bird.insertMany(db.seedBirds),
       db.Sighting.insertMany(db.seedSightings),
       db.User.insertMany(db.seedUsers),

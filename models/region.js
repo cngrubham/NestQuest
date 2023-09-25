@@ -6,7 +6,7 @@ const birdSchema = require("./bird.js");
 const regionSchema = new mongoose.Schema({
   code: String,
   name: String,
-  birds: [String],
+  birds: [birdSchema],
 });
 
 // Export the schema as a Mongoose model.

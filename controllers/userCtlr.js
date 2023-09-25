@@ -10,7 +10,10 @@ const db = require("../models");
 
 /* Routes
 --------------------------------------------------------------- */
-
+// create account
+// login
+// update profile
+// get profile
 
 /* Export these routes so that they are accessible in `server.js`
 --------------------------------------------------------------- */

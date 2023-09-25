@@ -4,5 +4,15 @@ This application will allow users to record and organize the bird species they e
 
 ## To Do
 - full crud on sightings
-- profile page
+- profile page and sightings listing
+- login
+- create user
+- nav bar
+- header
+- region-index endpoint
+- birds by region endpoint
 - 
+
+## Stretch Goal
+- edit user
+- change password
