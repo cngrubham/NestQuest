@@ -17,6 +17,7 @@ const birds = require("./models/seeds/bird-seed");
 const birdsCtrl = require("./controllers/birdsCtlr");
 const sightingsCtrl = require("./controllers/sightingCtlr");
 const regionsCtrl = require("./controllers/regionsCtlr");
+const userCtrl = require("./controllers/userCtlr");
 
 /* Create the Express app
 --------------------------------------------------------------- */
@@ -65,7 +66,7 @@ app.get("/seed", function (req, res) {
   ];
   Promise.all(delPromises).then((listsOfRemovedItems) => {
     const insertPromises = [
-    //   db.Region.insertMany(db.seedRegions),
+      //   db.Region.insertMany(db.seedRegions),
       db.Bird.insertMany(db.seedBirds),
       db.Sighting.insertMany(db.seedSightings),
       db.User.insertMany(db.seedUsers),
@@ -81,7 +82,7 @@ app.get("/seed", function (req, res) {
 app.use("/birds", birdsCtrl);
 app.use("/sightings", sightingsCtrl);
 app.use("/regions", regionsCtrl);
-//app.use("/user", userCtrl);
+app.use("/user", userCtrl);
 
 // The "catch-all" route: Runs for any other URL that doesn't match the above routes
 //must go below all other routes including app.use

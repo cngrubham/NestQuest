@@ -2,27 +2,29 @@
 <html lang="en">
 
 <head>
-    <%- include('./partials/head.ejs', {title: 'NestQuest | Regions }) %>
-        <link rel="stylesheet" href="/styles/home.css">
+    <%- include('./partials/head.ejs', {title: 'NestQuest | Regions' }) %>
+        <link rel="stylesheet" href="/styles/main.css">
 </head>
 
 <body>
-    <%- include(' ./partials/nav.ejs') %>
+    <%- include('./partials/nav.ejs') %>
         <h1>Regions</h1>
         <main>
             <section class="nestQuest-regions">
                 <!--for each us region -->
                 <div class="region card">
-                    <ul>
+                    <% regions.forEach((region)=> { %>
                         <li>
-
+                            <img class="region image" src=""><br>
+                            <strong>Region:</strong>
+                            <%= region.name %><br>
+                                <a href="/bird-index/<%= region._id %>">View Region's Birds</a>
                         </li>
-                    </ul>
                 </div>
-
+                <% }); %>
 
             </section>
         </main>
-        </body>
+</body>
 
 </html>

@@ -13,7 +13,7 @@ This application will allow users to record and organize the bird species they e
 - birds by region endpoint
 - home page login modal
 - featured page
-- user sightings if not logged in redirect to log in
+- user profile if not logged in redirect to log in
 
 ## Stretch Goal
 

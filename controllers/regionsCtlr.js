@@ -10,12 +10,17 @@ const db = require("../models");
 
 /* Routes
 --------------------------------------------------------------- */
-//All regions
-router.get("/test", (req, res) => {
-  res.send("Test Successful");
+//All regions GET
+router.get("/", (req, res) => {
+  Region.find().then((regions) => {
+    res.render("regions-index", { regions });
+  });
 });
 
 //Region byIds
+router.get("/", (req, res) => {
+  res.render();
+});
 
 //Region sightings
 

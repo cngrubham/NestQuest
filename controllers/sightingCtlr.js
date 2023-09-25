@@ -39,14 +39,14 @@ router.post("/create/:birdId", (req, res) => {
 });
 
 // Show Route: GET sightings/:id
-router.get("/:id", (req, res) => {
+router.get("/:id", (req, res) => { //need to query sightings to be specific to user
   db.Bird.findOne(
     { "sightings._id": req.params.id },
     { "sightings.$": true, _id: false }
   ).then((bird) => {
     // format query results to appear in one object,
     // rather than an object containing an array of one object
-    res.render("sightings/sighting-details", { sightings: bird.sightings[0] });
+    res.render("sightings/sightings-index", { sightings: bird.sightings[0] });
   });
 });
 // Edit Sighting Route (GET/Read)

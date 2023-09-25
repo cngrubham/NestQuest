@@ -17,4 +17,5 @@ module.exports = {
   seedSightings: require("./seeds/sighting-seed"),
   Sighting: require("./sighting"),
   User: require("./user"),
+  Region: require("./region"),
 };
