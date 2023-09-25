@@ -29,7 +29,9 @@ router.post("/login", (req, res) => {
 });
 // Logout Get
 router.get("/logout", (req, res) => {
+  //https://expressjs.com/en/api.html#res.clearCookie
   res.clearCookie("username");
+  // res.set("username", { expires: Date.now() });
   res.redirect("/");
 });
 // update profile

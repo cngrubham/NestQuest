@@ -11,10 +11,10 @@ const db = require("../models");
 /* Routes
 --------------------------------------------------------------- */
 //All regions GET
-router.get("/", (req, res) => {
-  db.Region.find().then((regions) => {
-    res.render("regions-index", { regions });
-  });
+router.get("/", async (req, res) => {
+  const regionsData = await db.Region.find();
+  console.log(db.Region)
+  res.render("regions-index", { regions: regionsData });
 });
 
 //Region byIds SHOW
@@ -26,7 +26,6 @@ router.get("/:id", (req, res) => {
 });
 
 //Region sightings?
-
 
 /* Export these routes so that they are accessible in `server.js`
 --------------------------------------------------------------- */

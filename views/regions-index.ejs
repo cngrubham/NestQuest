@@ -12,16 +12,23 @@
         <main>
             <section class="nestQuest-regions">
                 <!--for each us region -->
-                <div class="region card">
-                    <% regions.forEach((region)=> { %>
-                        <li>
-                            <img class="region image" src=""><br>
-                            <strong>Region:</strong>
-                            <%= region.name %><br>
-                                <a href="/bird-index/<%= region._id %>">View Region's Birds</a>
-                        </li>
-                </div>
-                <% }); %>
+                <% regions.forEach(function(region) { %>
+                    <div class="region card">
+                        <ul>
+                            <li><strong>Region:</strong>
+                                <%= region.name %><br> - <%= region.description %>
+                            </li>
+                            <li>
+                                <strong>Birds:</strong>
+                                <ul>
+                                    <% region.birds.forEach(function(bird) { %>
+                                        <li><a href="/bird-details/<%= bird._id %>">View Bird</a></li>
+                                        <% }); %>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <% }); %>
 
             </section>
         </main>

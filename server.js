@@ -6,6 +6,7 @@ const express = require("express");
 const livereload = require("livereload");
 const connectLiveReload = require("connect-livereload");
 const methodOverride = require("method-override");
+// https://www.freecodecamp.org/news/authenticate-users-node-app/
 const cookieParser = require("cookie-parser");
 
 /* Require the db connection, models, and seed data
