@@ -11,7 +11,6 @@ const db = require("../models");
 --------------------------------------------------------------- */
 // //Index Route: display all birds
 router.get("/bird-index", function (req, res) {
-  
   db.Bird.find({})
     .then((birds) => {
       res.render("bird-index", { birds: birds });

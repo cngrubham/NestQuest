@@ -40,7 +40,8 @@ router.post("/create/:birdId", (req, res) => {
 });
 
 // Show Route: GET sightings/:id
-router.get("/:id", (req, res) => { //need to query sightings to be specific to user
+router.get("/:id", (req, res) => {
+  //need to query sightings to be specific to user
   db.Bird.findOne(
     { "sightings._id": req.params.id },
     { "sightings.$": true, _id: false }
