@@ -14,20 +14,21 @@
         <section class="nestQuest-regions">
             <!--for each us region -->
             <% regions.forEach(function(region) { %>
-                <a href="/regions/<%=region.code%>" class="region card">
-                    <ul>
-                        <li><strong>Region:</strong>
-                            <%= region.code %><br>
-                                <%= region.name %>
-                        </li>
-                        <li>
-                            <strong>Birds: <%= region.birds.length %></strong>
+                <div class="bird-card">
+                    <a href="/regions/<%=region.code%>" class="region card">
+                        <ul>
+                            <li><strong>Region:</strong>
+                                <%= region.code %><br>
+                                    <%= region.name %>
+                            </li>
+                            <li>
+                                <strong>Birds: <%= region.birds.length %></strong>
 
-                        </li>
-                    </ul>
-                </a>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
                 <% }); %>
-
         </section>
     </main>
     <script src="/public/js/nav.js"></script>

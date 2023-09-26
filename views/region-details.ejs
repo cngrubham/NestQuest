@@ -1,11 +1,12 @@
+<!-- Updated HTML -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <%- include('./partials/head.ejs', {title: 'NestQuest | Region Details' }) %>
         <link rel="stylesheet" href="/public/nav.css">
+        <link rel="stylesheet" href="/public/main.css">
         <%- include('./partials/nav.ejs') %>
-
 </head>
 
 <body>
@@ -13,38 +14,36 @@
         <%=region.name%> Region Birds
     </h1>
     <main>
-        <section class="nestQuest-regions">
-            <!-- might add drop down search criteria -->
-            <!--for each us region -->
-            <h1>
-                <%= region.birds.length %> birds are in this area
-            </h1>
-            <div class="birds-container">
-                <h2>Bird Information</h2>
-
-                <!-- form for searching by familyComName -->
-
-                <form action="/search" method="GET">
-                    <label for="familyComName">Select by Family:</label>
-                    <select name="familyComName" id="familyComName">
-                        <% uniqueFamilyComNames.forEach(function(familyComName) { %>
-                            <option value="<%= familyComName %>">
-                                <%= familyComName %>
-                            </option>
-                            <% }); %>
-                    </select>
-                    <button type="submit">Filter Results</button>
-                </form>
-
-                <ul>
-                    <% birdData.forEach(function(bird) { %>
-                        <li>Name: <%= bird.comName %>
-                        </li>
-                        <a href="/bird"<%= bird.comName%>><%= bird.comName%> Details</a>
+        <h2>
+            <%= region.birds.length %> birds are in this area
+        </h2>
+        <div class="birds-container">
+            <!-- Form for searching by familyComName -->
+            <form action="/search" method="GET">
+                <label for="familyComName">Select by Family:</label>
+                <select name="familyComName" id="familyComName">
+                    <% uniqueFamilyComNames.forEach(function(familyComName) { %>
+                        <option value="<%= familyComName %>">
+                            <%= familyComName %>
+                        </option>
                         <% }); %>
-                </ul>
+                </select>
+                <button type="submit">Filter Results</button>
+            </form>
+            <h2>Bird Information</h2>
+            <!-- Display bird cards in a grid -->
+            <div class="bird-card-grid">
+                <section class="nestQuest-regions">
+                    <% birdData.forEach(function(bird) { %>
+                        <div class="bird-card">
+                            <p>Common Name: <%= bird.comName %>
+                            </p>
+                            <a href="/bird/<%= bird.comName %>">Details</a>
+                        </div>
+                        <% }); %>
             </div>
-        </section>
+            </section>
+        </div>
     </main>
     <script src="/public/js/nav.js"></script>
     <%- include('./partials/footer.ejs') %>

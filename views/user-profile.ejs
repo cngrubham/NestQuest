@@ -4,6 +4,7 @@
 <head>
     <%- include('./partials/head.ejs', {title: 'NestQuest | User Sightings' }) %>
         <link rel="stylesheet" href="/public/home.css">
+        <link rel="stylesheet" href="/public/user-profile.css">
         <link rel="stylesheet" href="/public/nav.css">
         <%- include('./partials/nav.ejs') %>
 
@@ -16,15 +17,37 @@
         <h1>User Sightings</h1>
         <section class="user-sightings">
             <!-- account info -->
-            <div class="sightings-card">
-                <!-- for each sighting list details -->
-                <ul>
-                    <li>
+            <div class="profile-info">
+                <div class="sighting-action">
+                    <a href="/edit-user">Edit Profile</a>
+                </div>
+            </div>
 
-                    </li>
-                </ul>
-                <!-- edit sighting button/link-->
-                <!-- delete sighting button-->
+
+            <div class="sightings-card">
+                <div class="sightings-card">
+                    <!-- User Sighting Details -->
+                    <h3>User Sightings</h3>
+
+                    <!-- For Each Sighting -->
+                    <ul>
+                        <!-- sighting info -->
+                        <li>
+                            <!-- Edit Sighting Button -->
+                            <div class="sighting-action">
+                                <a href="/edit-sighting">Edit</a>
+                            </div>
+                            <!-- Delete Sighting Button -->
+                            <div class="sighting-action">
+                                <a href="/delete-sighting">Delete</a>
+                            </div>
+                            <!-- View Sighting Button -->
+                            <div class="sighting-action">
+                                <a href="/sighting/details">View</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
 

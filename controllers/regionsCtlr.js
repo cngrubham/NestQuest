@@ -37,8 +37,7 @@ router.get("/:id", async (req, res) => {
     });
     res.render("region-details", { region, birdData, uniqueFamilyComNames });
   } catch (error) {
-    console.error(error);
-    res.status(404).render("404");
+    res.redirect("404");
   }
 });
 

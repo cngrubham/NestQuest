@@ -4,3 +4,49 @@ body {
     padding: 0;
     background-color: #f4f4f4;
 }
+
+.bird-card {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.2s;
+}
+
+.bird-card-grid {
+    display: grid;
+    gap: 20px;
+}
+
+
+.bird-card:hover {
+    transform: translateY(-5px);
+}
+
+.card {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.nestQuest-regions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .bird-card {
+        width: 100%;
+    }
+}
