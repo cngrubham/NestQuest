@@ -13,7 +13,7 @@ const db = require("../models");
 //All regions GET
 router.get("/", async (req, res) => {
   const regionsData = await db.Region.find();
-  console.log(db.regionsData);
+  console.log("regionsData", regionsData);
   res.render("regions-index", { regions: regionsData });
 });
 

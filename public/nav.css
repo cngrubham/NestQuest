@@ -29,6 +29,9 @@
 
 }
 
+.show {
+    display: flex;
+}
 
 .nav-bar-links {
     display: none;

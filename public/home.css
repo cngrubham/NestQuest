@@ -21,9 +21,7 @@
     overflow: auto;
 }
 
-.show {
-    display: flex;
-}
+
 
 #close-modal-button {
     position: absolute;

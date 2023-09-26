@@ -2,7 +2,7 @@ const birds = [
   {
     sciName: "Struthio camelus",
     comName: "Common Ostrich",
-    speciesCode: "ostric2",
+    _id: "ostric2",
     category: "species",
     taxonOrder: 2.0,
     bandingCodes: [],
@@ -16,7 +16,7 @@ const birds = [
   {
     sciName: "Struthio molybdophanes",
     comName: "Somali Ostrich",
-    speciesCode: "ostric3",
+    _id: "ostric3",
     category: "species",
     taxonOrder: 7.0,
     bandingCodes: [],
@@ -30,7 +30,7 @@ const birds = [
   {
     sciName: "Struthio camelus/molybdophanes",
     comName: "Common/Somali Ostrich",
-    speciesCode: "y00934",
+    _id: "y00934",
     category: "slash",
     taxonOrder: 8.0,
     bandingCodes: [],
@@ -44,7 +44,7 @@ const birds = [
   {
     sciName: "Rhea americana",
     comName: "Greater Rhea",
-    speciesCode: "grerhe1",
+    _id: "grerhe1",
     category: "species",
     taxonOrder: 10.0,
     bandingCodes: [],
@@ -58,7 +58,7 @@ const birds = [
   {
     sciName: "Rhea pennata",
     comName: "Lesser Rhea",
-    speciesCode: "lesrhe2",
+    _id: "lesrhe2",
     category: "species",
     taxonOrder: 16.0,
     bandingCodes: [],
@@ -72,7 +72,7 @@ const birds = [
   {
     sciName: "Rhea pennata tarapacensis/garleppi",
     comName: "Lesser Rhea (Puna)",
-    speciesCode: "lesrhe4",
+    _id: "lesrhe4",
     category: "issf",
     taxonOrder: 17.0,
     bandingCodes: [],
@@ -87,7 +87,7 @@ const birds = [
   {
     sciName: "Rhea pennata pennata",
     comName: "Lesser Rhea (Darwin's)",
-    speciesCode: "lesrhe3",
+    _id: "lesrhe3",
     category: "issf",
     taxonOrder: 20.0,
     bandingCodes: [],
@@ -102,7 +102,7 @@ const birds = [
   {
     sciName: "Nothocercus julius",
     comName: "Tawny-breasted Tinamou",
-    speciesCode: "tabtin1",
+    _id: "tabtin1",
     category: "species",
     taxonOrder: 22.0,
     bandingCodes: [],
@@ -116,7 +116,7 @@ const birds = [
   {
     sciName: "Nothocercus bonapartei",
     comName: "Highland Tinamou",
-    speciesCode: "higtin1",
+    _id: "higtin1",
     category: "species",
     taxonOrder: 23.0,
     bandingCodes: ["HITI"],
@@ -130,7 +130,7 @@ const birds = [
   {
     sciName: "Nothocercus bonapartei [bonapartei Group]",
     comName: "Highland Tinamou (South American)",
-    speciesCode: "higtin2",
+    _id: "higtin2",
     category: "issf",
     taxonOrder: 24.0,
     bandingCodes: [],
@@ -145,7 +145,7 @@ const birds = [
   {
     sciName: "Nothocercus bonapartei frantzii",
     comName: "Highland Tinamou (Costa Rican)",
-    speciesCode: "higtin3",
+    _id: "higtin3",
     category: "issf",
     taxonOrder: 29.0,
     bandingCodes: [],
@@ -160,7 +160,7 @@ const birds = [
   {
     sciName: "Nothocercus nigrocapillus",
     comName: "Hooded Tinamou",
-    speciesCode: "hootin1",
+    _id: "hootin1",
     category: "species",
     taxonOrder: 30.0,
     bandingCodes: [],
@@ -174,7 +174,7 @@ const birds = [
   {
     sciName: "Tinamus tao",
     comName: "Gray Tinamou",
-    speciesCode: "grytin1",
+    _id: "grytin1",
     category: "species",
     taxonOrder: 33.0,
     bandingCodes: [],
@@ -188,7 +188,7 @@ const birds = [
   {
     sciName: "Tinamus solitarius",
     comName: "Solitary Tinamou",
-    speciesCode: "soltin1",
+    _id: "soltin1",
     category: "species",
     taxonOrder: 38.0,
     bandingCodes: [],
@@ -202,7 +202,7 @@ const birds = [
   {
     sciName: "Tinamus osgoodi",
     comName: "Black Tinamou",
-    speciesCode: "blatin1",
+    _id: "blatin1",
     category: "species",
     taxonOrder: 39.0,
     bandingCodes: [],
@@ -216,7 +216,7 @@ const birds = [
   {
     sciName: "Tinamus major",
     comName: "Great Tinamou",
-    speciesCode: "gretin1",
+    _id: "gretin1",
     category: "species",
     taxonOrder: 42.0,
     bandingCodes: ["GRTI"],
@@ -230,7 +230,7 @@ const birds = [
   {
     sciName: "Tinamus guttatus",
     comName: "White-throated Tinamou",
-    speciesCode: "whttin1",
+    _id: "whttin1",
     category: "species",
     taxonOrder: 55.0,
     bandingCodes: [],
@@ -244,7 +244,7 @@ const birds = [
   {
     sciName: "Tinamus sp.",
     comName: "Tinamus sp.",
-    speciesCode: "tinamu1",
+    _id: "tinamu1",
     category: "spuh",
     taxonOrder: 56.0,
     bandingCodes: [],
@@ -258,7 +258,7 @@ const birds = [
   {
     sciName: "Crypturellus cinereus",
     comName: "Cinereous Tinamou",
-    speciesCode: "cintin1",
+    _id: "cintin1",
     category: "species",
     taxonOrder: 57.0,
     bandingCodes: [],
@@ -272,7 +272,7 @@ const birds = [
   {
     sciName: "Crypturellus berlepschi",
     comName: "Berlepsch's Tinamou",
-    speciesCode: "bertin1",
+    _id: "bertin1",
     category: "species",
     taxonOrder: 58.0,
     bandingCodes: [],
@@ -286,7 +286,7 @@ const birds = [
   {
     sciName: "Crypturellus soui",
     comName: "Little Tinamou",
-    speciesCode: "littin1",
+    _id: "littin1",
     category: "species",
     taxonOrder: 59.0,
     bandingCodes: ["LITI"],
@@ -300,7 +300,7 @@ const birds = [
   {
     sciName: "Crypturellus ptaritepui",
     comName: "Tepui Tinamou",
-    speciesCode: "teptin1",
+    _id: "teptin1",
     category: "species",
     taxonOrder: 74.0,
     bandingCodes: [],
@@ -314,7 +314,7 @@ const birds = [
   {
     sciName: "Crypturellus obsoletus",
     comName: "Brown Tinamou",
-    speciesCode: "brotin1",
+    _id: "brotin1",
     category: "species",
     taxonOrder: 75.0,
     bandingCodes: [],
@@ -328,7 +328,7 @@ const birds = [
   {
     sciName: "Crypturellus obsoletus castaneus",
     comName: "Brown Tinamou (castaneus)",
-    speciesCode: "brntin1",
+    _id: "brntin1",
     category: "issf",
     taxonOrder: 76.0,
     bandingCodes: [],
@@ -343,7 +343,7 @@ const birds = [
   {
     sciName: "Crypturellus obsoletus [obsoletus Group]",
     comName: "Brown Tinamou (Brown)",
-    speciesCode: "brntin2",
+    _id: "brntin2",
     category: "issf",
     taxonOrder: 77.0,
     bandingCodes: [],
@@ -358,7 +358,7 @@ const birds = [
   {
     sciName: "Crypturellus undulatus",
     comName: "Undulated Tinamou",
-    speciesCode: "undtin1",
+    _id: "undtin1",
     category: "species",
     taxonOrder: 86.0,
     bandingCodes: [],
@@ -372,7 +372,7 @@ const birds = [
   {
     sciName: "Crypturellus transfasciatus",
     comName: "Pale-browed Tinamou",
-    speciesCode: "pabtin1",
+    _id: "pabtin1",
     category: "species",
     taxonOrder: 93.0,
     bandingCodes: [],
@@ -386,7 +386,7 @@ const birds = [
   {
     sciName: "Crypturellus strigulosus",
     comName: "Brazilian Tinamou",
-    speciesCode: "bratin1",
+    _id: "bratin1",
     category: "species",
     taxonOrder: 94.0,
     bandingCodes: [],
@@ -400,7 +400,7 @@ const birds = [
   {
     sciName: "Crypturellus duidae",
     comName: "Gray-legged Tinamou",
-    speciesCode: "gyltin1",
+    _id: "gyltin1",
     category: "species",
     taxonOrder: 95.0,
     bandingCodes: [],
@@ -414,7 +414,7 @@ const birds = [
   {
     sciName: "Crypturellus erythropus",
     comName: "Red-legged Tinamou",
-    speciesCode: "reltin1",
+    _id: "reltin1",
     category: "species",
     taxonOrder: 96.0,
     bandingCodes: [],
@@ -428,7 +428,7 @@ const birds = [
   {
     sciName: "Crypturellus noctivagus",
     comName: "Yellow-legged Tinamou",
-    speciesCode: "yeltin1",
+    _id: "yeltin1",
     category: "species",
     taxonOrder: 104.0,
     bandingCodes: [],
@@ -442,7 +442,7 @@ const birds = [
   {
     sciName: "Crypturellus noctivagus zabele",
     comName: "Yellow-legged Tinamou (zabele)",
-    speciesCode: "yeltin2",
+    _id: "yeltin2",
     category: "issf",
     taxonOrder: 105.0,
     bandingCodes: [],
@@ -457,7 +457,7 @@ const birds = [
   {
     sciName: "Crypturellus noctivagus noctivagus",
     comName: "Yellow-legged Tinamou (noctivagus)",
-    speciesCode: "yeltin3",
+    _id: "yeltin3",
     category: "issf",
     taxonOrder: 106.0,
     bandingCodes: [],
@@ -472,7 +472,7 @@ const birds = [
   {
     sciName: "Crypturellus atrocapillus",
     comName: "Black-capped Tinamou",
-    speciesCode: "blctin1",
+    _id: "blctin1",
     category: "species",
     taxonOrder: 107.0,
     bandingCodes: [],
@@ -486,7 +486,7 @@ const birds = [
   {
     sciName: "Crypturellus boucardi",
     comName: "Slaty-breasted Tinamou",
-    speciesCode: "slbtin1",
+    _id: "slbtin1",
     category: "species",
     taxonOrder: 110.0,
     bandingCodes: ["SBTI"],
@@ -500,7 +500,7 @@ const birds = [
   {
     sciName: "Crypturellus kerriae",
     comName: "Choco Tinamou",
-    speciesCode: "chotin1",
+    _id: "chotin1",
     category: "species",
     taxonOrder: 113.0,
     bandingCodes: ["CHTI"],
@@ -514,7 +514,7 @@ const birds = [
   {
     sciName: "Crypturellus variegatus",
     comName: "Variegated Tinamou",
-    speciesCode: "vartin1",
+    _id: "vartin1",
     category: "species",
     taxonOrder: 114.0,
     bandingCodes: [],
@@ -528,7 +528,7 @@ const birds = [
   {
     sciName: "Crypturellus cinnamomeus",
     comName: "Thicket Tinamou",
-    speciesCode: "thitin1",
+    _id: "thitin1",
     category: "species",
     taxonOrder: 115.0,
     bandingCodes: ["THTI"],
@@ -542,7 +542,7 @@ const birds = [
   {
     sciName: "Crypturellus cinnamomeus occidentalis",
     comName: "Thicket Tinamou (occidentalis)",
-    speciesCode: "thitin2",
+    _id: "thitin2",
     category: "issf",
     taxonOrder: 116.0,
     bandingCodes: [],
@@ -557,7 +557,7 @@ const birds = [
   {
     sciName: "Crypturellus cinnamomeus [cinnamomeus Group]",
     comName: "Thicket Tinamou (cinnamomeus Group)",
-    speciesCode: "thitin3",
+    _id: "thitin3",
     category: "issf",
     taxonOrder: 117.0,
     bandingCodes: [],
@@ -572,7 +572,7 @@ const birds = [
   {
     sciName: "Crypturellus brevirostris",
     comName: "Rusty Tinamou",
-    speciesCode: "rustin1",
+    _id: "rustin1",
     category: "species",
     taxonOrder: 126.0,
     bandingCodes: [],
@@ -586,7 +586,7 @@ const birds = [
   {
     sciName: "Crypturellus bartletti",
     comName: "Bartlett's Tinamou",
-    speciesCode: "bartin2",
+    _id: "bartin2",
     category: "species",
     taxonOrder: 127.0,
     bandingCodes: [],
@@ -600,7 +600,7 @@ const birds = [
   {
     sciName: "Crypturellus parvirostris",
     comName: "Small-billed Tinamou",
-    speciesCode: "smbtin1",
+    _id: "smbtin1",
     category: "species",
     taxonOrder: 128.0,
     bandingCodes: [],
@@ -614,7 +614,7 @@ const birds = [
   {
     sciName: "Crypturellus casiquiare",
     comName: "Barred Tinamou",
-    speciesCode: "bartin1",
+    _id: "bartin1",
     category: "species",
     taxonOrder: 129.0,
     bandingCodes: [],
@@ -628,7 +628,7 @@ const birds = [
   {
     sciName: "Crypturellus tataupa",
     comName: "Tataupa Tinamou",
-    speciesCode: "tattin1",
+    _id: "tattin1",
     category: "species",
     taxonOrder: 130.0,
     bandingCodes: [],
@@ -642,7 +642,7 @@ const birds = [
   {
     sciName: "Crypturellus sp.",
     comName: "Crypturellus sp.",
-    speciesCode: "cryptu1",
+    _id: "cryptu1",
     category: "spuh",
     taxonOrder: 135.0,
     bandingCodes: [],
@@ -656,7 +656,7 @@ const birds = [
   {
     sciName: "Rhynchotus rufescens",
     comName: "Red-winged Tinamou",
-    speciesCode: "rewtin1",
+    _id: "rewtin1",
     category: "species",
     taxonOrder: 136.0,
     bandingCodes: [],
@@ -670,7 +670,7 @@ const birds = [
   {
     sciName: "Rhynchotus maculicollis",
     comName: "Huayco Tinamou",
-    speciesCode: "huatin1",
+    _id: "huatin1",
     category: "species",
     taxonOrder: 140.0,
     bandingCodes: [],
@@ -684,7 +684,7 @@ const birds = [
   {
     sciName: "Nothoprocta taczanowskii",
     comName: "Taczanowski's Tinamou",
-    speciesCode: "tactin1",
+    _id: "tactin1",
     category: "species",
     taxonOrder: 141.0,
     bandingCodes: [],
@@ -698,7 +698,7 @@ const birds = [
   {
     sciName: "Nothoprocta ornata",
     comName: "Ornate Tinamou",
-    speciesCode: "orntin1",
+    _id: "orntin1",
     category: "species",
     taxonOrder: 142.0,
     bandingCodes: [],
@@ -712,7 +712,7 @@ const birds = [
   {
     sciName: "Nothoprocta perdicaria",
     comName: "Chilean Tinamou",
-    speciesCode: "chitin1",
+    _id: "chitin1",
     category: "species",
     taxonOrder: 146.0,
     bandingCodes: [],
@@ -726,7 +726,7 @@ const birds = [
   {
     sciName: "Nothoprocta cinerascens",
     comName: "Brushland Tinamou",
-    speciesCode: "brutin1",
+    _id: "brutin1",
     category: "species",
     taxonOrder: 149.0,
     bandingCodes: [],
@@ -740,7 +740,7 @@ const birds = [
   {
     sciName: "Nothoprocta pentlandii",
     comName: "Andean Tinamou",
-    speciesCode: "andtin1",
+    _id: "andtin1",
     category: "species",
     taxonOrder: 152.0,
     bandingCodes: [],
@@ -754,7 +754,7 @@ const birds = [
   {
     sciName: "Nothoprocta curvirostris",
     comName: "Curve-billed Tinamou",
-    speciesCode: "cubtin1",
+    _id: "cubtin1",
     category: "species",
     taxonOrder: 161.0,
     bandingCodes: [],
@@ -768,7 +768,7 @@ const birds = [
   {
     sciName: "Nothoprocta sp.",
     comName: "Nothoprocta sp.",
-    speciesCode: "nothop1",
+    _id: "nothop1",
     category: "spuh",
     taxonOrder: 164.0,
     bandingCodes: [],
@@ -782,7 +782,7 @@ const birds = [
   {
     sciName: "Nothura boraquira",
     comName: "White-bellied Nothura",
-    speciesCode: "whbnot1",
+    _id: "whbnot1",
     category: "species",
     taxonOrder: 165.0,
     bandingCodes: [],
@@ -796,7 +796,7 @@ const birds = [
   {
     sciName: "Nothura minor",
     comName: "Lesser Nothura",
-    speciesCode: "lesnot1",
+    _id: "lesnot1",
     category: "species",
     taxonOrder: 166.0,
     bandingCodes: [],
@@ -810,7 +810,7 @@ const birds = [
   {
     sciName: "Nothura darwinii",
     comName: "Darwin's Nothura",
-    speciesCode: "darnot1",
+    _id: "darnot1",
     category: "species",
     taxonOrder: 167.0,
     bandingCodes: [],
@@ -824,7 +824,7 @@ const birds = [
   {
     sciName: "Nothura maculosa",
     comName: "Spotted Nothura",
-    speciesCode: "sponot1",
+    _id: "sponot1",
     category: "species",
     taxonOrder: 173.0,
     bandingCodes: [],
@@ -838,7 +838,7 @@ const birds = [
   {
     sciName: "Taoniscus nanus",
     comName: "Dwarf Tinamou",
-    speciesCode: "dwatin1",
+    _id: "dwatin1",
     category: "species",
     taxonOrder: 183.0,
     bandingCodes: [],
@@ -852,7 +852,7 @@ const birds = [
   {
     sciName: "Eudromia elegans",
     comName: "Elegant Crested-Tinamou",
-    speciesCode: "elctin1",
+    _id: "elctin1",
     category: "species",
     taxonOrder: 184.0,
     bandingCodes: [],
@@ -866,7 +866,7 @@ const birds = [
   {
     sciName: "Eudromia formosa",
     comName: "Quebracho Crested-Tinamou",
-    speciesCode: "quctin1",
+    _id: "quctin1",
     category: "species",
     taxonOrder: 195.0,
     bandingCodes: [],
@@ -880,7 +880,7 @@ const birds = [
   {
     sciName: "Tinamotis pentlandii",
     comName: "Puna Tinamou",
-    speciesCode: "puntin1",
+    _id: "puntin1",
     category: "species",
     taxonOrder: 198.0,
     bandingCodes: [],
@@ -894,7 +894,7 @@ const birds = [
   {
     sciName: "Tinamotis ingoufi",
     comName: "Patagonian Tinamou",
-    speciesCode: "pattin1",
+    _id: "pattin1",
     category: "species",
     taxonOrder: 199.0,
     bandingCodes: [],
@@ -908,7 +908,7 @@ const birds = [
   {
     sciName: "Tinamidae sp.",
     comName: "tinamou sp.",
-    speciesCode: "tinamo1",
+    _id: "tinamo1",
     category: "spuh",
     taxonOrder: 200.0,
     bandingCodes: [],
@@ -922,7 +922,7 @@ const birds = [
   {
     sciName: "Casuarius casuarius",
     comName: "Southern Cassowary",
-    speciesCode: "soucas1",
+    _id: "soucas1",
     category: "species",
     taxonOrder: 202.0,
     bandingCodes: [],
@@ -936,7 +936,7 @@ const birds = [
   {
     sciName: "Casuarius bennetti",
     comName: "Dwarf Cassowary",
-    speciesCode: "dwacas1",
+    _id: "dwacas1",
     category: "species",
     taxonOrder: 203.0,
     bandingCodes: [],
@@ -950,7 +950,7 @@ const birds = [
   {
     sciName: "Casuarius unappendiculatus",
     comName: "Northern Cassowary",
-    speciesCode: "norcas1",
+    _id: "norcas1",
     category: "species",
     taxonOrder: 204.0,
     bandingCodes: [],
@@ -964,7 +964,7 @@ const birds = [
   {
     sciName: "Dromaius novaehollandiae",
     comName: "Emu",
-    speciesCode: "emu1",
+    _id: "emu1",
     category: "species",
     taxonOrder: 205.0,
     bandingCodes: [],
@@ -978,7 +978,7 @@ const birds = [
   {
     sciName: "Apteryx australis",
     comName: "Southern Brown Kiwi",
-    speciesCode: "sobkiw1",
+    _id: "sobkiw1",
     category: "species",
     taxonOrder: 211.0,
     bandingCodes: [],
@@ -992,7 +992,7 @@ const birds = [
   {
     sciName: "Apteryx australis australis",
     comName: "Southern Brown Kiwi (South I.)",
-    speciesCode: "sobkiw2",
+    _id: "sobkiw2",
     category: "issf",
     taxonOrder: 212.0,
     bandingCodes: [],
@@ -1007,7 +1007,7 @@ const birds = [
   {
     sciName: "Apteryx australis lawryi",
     comName: "Southern Brown Kiwi (Stewart I.)",
-    speciesCode: "sobkiw3",
+    _id: "sobkiw3",
     category: "issf",
     taxonOrder: 213.0,
     bandingCodes: [],
@@ -1022,7 +1022,7 @@ const birds = [
   {
     sciName: "Apteryx rowi",
     comName: "Okarito Brown Kiwi",
-    speciesCode: "okbkiw1",
+    _id: "okbkiw1",
     category: "species",
     taxonOrder: 214.0,
     bandingCodes: [],
@@ -1036,7 +1036,7 @@ const birds = [
   {
     sciName: "Apteryx mantelli",
     comName: "North Island Brown Kiwi",
-    speciesCode: "nibkiw1",
+    _id: "nibkiw1",
     category: "species",
     taxonOrder: 215.0,
     bandingCodes: [],
@@ -1050,7 +1050,7 @@ const birds = [
   {
     sciName: "Apteryx owenii",
     comName: "Little Spotted Kiwi",
-    speciesCode: "liskiw1",
+    _id: "liskiw1",
     category: "species",
     taxonOrder: 216.0,
     bandingCodes: [],
@@ -1064,7 +1064,7 @@ const birds = [
   {
     sciName: "Apteryx haastii",
     comName: "Great Spotted Kiwi",
-    speciesCode: "grskiw1",
+    _id: "grskiw1",
     category: "species",
     taxonOrder: 217.0,
     bandingCodes: [],
@@ -1078,7 +1078,7 @@ const birds = [
   {
     sciName: "Apteryx sp.",
     comName: "kiwi sp.",
-    speciesCode: "kiwi1",
+    _id: "kiwi1",
     category: "spuh",
     taxonOrder: 218.0,
     bandingCodes: [],
@@ -1092,7 +1092,7 @@ const birds = [
   {
     sciName: "Anhima cornuta",
     comName: "Horned Screamer",
-    speciesCode: "horscr1",
+    _id: "horscr1",
     category: "species",
     taxonOrder: 220.0,
     bandingCodes: [],
@@ -1106,7 +1106,7 @@ const birds = [
   {
     sciName: "Chauna torquata",
     comName: "Southern Screamer",
-    speciesCode: "souscr1",
+    _id: "souscr1",
     category: "species",
     taxonOrder: 221.0,
     bandingCodes: [],
@@ -1120,7 +1120,7 @@ const birds = [
   {
     sciName: "Chauna chavaria",
     comName: "Northern Screamer",
-    speciesCode: "norscr1",
+    _id: "norscr1",
     category: "species",
     taxonOrder: 222.0,
     bandingCodes: [],
@@ -1134,7 +1134,7 @@ const birds = [
   {
     sciName: "Anseranas semipalmata",
     comName: "Magpie Goose",
-    speciesCode: "maggoo1",
+    _id: "maggoo1",
     category: "species",
     taxonOrder: 224.0,
     bandingCodes: [],
@@ -1148,7 +1148,7 @@ const birds = [
   {
     sciName: "Dendrocygna guttata",
     comName: "Spotted Whistling-Duck",
-    speciesCode: "spwduc1",
+    _id: "spwduc1",
     category: "species",
     taxonOrder: 226.0,
     bandingCodes: [],
@@ -1162,7 +1162,7 @@ const birds = [
   {
     sciName: "Dendrocygna eytoni",
     comName: "Plumed Whistling-Duck",
-    speciesCode: "plwduc1",
+    _id: "plwduc1",
     category: "species",
     taxonOrder: 227.0,
     bandingCodes: [],
@@ -1176,7 +1176,7 @@ const birds = [
   {
     sciName: "Dendrocygna viduata",
     comName: "White-faced Whistling-Duck",
-    speciesCode: "wfwduc1",
+    _id: "wfwduc1",
     category: "species",
     taxonOrder: 228.0,
     bandingCodes: ["WFWD"],
@@ -1190,7 +1190,7 @@ const birds = [
   {
     sciName: "Dendrocygna guttata x viduata",
     comName: "Spotted x White-faced Whistling-Duck (hybrid)",
-    speciesCode: "x00721",
+    _id: "x00721",
     category: "hybrid",
     taxonOrder: 229.0,
     bandingCodes: [],
@@ -1204,7 +1204,7 @@ const birds = [
   {
     sciName: "Dendrocygna autumnalis",
     comName: "Black-bellied Whistling-Duck",
-    speciesCode: "bbwduc",
+    _id: "bbwduc",
     category: "species",
     taxonOrder: 230.0,
     bandingCodes: ["BBWD"],
@@ -1218,7 +1218,7 @@ const birds = [
   {
     sciName: "Dendrocygna autumnalis fulgens",
     comName: "Black-bellied Whistling-Duck (fulgens)",
-    speciesCode: "bkbwhd1",
+    _id: "bkbwhd1",
     category: "issf",
     taxonOrder: 231.0,
     bandingCodes: [],
@@ -1233,7 +1233,7 @@ const birds = [
   {
     sciName: "Dendrocygna autumnalis autumnalis",
     comName: "Black-bellied Whistling-Duck (autumnalis)",
-    speciesCode: "bkbwhd2",
+    _id: "bkbwhd2",
     category: "issf",
     taxonOrder: 232.0,
     bandingCodes: [],
@@ -1248,7 +1248,7 @@ const birds = [
   {
     sciName: "Dendrocygna arborea",
     comName: "West Indian Whistling-Duck",
-    speciesCode: "wiwduc1",
+    _id: "wiwduc1",
     category: "species",
     taxonOrder: 233.0,
     bandingCodes: ["WIWD"],
@@ -1262,7 +1262,7 @@ const birds = [
   {
     sciName: "Dendrocygna autumnalis x arborea",
     comName: "Black-bellied x West Indian Whistling-Duck (hybrid)",
-    speciesCode: "x00775",
+    _id: "x00775",
     category: "hybrid",
     taxonOrder: 234.0,
     bandingCodes: [],
@@ -1276,7 +1276,7 @@ const birds = [
   {
     sciName: "Dendrocygna bicolor",
     comName: "Fulvous Whistling-Duck",
-    speciesCode: "fuwduc",
+    _id: "fuwduc",
     category: "species",
     taxonOrder: 235.0,
     bandingCodes: ["FUWD"],
@@ -1290,7 +1290,7 @@ const birds = [
   {
     sciName: "Dendrocygna viduata x bicolor",
     comName: "White-faced x Fulvous Whistling-Duck (hybrid)",
-    speciesCode: "x00938",
+    _id: "x00938",
     category: "hybrid",
     taxonOrder: 236.0,
     bandingCodes: [],
@@ -1304,7 +1304,7 @@ const birds = [
   {
     sciName: "Dendrocygna autumnalis x bicolor",
     comName: "Black-bellied x Fulvous Whistling-Duck (hybrid)",
-    speciesCode: "x00875",
+    _id: "x00875",
     category: "hybrid",
     taxonOrder: 237.0,
     bandingCodes: [],
@@ -1318,7 +1318,7 @@ const birds = [
   {
     sciName: "Dendrocygna arcuata",
     comName: "Wandering Whistling-Duck",
-    speciesCode: "wawduc1",
+    _id: "wawduc1",
     category: "species",
     taxonOrder: 238.0,
     bandingCodes: [],
@@ -1332,7 +1332,7 @@ const birds = [
   {
     sciName: "Dendrocygna eytoni x arcuata",
     comName: "Plumed x Wandering Whistling-Duck (hybrid)",
-    speciesCode: "x00990",
+    _id: "x00990",
     category: "hybrid",
     taxonOrder: 242.0,
     bandingCodes: [],
@@ -1346,7 +1346,7 @@ const birds = [
   {
     sciName: "Dendrocygna javanica",
     comName: "Lesser Whistling-Duck",
-    speciesCode: "lewduc1",
+    _id: "lewduc1",
     category: "species",
     taxonOrder: 243.0,
     bandingCodes: [],
@@ -1360,7 +1360,7 @@ const birds = [
   {
     sciName: "Dendrocygna bicolor/javanica",
     comName: "Fulvous/Lesser Whistling-Duck",
-    speciesCode: "y01080",
+    _id: "y01080",
     category: "slash",
     taxonOrder: 244.0,
     bandingCodes: [],
@@ -1374,7 +1374,7 @@ const birds = [
   {
     sciName: "Dendrocygna arcuata x javanica",
     comName: "Wandering x Lesser Whistling-Duck (hybrid)",
-    speciesCode: "x00360",
+    _id: "x00360",
     category: "hybrid",
     taxonOrder: 245.0,
     bandingCodes: [],
@@ -1388,7 +1388,7 @@ const birds = [
   {
     sciName: "Dendrocygna sp.",
     comName: "whistling-duck sp.",
-    speciesCode: "whistl1",
+    _id: "whistl1",
     category: "spuh",
     taxonOrder: 246.0,
     bandingCodes: [],
@@ -1402,7 +1402,7 @@ const birds = [
   {
     sciName: "Thalassornis leuconotus",
     comName: "White-backed Duck",
-    speciesCode: "whbduc1",
+    _id: "whbduc1",
     category: "species",
     taxonOrder: 247.0,
     bandingCodes: [],
@@ -1416,7 +1416,7 @@ const birds = [
   {
     sciName: "Anser indicus",
     comName: "Bar-headed Goose",
-    speciesCode: "bahgoo",
+    _id: "bahgoo",
     category: "species",
     taxonOrder: 250.0,
     bandingCodes: [],
@@ -1430,7 +1430,7 @@ const birds = [
   {
     sciName: "Anser canagicus",
     comName: "Emperor Goose",
-    speciesCode: "empgoo",
+    _id: "empgoo",
     category: "species",
     taxonOrder: 251.0,
     bandingCodes: ["EMGO"],
@@ -1444,7 +1444,7 @@ const birds = [
   {
     sciName: "Anser caerulescens",
     comName: "Snow Goose",
-    speciesCode: "snogoo",
+    _id: "snogoo",
     category: "species",
     taxonOrder: 252.0,
     bandingCodes: ["SNGO"],
@@ -1458,7 +1458,7 @@ const birds = [
   {
     sciName: "Anser indicus x caerulescens",
     comName: "Bar-headed x Snow Goose (hybrid)",
-    speciesCode: "x00991",
+    _id: "x00991",
     category: "hybrid",
     taxonOrder: 255.0,
     bandingCodes: [],
@@ -1472,7 +1472,7 @@ const birds = [
   {
     sciName: "Anser rossii",
     comName: "Ross's Goose",
-    speciesCode: "rosgoo",
+    _id: "rosgoo",
     category: "species",
     taxonOrder: 256.0,
     bandingCodes: ["ROGO"],
@@ -1486,7 +1486,7 @@ const birds = [
   {
     sciName: "Anser caerulescens x rossii",
     comName: "Snow x Ross's Goose (hybrid)",
-    speciesCode: "sxrgoo1",
+    _id: "sxrgoo1",
     category: "hybrid",
     taxonOrder: 257.0,
     bandingCodes: ["SRGH"],
@@ -1500,7 +1500,7 @@ const birds = [
   {
     sciName: "Anser caerulescens/rossii",
     comName: "Snow/Ross's Goose",
-    speciesCode: "y00469",
+    _id: "y00469",
     category: "slash",
     taxonOrder: 258.0,
     bandingCodes: ["SRGO"],
@@ -1514,7 +1514,7 @@ const birds = [
   {
     sciName: "Anser anser",
     comName: "Graylag Goose",
-    speciesCode: "gragoo",
+    _id: "gragoo",
     category: "species",
     taxonOrder: 259.0,
     bandingCodes: ["GRGO"],
@@ -1528,7 +1528,7 @@ const birds = [
   {
     sciName: "Anser anser anser",
     comName: "Graylag Goose (European)",
-    speciesCode: "gragoo2",
+    _id: "gragoo2",
     category: "issf",
     taxonOrder: 260.0,
     bandingCodes: [],
@@ -1543,7 +1543,7 @@ const birds = [
   {
     sciName: "Anser anser rubrirostris",
     comName: "Graylag Goose (Siberian)",
-    speciesCode: "gragoo3",
+    _id: "gragoo3",
     category: "issf",
     taxonOrder: 261.0,
     bandingCodes: [],
@@ -1558,7 +1558,7 @@ const birds = [
   {
     sciName: "Anser anser (Domestic type)",
     comName: "Graylag Goose (Domestic type)",
-    speciesCode: "gragoo1",
+    _id: "gragoo1",
     category: "domestic",
     taxonOrder: 262.0,
     bandingCodes: [],
@@ -1573,7 +1573,7 @@ const birds = [
   {
     sciName: "Anser indicus x anser",
     comName: "Bar-headed x Graylag Goose (hybrid)",
-    speciesCode: "x00992",
+    _id: "x00992",
     category: "hybrid",
     taxonOrder: 263.0,
     bandingCodes: [],
@@ -1587,7 +1587,7 @@ const birds = [
   {
     sciName: "Anser cygnoides",
     comName: "Swan Goose",
-    speciesCode: "swagoo1",
+    _id: "swagoo1",
     category: "species",
     taxonOrder: 264.0,
     bandingCodes: [],
@@ -1601,7 +1601,7 @@ const birds = [
   {
     sciName: "Anser cygnoides (Domestic type)",
     comName: "Swan Goose (Domestic type)",
-    speciesCode: "swagoo2",
+    _id: "swagoo2",
     category: "domestic",
     taxonOrder: 265.0,
     bandingCodes: [],
@@ -1616,7 +1616,7 @@ const birds = [
   {
     sciName: "Anser anser x cygnoides",
     comName: "Graylag x Swan Goose (hybrid)",
-    speciesCode: "x00776",
+    _id: "x00776",
     category: "hybrid",
     taxonOrder: 266.0,
     bandingCodes: [],
@@ -1630,7 +1630,7 @@ const birds = [
   {
     sciName: "Anser albifrons",
     comName: "Greater White-fronted Goose",
-    speciesCode: "gwfgoo",
+    _id: "gwfgoo",
     category: "species",
     taxonOrder: 267.0,
     bandingCodes: ["GWFG"],
@@ -1644,7 +1644,7 @@ const birds = [
   {
     sciName: "Anser albifrons flavirostris",
     comName: "Greater White-fronted Goose (Greenland)",
-    speciesCode: "gwfgoo1",
+    _id: "gwfgoo1",
     category: "issf",
     taxonOrder: 268.0,
     bandingCodes: [],
@@ -1659,7 +1659,7 @@ const birds = [
   {
     sciName: "Anser albifrons albifrons",
     comName: "Greater White-fronted Goose (Eurasian)",
-    speciesCode: "gwfgoo4",
+    _id: "gwfgoo4",
     category: "issf",
     taxonOrder: 269.0,
     bandingCodes: [],
@@ -1674,7 +1674,7 @@ const birds = [
   {
     sciName: "Anser albifrons gambelli/sponsa",
     comName: "Greater White-fronted Goose (Western)",
-    speciesCode: "gwfgoo2",
+    _id: "gwfgoo2",
     category: "issf",
     taxonOrder: 270.0,
     bandingCodes: [],
@@ -1689,7 +1689,7 @@ const birds = [
   {
     sciName: "Anser albifrons elgasi",
     comName: "Greater White-fronted Goose (Tule)",
-    speciesCode: "gwfgoo3",
+    _id: "gwfgoo3",
     category: "issf",
     taxonOrder: 273.0,
     bandingCodes: ["TWFG"],
@@ -1704,7 +1704,7 @@ const birds = [
   {
     sciName: "Anser indicus x albifrons",
     comName: "Bar-headed x Greater White-fronted Goose (hybrid)",
-    speciesCode: "x00755",
+    _id: "x00755",
     category: "hybrid",
     taxonOrder: 274.0,
     bandingCodes: [],
@@ -1718,7 +1718,7 @@ const birds = [
   {
     sciName: "Anser canagicus x albifrons",
     comName: "Emperor x Greater White-fronted Goose (hybrid)",
-    speciesCode: "x00361",
+    _id: "x00361",
     category: "hybrid",
     taxonOrder: 275.0,
     bandingCodes: [],
@@ -1732,7 +1732,7 @@ const birds = [
   {
     sciName: "Anser caerulescens x albifrons",
     comName: "Snow x Greater White-fronted Goose (hybrid)",
-    speciesCode: "x00627",
+    _id: "x00627",
     category: "hybrid",
     taxonOrder: 276.0,
     bandingCodes: [],
@@ -1746,7 +1746,7 @@ const birds = [
   {
     sciName: "Anser rossii x albifrons",
     comName: "Ross's x Greater White-fronted Goose (hybrid)",
-    speciesCode: "x00362",
+    _id: "x00362",
     category: "hybrid",
     taxonOrder: 277.0,
     bandingCodes: [],
@@ -1760,7 +1760,7 @@ const birds = [
   {
     sciName: "Anser erythropus",
     comName: "Lesser White-fronted Goose",
-    speciesCode: "lwfgoo",
+    _id: "lwfgoo",
     category: "species",
     taxonOrder: 278.0,
     bandingCodes: ["LWFG"],
@@ -1774,7 +1774,7 @@ const birds = [
   {
     sciName: "Anser albifrons/erythropus",
     comName: "Greater/Lesser White-fronted Goose",
-    speciesCode: "y00707",
+    _id: "y00707",
     category: "slash",
     taxonOrder: 279.0,
     bandingCodes: [],
@@ -1788,7 +1788,7 @@ const birds = [
   {
     sciName: "Anser fabalis",
     comName: "Taiga Bean-Goose",
-    speciesCode: "taibeg1",
+    _id: "taibeg1",
     category: "species",
     taxonOrder: 280.0,
     bandingCodes: ["TABG"],
@@ -1802,7 +1802,7 @@ const birds = [
   {
     sciName: "Anser serrirostris",
     comName: "Tundra Bean-Goose",
-    speciesCode: "tunbeg1",
+    _id: "tunbeg1",
     category: "species",
     taxonOrder: 284.0,
     bandingCodes: ["TUBG"],
@@ -1816,7 +1816,7 @@ const birds = [
   {
     sciName: "Anser fabalis/serrirostris",
     comName: "Taiga/Tundra Bean-Goose",
-    speciesCode: "y00468",
+    _id: "y00468",
     category: "slash",
     taxonOrder: 287.0,
     bandingCodes: [],
@@ -1830,7 +1830,7 @@ const birds = [
   {
     sciName: "Anser brachyrhynchus",
     comName: "Pink-footed Goose",
-    speciesCode: "pifgoo",
+    _id: "pifgoo",
     category: "species",
     taxonOrder: 288.0,
     bandingCodes: ["PFGO"],
@@ -1844,7 +1844,7 @@ const birds = [
   {
     sciName: "Anser sp. (Domestic type)",
     comName: "Domestic goose sp. (Domestic type)",
-    speciesCode: "domgoo1",
+    _id: "domgoo1",
     category: "domestic",
     taxonOrder: 289.0,
     bandingCodes: [],
@@ -1858,7 +1858,7 @@ const birds = [
   {
     sciName: "Anser sp.",
     comName: "Anser sp.",
-    speciesCode: "anser1",
+    _id: "anser1",
     category: "spuh",
     taxonOrder: 290.0,
     bandingCodes: [],
@@ -1872,7 +1872,7 @@ const birds = [
   {
     sciName: "Branta bernicla",
     comName: "Brant",
-    speciesCode: "brant",
+    _id: "brant",
     category: "species",
     taxonOrder: 291.0,
     bandingCodes: ["BRAN"],
@@ -1886,7 +1886,7 @@ const birds = [
   {
     sciName: "Branta bernicla bernicla",
     comName: "Brant (Dark-bellied)",
-    speciesCode: "dabbra1",
+    _id: "dabbra1",
     category: "issf",
     taxonOrder: 292.0,
     bandingCodes: [],
@@ -1901,7 +1901,7 @@ const birds = [
   {
     sciName: "Branta bernicla hrota",
     comName: "Brant (Atlantic)",
-    speciesCode: "atlbra1",
+    _id: "atlbra1",
     category: "issf",
     taxonOrder: 293.0,
     bandingCodes: ["ATBR"],
@@ -1916,7 +1916,7 @@ const birds = [
   {
     sciName: "Branta bernicla nigricans",
     comName: "Brant (Black)",
-    speciesCode: "blkbra1",
+    _id: "blkbra1",
     category: "issf",
     taxonOrder: 294.0,
     bandingCodes: ["BLBR"],
@@ -1931,7 +1931,7 @@ const birds = [
   {
     sciName: "Branta bernicla (Gray-bellied)",
     comName: "Brant (Gray-bellied)",
-    speciesCode: "gybbra1",
+    _id: "gybbra1",
     category: "form",
     taxonOrder: 295.0,
     bandingCodes: [],
@@ -1946,7 +1946,7 @@ const birds = [
   {
     sciName: "Branta bernicla bernicla x nigricans",
     comName: "Brant (Dark-bellied x Black)",
-    speciesCode: "brant2",
+    _id: "brant2",
     category: "intergrade",
     taxonOrder: 296.0,
     bandingCodes: [],
@@ -1961,7 +1961,7 @@ const birds = [
   {
     sciName: "Branta bernicla hrota x nigricans",
     comName: "Brant (Atlantic x Black)",
-    speciesCode: "brant1",
+    _id: "brant1",
     category: "intergrade",
     taxonOrder: 297.0,
     bandingCodes: ["BABI"],
@@ -1976,7 +1976,7 @@ const birds = [
   {
     sciName: "Anser caerulescens x Branta bernicla",
     comName: "Snow Goose x Brant (hybrid)",
-    speciesCode: "x00685",
+    _id: "x00685",
     category: "hybrid",
     taxonOrder: 298.0,
     bandingCodes: [],
@@ -1990,7 +1990,7 @@ const birds = [
   {
     sciName: "Branta leucopsis",
     comName: "Barnacle Goose",
-    speciesCode: "bargoo",
+    _id: "bargoo",
     category: "species",
     taxonOrder: 299.0,
     bandingCodes: ["BARG"],
@@ -2004,7 +2004,7 @@ const birds = [
   {
     sciName: "Anser indicus x Branta leucopsis",
     comName: "Bar-headed x Barnacle Goose (hybrid)",
-    speciesCode: "x00363",
+    _id: "x00363",
     category: "hybrid",
     taxonOrder: 300.0,
     bandingCodes: [],
@@ -2018,7 +2018,7 @@ const birds = [
   {
     sciName: "Anser canagicus x Branta leucopsis",
     comName: "Emperor x Barnacle Goose (hybrid)",
-    speciesCode: "x00993",
+    _id: "x00993",
     category: "hybrid",
     taxonOrder: 301.0,
     bandingCodes: [],
@@ -2032,7 +2032,7 @@ const birds = [
   {
     sciName: "Anser caerulescens x Branta leucopsis",
     comName: "Snow x Barnacle Goose (hybrid)",
-    speciesCode: "x00994",
+    _id: "x00994",
     category: "hybrid",
     taxonOrder: 302.0,
     bandingCodes: [],
@@ -2046,7 +2046,7 @@ const birds = [
   {
     sciName: "Anser rossii x Branta leucopsis",
     comName: "Ross's x Barnacle Goose (hybrid)",
-    speciesCode: "x00995",
+    _id: "x00995",
     category: "hybrid",
     taxonOrder: 303.0,
     bandingCodes: [],
@@ -2060,7 +2060,7 @@ const birds = [
   {
     sciName: "Anser anser x Branta leucopsis",
     comName: "Graylag x Barnacle Goose (hybrid)",
-    speciesCode: "x00649",
+    _id: "x00649",
     category: "hybrid",
     taxonOrder: 304.0,
     bandingCodes: [],
@@ -2074,7 +2074,7 @@ const birds = [
   {
     sciName: "Anser albifrons x Branta leucopsis",
     comName: "Greater White-fronted x Barnacle Goose (hybrid)",
-    speciesCode: "x00757",
+    _id: "x00757",
     category: "hybrid",
     taxonOrder: 305.0,
     bandingCodes: [],
@@ -2088,7 +2088,7 @@ const birds = [
   {
     sciName: "Anser erythropus x Branta leucopsis",
     comName: "Lesser White-fronted x Barnacle Goose (hybrid)",
-    speciesCode: "x00364",
+    _id: "x00364",
     category: "hybrid",
     taxonOrder: 306.0,
     bandingCodes: [],
@@ -2102,7 +2102,7 @@ const birds = [
   {
     sciName: "Anser brachyrhynchus x Branta leucopsis",
     comName: "Pink-footed x Barnacle Goose (hybrid)",
-    speciesCode: "x00756",
+    _id: "x00756",
     category: "hybrid",
     taxonOrder: 307.0,
     bandingCodes: [],
@@ -2116,7 +2116,7 @@ const birds = [
   {
     sciName: "Branta hutchinsii",
     comName: "Cackling Goose",
-    speciesCode: "cacgoo1",
+    _id: "cacgoo1",
     category: "species",
     taxonOrder: 308.0,
     bandingCodes: ["CACG"],
@@ -2130,7 +2130,7 @@ const birds = [
   {
     sciName: "Branta hutchinsii leucopareia",
     comName: "Cackling Goose (Aleutian)",
-    speciesCode: "alcgoo1",
+    _id: "alcgoo1",
     category: "issf",
     taxonOrder: 309.0,
     bandingCodes: ["ACGO"],
@@ -2145,7 +2145,7 @@ const birds = [
   {
     sciName: "Branta hutchinsii hutchinsii",
     comName: "Cackling Goose (Richardson's)",
-    speciesCode: "ricgoo1",
+    _id: "ricgoo1",
     category: "issf",
     taxonOrder: 310.0,
     bandingCodes: [],
@@ -2160,7 +2160,7 @@ const birds = [
   {
     sciName: "Branta hutchinsii minima",
     comName: "Cackling Goose (minima)",
-    speciesCode: "cacgoo2",
+    _id: "cacgoo2",
     category: "issf",
     taxonOrder: 311.0,
     bandingCodes: ["MCGO"],
@@ -2175,7 +2175,7 @@ const birds = [
   {
     sciName: "Branta hutchinsii taverneri",
     comName: "Cackling Goose (Taverner's)",
-    speciesCode: "tacgoo1",
+    _id: "tacgoo1",
     category: "issf",
     taxonOrder: 312.0,
     bandingCodes: [],
@@ -2190,7 +2190,7 @@ const birds = [
   {
     sciName: "Anser canagicus x Branta hutchinsii",
     comName: "Emperor x Cackling Goose (hybrid)",
-    speciesCode: "x00831",
+    _id: "x00831",
     category: "hybrid",
     taxonOrder: 313.0,
     bandingCodes: [],
@@ -2204,7 +2204,7 @@ const birds = [
   {
     sciName: "Anser caerulescens x Branta hutchinsii",
     comName: "Snow x Cackling Goose (hybrid)",
-    speciesCode: "x00692",
+    _id: "x00692",
     category: "hybrid",
     taxonOrder: 314.0,
     bandingCodes: [],
@@ -2218,7 +2218,7 @@ const birds = [
   {
     sciName: "Anser rossii x Branta hutchinsii",
     comName: "Ross's x Cackling Goose (hybrid)",
-    speciesCode: "x00694",
+    _id: "x00694",
     category: "hybrid",
     taxonOrder: 315.0,
     bandingCodes: [],
@@ -2232,7 +2232,7 @@ const birds = [
   {
     sciName: "Branta bernicla x hutchinsii",
     comName: "Brant x Cackling Goose (hybrid)",
-    speciesCode: "x00722",
+    _id: "x00722",
     category: "hybrid",
     taxonOrder: 316.0,
     bandingCodes: [],
@@ -2246,7 +2246,7 @@ const birds = [
   {
     sciName: "Anser albifrons x Branta hutchinsii",
     comName: "Greater White-fronted x Cackling Goose (hybrid)",
-    speciesCode: "x00414",
+    _id: "x00414",
     category: "hybrid",
     taxonOrder: 317.0,
     bandingCodes: [],
@@ -2260,7 +2260,7 @@ const birds = [
   {
     sciName: "Branta leucopsis x hutchinsii",
     comName: "Barnacle x Cackling Goose (hybrid)",
-    speciesCode: "x00416",
+    _id: "x00416",
     category: "hybrid",
     taxonOrder: 318.0,
     bandingCodes: [],
@@ -2274,7 +2274,7 @@ const birds = [
   {
     sciName: "Branta canadensis",
     comName: "Canada Goose",
-    speciesCode: "cangoo",
+    _id: "cangoo",
     category: "species",
     taxonOrder: 319.0,
     bandingCodes: ["CANG"],
@@ -2288,7 +2288,7 @@ const birds = [
   {
     sciName: "Branta canadensis moffitti/maxima",
     comName: "Canada Goose (moffitti/maxima)",
-    speciesCode: "cangoo4",
+    _id: "cangoo4",
     category: "issf",
     taxonOrder: 320.0,
     bandingCodes: ["LCGO"],
@@ -2303,7 +2303,7 @@ const birds = [
   {
     sciName: "Branta canadensis occidentalis/fulva",
     comName: "Canada Goose (occidentalis/fulva)",
-    speciesCode: "cangoo3",
+    _id: "cangoo3",
     category: "issf",
     taxonOrder: 323.0,
     bandingCodes: [],
@@ -2318,7 +2318,7 @@ const birds = [
   {
     sciName: "Branta canadensis [canadensis Group]",
     comName: "Canada Goose (canadensis Group)",
-    speciesCode: "cangoo1",
+    _id: "cangoo1",
     category: "issf",
     taxonOrder: 326.0,
     bandingCodes: [],
@@ -2333,7 +2333,7 @@ const birds = [
   {
     sciName: "Anser indicus x Branta canadensis",
     comName: "Bar-headed x Canada Goose (hybrid)",
-    speciesCode: "x00908",
+    _id: "x00908",
     category: "hybrid",
     taxonOrder: 330.0,
     bandingCodes: [],
@@ -2347,7 +2347,7 @@ const birds = [
   {
     sciName: "Anser cygnoides x Branta canadensis",
     comName: "Swan Goose x Canada Goose (hybrid)",
-    speciesCode: "swagoo3",
+    _id: "swagoo3",
     category: "hybrid",
     taxonOrder: 331.0,
     bandingCodes: [],
@@ -2361,7 +2361,7 @@ const birds = [
   {
     sciName: "Anser brachyrhynchus x Branta canadensis",
     comName: "Pink-footed x Canada Goose (hybrid)",
-    speciesCode: "x00650",
+    _id: "x00650",
     category: "hybrid",
     taxonOrder: 332.0,
     bandingCodes: [],
@@ -2375,7 +2375,7 @@ const birds = [
   {
     sciName: "Anser albifrons x Branta canadensis",
     comName: "Greater White-fronted x Canada Goose (hybrid)",
-    speciesCode: "x00415",
+    _id: "x00415",
     category: "hybrid",
     taxonOrder: 333.0,
     bandingCodes: [],
@@ -2389,7 +2389,7 @@ const birds = [
   {
     sciName: "Anser anser x Branta canadensis",
     comName: "Graylag x Canada Goose (hybrid)",
-    speciesCode: "x00758",
+    _id: "x00758",
     category: "hybrid",
     taxonOrder: 334.0,
     bandingCodes: [],
@@ -2403,7 +2403,7 @@ const birds = [
   {
     sciName: "Anser sp. (Domestic type) x Branta canadensis",
     comName: "Domestic goose sp. x Canada Goose (hybrid)",
-    speciesCode: "x00759",
+    _id: "x00759",
     category: "hybrid",
     taxonOrder: 335.0,
     bandingCodes: [],
@@ -2417,7 +2417,7 @@ const birds = [
   {
     sciName: "Anser caerulescens x Branta canadensis",
     comName: "Snow x Canada Goose (hybrid)",
-    speciesCode: "x00197",
+    _id: "x00197",
     category: "hybrid",
     taxonOrder: 336.0,
     bandingCodes: [],
@@ -2431,7 +2431,7 @@ const birds = [
   {
     sciName: "Anser rossii x Branta canadensis",
     comName: "Ross's x Canada Goose (hybrid)",
-    speciesCode: "x00693",
+    _id: "x00693",
     category: "hybrid",
     taxonOrder: 337.0,
     bandingCodes: [],
@@ -2445,7 +2445,7 @@ const birds = [
   {
     sciName: "Branta leucopsis x canadensis",
     comName: "Barnacle x Canada Goose (hybrid)",
-    speciesCode: "x00417",
+    _id: "x00417",
     category: "hybrid",
     taxonOrder: 338.0,
     bandingCodes: [],
@@ -2459,7 +2459,7 @@ const birds = [
   {
     sciName: "Branta hutchinsii/canadensis",
     comName: "Cackling/Canada Goose",
-    speciesCode: "y00470",
+    _id: "y00470",
     category: "slash",
     taxonOrder: 339.0,
     bandingCodes: ["CCGO"],
@@ -2473,7 +2473,7 @@ const birds = [
   {
     sciName: "Anser caerulescens/rossii x Branta hutchinsii/canadensis",
     comName: "Snow/Ross's x Cackling/Canada Goose (hybrid)",
-    speciesCode: "y00765",
+    _id: "y00765",
     category: "hybrid",
     taxonOrder: 340.0,
     bandingCodes: [],
@@ -2487,7 +2487,7 @@ const birds = [
   {
     sciName: "Branta sandvicensis",
     comName: "Hawaiian Goose",
-    speciesCode: "hawgoo",
+    _id: "hawgoo",
     category: "species",
     taxonOrder: 341.0,
     bandingCodes: ["HAGO"],
@@ -2501,7 +2501,7 @@ const birds = [
   {
     sciName: "Branta ruficollis",
     comName: "Red-breasted Goose",
-    speciesCode: "rebgoo1",
+    _id: "rebgoo1",
     category: "species",
     taxonOrder: 342.0,
     bandingCodes: [],
@@ -2515,7 +2515,7 @@ const birds = [
   {
     sciName: "Anser albifrons x Branta ruficollis",
     comName: "Greater White-fronted x Red-breasted Goose (hybrid)",
-    speciesCode: "x00939",
+    _id: "x00939",
     category: "hybrid",
     taxonOrder: 343.0,
     bandingCodes: [],
@@ -2529,7 +2529,7 @@ const birds = [
   {
     sciName: "Branta bernicla x ruficollis",
     comName: "Brant x Red-breasted Goose (hybrid)",
-    speciesCode: "x00996",
+    _id: "x00996",
     category: "hybrid",
     taxonOrder: 344.0,
     bandingCodes: [],
@@ -2543,7 +2543,7 @@ const birds = [
   {
     sciName: "Branta leucopsis x ruficollis",
     comName: "Barnacle x Red-breasted Goose (hybrid)",
-    speciesCode: "x00365",
+    _id: "x00365",
     category: "hybrid",
     taxonOrder: 345.0,
     bandingCodes: [],
@@ -2557,7 +2557,7 @@ const birds = [
   {
     sciName: "Branta sp.",
     comName: "Branta sp.",
-    speciesCode: "branta1",
+    _id: "branta1",
     category: "spuh",
     taxonOrder: 346.0,
     bandingCodes: [],
@@ -2571,7 +2571,7 @@ const birds = [
   {
     sciName: "Anatidae (goose sp.)",
     comName: "goose sp.",
-    speciesCode: "goose1",
+    _id: "goose1",
     category: "spuh",
     taxonOrder: 347.0,
     bandingCodes: ["UNGO"],
@@ -2585,7 +2585,7 @@ const birds = [
   {
     sciName: "Cereopsis novaehollandiae",
     comName: "Cape Barren Goose",
-    speciesCode: "cabgoo1",
+    _id: "cabgoo1",
     category: "species",
     taxonOrder: 348.0,
     bandingCodes: [],
@@ -2599,7 +2599,7 @@ const birds = [
   {
     sciName: "Stictonetta naevosa",
     comName: "Freckled Duck",
-    speciesCode: "freduc1",
+    _id: "freduc1",
     category: "species",
     taxonOrder: 351.0,
     bandingCodes: [],
@@ -2613,7 +2613,7 @@ const birds = [
   {
     sciName: "Cyanochen cyanoptera",
     comName: "Blue-winged Goose",
-    speciesCode: "buwgoo1",
+    _id: "buwgoo1",
     category: "species",
     taxonOrder: 352.0,
     bandingCodes: [],
@@ -2627,7 +2627,7 @@ const birds = [
   {
     sciName: "Cygnus olor",
     comName: "Mute Swan",
-    speciesCode: "mutswa",
+    _id: "mutswa",
     category: "species",
     taxonOrder: 353.0,
     bandingCodes: ["MUSW"],
@@ -2641,7 +2641,7 @@ const birds = [
   {
     sciName: "Anser anser x Cygnus olor",
     comName: "Graylag Goose x Mute Swan (hybrid)",
-    speciesCode: "x00366",
+    _id: "x00366",
     category: "hybrid",
     taxonOrder: 354.0,
     bandingCodes: [],
@@ -2655,7 +2655,7 @@ const birds = [
   {
     sciName: "Cygnus atratus",
     comName: "Black Swan",
-    speciesCode: "blkswa",
+    _id: "blkswa",
     category: "species",
     taxonOrder: 355.0,
     bandingCodes: [],
@@ -2669,7 +2669,7 @@ const birds = [
   {
     sciName: "Cygnus olor x atratus",
     comName: "Mute x Black Swan (hybrid)",
-    speciesCode: "x01037",
+    _id: "x01037",
     category: "hybrid",
     taxonOrder: 356.0,
     bandingCodes: [],
@@ -2683,7 +2683,7 @@ const birds = [
   {
     sciName: "Cygnus melancoryphus",
     comName: "Black-necked Swan",
-    speciesCode: "blnswa2",
+    _id: "blnswa2",
     category: "species",
     taxonOrder: 357.0,
     bandingCodes: [],
@@ -2697,7 +2697,7 @@ const birds = [
   {
     sciName: "Cygnus buccinator",
     comName: "Trumpeter Swan",
-    speciesCode: "truswa",
+    _id: "truswa",
     category: "species",
     taxonOrder: 358.0,
     bandingCodes: ["TRUS"],
@@ -2711,7 +2711,7 @@ const birds = [
   {
     sciName: "Cygnus olor x buccinator",
     comName: "Mute x Trumpeter Swan (hybrid)",
-    speciesCode: "x00832",
+    _id: "x00832",
     category: "hybrid",
     taxonOrder: 359.0,
     bandingCodes: [],
@@ -2725,7 +2725,7 @@ const birds = [
   {
     sciName: "Cygnus columbianus",
     comName: "Tundra Swan",
-    speciesCode: "tunswa",
+    _id: "tunswa",
     category: "species",
     taxonOrder: 360.0,
     bandingCodes: ["TUSW"],
@@ -2739,7 +2739,7 @@ const birds = [
   {
     sciName: "Cygnus columbianus columbianus",
     comName: "Tundra Swan (Whistling)",
-    speciesCode: "tunswa1",
+    _id: "tunswa1",
     category: "issf",
     taxonOrder: 361.0,
     bandingCodes: ["WHSW"],
@@ -2754,7 +2754,7 @@ const birds = [
   {
     sciName: "Cygnus columbianus bewickii",
     comName: "Tundra Swan (Bewick's)",
-    speciesCode: "bewswa1",
+    _id: "bewswa1",
     category: "issf",
     taxonOrder: 362.0,
     bandingCodes: ["BESW"],
@@ -2769,7 +2769,7 @@ const birds = [
   {
     sciName: "Cygnus columbianus columbianus x bewickii",
     comName: "Tundra Swan (Whistling x Bewick's)",
-    speciesCode: "tunswa2",
+    _id: "tunswa2",
     category: "intergrade",
     taxonOrder: 363.0,
     bandingCodes: [],
@@ -2784,7 +2784,7 @@ const birds = [
   {
     sciName: "Cygnus buccinator x columbianus",
     comName: "Trumpeter x Tundra Swan (hybrid)",
-    speciesCode: "x00418",
+    _id: "x00418",
     category: "hybrid",
     taxonOrder: 364.0,
     bandingCodes: [],
@@ -2798,7 +2798,7 @@ const birds = [
   {
     sciName: "Cygnus buccinator/columbianus",
     comName: "Trumpeter/Tundra Swan",
-    speciesCode: "y00471",
+    _id: "y00471",
     category: "slash",
     taxonOrder: 365.0,
     bandingCodes: [],
@@ -2812,7 +2812,7 @@ const birds = [
   {
     sciName: "Cygnus cygnus",
     comName: "Whooper Swan",
-    speciesCode: "whoswa",
+    _id: "whoswa",
     category: "species",
     taxonOrder: 366.0,
     bandingCodes: ["WHOS"],
@@ -2826,7 +2826,7 @@ const birds = [
   {
     sciName: "Cygnus olor x cygnus",
     comName: "Mute x Whooper Swan (hybrid)",
-    speciesCode: "x00997",
+    _id: "x00997",
     category: "hybrid",
     taxonOrder: 367.0,
     bandingCodes: [],
@@ -2840,7 +2840,7 @@ const birds = [
   {
     sciName: "Cygnus buccinator x cygnus",
     comName: "Trumpeter x Whooper Swan (hybrid)",
-    speciesCode: "x00419",
+    _id: "x00419",
     category: "hybrid",
     taxonOrder: 368.0,
     bandingCodes: [],
@@ -2854,7 +2854,7 @@ const birds = [
   {
     sciName: "Cygnus columbianus/cygnus",
     comName: "Tundra/Whooper Swan",
-    speciesCode: "y00708",
+    _id: "y00708",
     category: "slash",
     taxonOrder: 369.0,
     bandingCodes: [],
@@ -2868,7 +2868,7 @@ const birds = [
   {
     sciName: "Cygnus sp.",
     comName: "swan sp.",
-    speciesCode: "swan1",
+    _id: "swan1",
     category: "spuh",
     taxonOrder: 370.0,
     bandingCodes: [],
@@ -2882,7 +2882,7 @@ const birds = [
   {
     sciName: "Coscoroba coscoroba",
     comName: "Coscoroba Swan",
-    speciesCode: "cosswa1",
+    _id: "cosswa1",
     category: "species",
     taxonOrder: 371.0,
     bandingCodes: [],
@@ -2896,7 +2896,7 @@ const birds = [
   {
     sciName: "Sarkidiornis melanotos",
     comName: "Knob-billed Duck",
-    speciesCode: "comduc2",
+    _id: "comduc2",
     category: "species",
     taxonOrder: 372.0,
     bandingCodes: [],
@@ -2910,7 +2910,7 @@ const birds = [
   {
     sciName: "Sarkidiornis sylvicola",
     comName: "Comb Duck",
-    speciesCode: "comduc3",
+    _id: "comduc3",
     category: "species",
     taxonOrder: 373.0,
     bandingCodes: ["CODU"],
@@ -2924,7 +2924,7 @@ const birds = [
   {
     sciName: "Pteronetta hartlaubii",
     comName: "Hartlaub's Duck",
-    speciesCode: "harduc1",
+    _id: "harduc1",
     category: "species",
     taxonOrder: 374.0,
     bandingCodes: [],
@@ -2938,7 +2938,7 @@ const birds = [
   {
     sciName: "Oressochen jubatus",
     comName: "Orinoco Goose",
-    speciesCode: "origoo1",
+    _id: "origoo1",
     category: "species",
     taxonOrder: 375.0,
     bandingCodes: ["ORGO"],
@@ -2952,7 +2952,7 @@ const birds = [
   {
     sciName: "Oressochen melanopterus",
     comName: "Andean Goose",
-    speciesCode: "andgoo1",
+    _id: "andgoo1",
     category: "species",
     taxonOrder: 376.0,
     bandingCodes: [],
@@ -2966,7 +2966,7 @@ const birds = [
   {
     sciName: "Chloephaga picta",
     comName: "Upland Goose",
-    speciesCode: "uplgoo1",
+    _id: "uplgoo1",
     category: "species",
     taxonOrder: 377.0,
     bandingCodes: [],
@@ -2980,7 +2980,7 @@ const birds = [
   {
     sciName: "Chloephaga picta (White-breasted)",
     comName: "Upland Goose (White-breasted)",
-    speciesCode: "uplgoo2",
+    _id: "uplgoo2",
     category: "form",
     taxonOrder: 380.0,
     bandingCodes: [],
@@ -2995,7 +2995,7 @@ const birds = [
   {
     sciName: "Chloephaga picta (Bar-breasted)",
     comName: "Upland Goose (Bar-breasted)",
-    speciesCode: "uplgoo3",
+    _id: "uplgoo3",
     category: "form",
     taxonOrder: 381.0,
     bandingCodes: [],
@@ -3010,7 +3010,7 @@ const birds = [
   {
     sciName: "Chloephaga hybrida",
     comName: "Kelp Goose",
-    speciesCode: "kelgoo1",
+    _id: "kelgoo1",
     category: "species",
     taxonOrder: 382.0,
     bandingCodes: [],
@@ -3024,7 +3024,7 @@ const birds = [
   {
     sciName: "Chloephaga poliocephala",
     comName: "Ashy-headed Goose",
-    speciesCode: "ashgoo1",
+    _id: "ashgoo1",
     category: "species",
     taxonOrder: 385.0,
     bandingCodes: [],
@@ -3038,7 +3038,7 @@ const birds = [
   {
     sciName: "Chloephaga rubidiceps",
     comName: "Ruddy-headed Goose",
-    speciesCode: "ruhgoo1",
+    _id: "ruhgoo1",
     category: "species",
     taxonOrder: 386.0,
     bandingCodes: [],
@@ -3052,7 +3052,7 @@ const birds = [
   {
     sciName: "Chloephaga sp.",
     comName: "Chloephaga sp.",
-    speciesCode: "chloep1",
+    _id: "chloep1",
     category: "spuh",
     taxonOrder: 387.0,
     bandingCodes: [],
@@ -3066,7 +3066,7 @@ const birds = [
   {
     sciName: "Radjah radjah",
     comName: "Radjah Shelduck",
-    speciesCode: "radshe1",
+    _id: "radshe1",
     category: "species",
     taxonOrder: 388.0,
     bandingCodes: [],
@@ -3080,7 +3080,7 @@ const birds = [
   {
     sciName: "Alopochen aegyptiaca",
     comName: "Egyptian Goose",
-    speciesCode: "egygoo",
+    _id: "egygoo",
     category: "species",
     taxonOrder: 391.0,
     bandingCodes: ["EGGO"],
@@ -3094,7 +3094,7 @@ const birds = [
   {
     sciName: "Alopochen mauritiana",
     comName: "Mauritius Shelduck",
-    speciesCode: "maushe1",
+    _id: "maushe1",
     category: "species",
     taxonOrder: 392.0,
     bandingCodes: [],
@@ -3110,7 +3110,7 @@ const birds = [
   {
     sciName: "Alopochen kervazoi",
     comName: "Reunion Shelduck",
-    speciesCode: "reushe1",
+    _id: "reushe1",
     category: "species",
     taxonOrder: 393.0,
     bandingCodes: [],
@@ -3126,7 +3126,7 @@ const birds = [
   {
     sciName: "Tadorna ferruginea",
     comName: "Ruddy Shelduck",
-    speciesCode: "rudshe",
+    _id: "rudshe",
     category: "species",
     taxonOrder: 394.0,
     bandingCodes: ["RUSH"],
@@ -3140,7 +3140,7 @@ const birds = [
   {
     sciName: "Alopochen aegyptiaca x Tadorna ferruginea",
     comName: "Egyptian Goose x Ruddy Shelduck (hybrid)",
-    speciesCode: "x00367",
+    _id: "x00367",
     category: "hybrid",
     taxonOrder: 395.0,
     bandingCodes: [],
@@ -3154,7 +3154,7 @@ const birds = [
   {
     sciName: "Tadorna cana",
     comName: "South African Shelduck",
-    speciesCode: "soashe1",
+    _id: "soashe1",
     category: "species",
     taxonOrder: 396.0,
     bandingCodes: [],
@@ -3168,7 +3168,7 @@ const birds = [
   {
     sciName: "Tadorna tadornoides",
     comName: "Australian Shelduck",
-    speciesCode: "ausshe1",
+    _id: "ausshe1",
     category: "species",
     taxonOrder: 397.0,
     bandingCodes: [],
@@ -3182,7 +3182,7 @@ const birds = [
   {
     sciName: "Tadorna variegata",
     comName: "Paradise Shelduck",
-    speciesCode: "parshe1",
+    _id: "parshe1",
     category: "species",
     taxonOrder: 398.0,
     bandingCodes: [],
@@ -3196,7 +3196,7 @@ const birds = [
   {
     sciName: "Tadorna tadorna",
     comName: "Common Shelduck",
-    speciesCode: "comshe",
+    _id: "comshe",
     category: "species",
     taxonOrder: 399.0,
     bandingCodes: ["COMS"],
@@ -3210,7 +3210,7 @@ const birds = [
   {
     sciName: "Tadorna ferruginea x tadorna",
     comName: "Ruddy x Common Shelduck (hybrid)",
-    speciesCode: "x00876",
+    _id: "x00876",
     category: "hybrid",
     taxonOrder: 400.0,
     bandingCodes: [],
@@ -3224,7 +3224,7 @@ const birds = [
   {
     sciName: "Tadorna cristata",
     comName: "Crested Shelduck",
-    speciesCode: "creshe1",
+    _id: "creshe1",
     category: "species",
     taxonOrder: 401.0,
     bandingCodes: [],
@@ -3240,7 +3240,7 @@ const birds = [
   {
     sciName: "Plectropterus gambensis",
     comName: "Spur-winged Goose",
-    speciesCode: "spwgoo1",
+    _id: "spwgoo1",
     category: "species",
     taxonOrder: 402.0,
     bandingCodes: [],
@@ -3254,7 +3254,7 @@ const birds = [
   {
     sciName: "Plectropterus gambensis gambensis",
     comName: "Spur-winged Goose (Northern)",
-    speciesCode: "spwgoo2",
+    _id: "spwgoo2",
     category: "issf",
     taxonOrder: 403.0,
     bandingCodes: [],
@@ -3269,7 +3269,7 @@ const birds = [
   {
     sciName: "Plectropterus gambensis niger",
     comName: "Spur-winged Goose (Southern)",
-    speciesCode: "spwgoo3",
+    _id: "spwgoo3",
     category: "issf",
     taxonOrder: 404.0,
     bandingCodes: [],
@@ -3284,7 +3284,7 @@ const birds = [
   {
     sciName: "Tachyeres patachonicus",
     comName: "Flying Steamer-Duck",
-    speciesCode: "flystd1",
+    _id: "flystd1",
     category: "species",
     taxonOrder: 405.0,
     bandingCodes: [],
@@ -3298,7 +3298,7 @@ const birds = [
   {
     sciName: "Tachyeres pteneres",
     comName: "Flightless Steamer-Duck",
-    speciesCode: "flistd1",
+    _id: "flistd1",
     category: "species",
     taxonOrder: 406.0,
     bandingCodes: [],
@@ -3312,7 +3312,7 @@ const birds = [
   {
     sciName: "Tachyeres pteneres [undescribed form]",
     comName: "Flightless Steamer-Duck (Chiloe form)",
-    speciesCode: "flistd2",
+    _id: "flistd2",
     category: "form",
     taxonOrder: 407.0,
     bandingCodes: [],
@@ -3327,7 +3327,7 @@ const birds = [
   {
     sciName: "Tachyeres brachypterus",
     comName: "Falkland Steamer-Duck",
-    speciesCode: "falstd1",
+    _id: "falstd1",
     category: "species",
     taxonOrder: 408.0,
     bandingCodes: [],
@@ -3341,7 +3341,7 @@ const birds = [
   {
     sciName: "Tachyeres leucocephalus",
     comName: "White-headed Steamer-Duck",
-    speciesCode: "whhstd1",
+    _id: "whhstd1",
     category: "species",
     taxonOrder: 409.0,
     bandingCodes: [],
@@ -3355,7 +3355,7 @@ const birds = [
   {
     sciName: "Tachyeres sp.",
     comName: "steamer-duck sp.",
-    speciesCode: "steame1",
+    _id: "steame1",
     category: "spuh",
     taxonOrder: 410.0,
     bandingCodes: [],
@@ -3369,7 +3369,7 @@ const birds = [
   {
     sciName: "Lophonetta specularioides",
     comName: "Crested Duck",
-    speciesCode: "creduc1",
+    _id: "creduc1",
     category: "species",
     taxonOrder: 411.0,
     bandingCodes: [],
@@ -3383,7 +3383,7 @@ const birds = [
   {
     sciName: "Speculanas specularis",
     comName: "Spectacled Duck",
-    speciesCode: "speduc2",
+    _id: "speduc2",
     category: "species",
     taxonOrder: 414.0,
     bandingCodes: [],
@@ -3397,7 +3397,7 @@ const birds = [
   {
     sciName: "Cairina moschata",
     comName: "Muscovy Duck",
-    speciesCode: "musduc",
+    _id: "musduc",
     category: "species",
     taxonOrder: 415.0,
     bandingCodes: ["MUDU"],
@@ -3411,7 +3411,7 @@ const birds = [
   {
     sciName: "Cairina moschata (Domestic type)",
     comName: "Muscovy Duck (Domestic type)",
-    speciesCode: "musduc3",
+    _id: "musduc3",
     category: "domestic",
     taxonOrder: 416.0,
     bandingCodes: [],
@@ -3426,7 +3426,7 @@ const birds = [
   {
     sciName: "Nettapus pulchellus",
     comName: "Green Pygmy-Goose",
-    speciesCode: "grnpyg1",
+    _id: "grnpyg1",
     category: "species",
     taxonOrder: 417.0,
     bandingCodes: [],
@@ -3440,7 +3440,7 @@ const birds = [
   {
     sciName: "Nettapus coromandelianus",
     comName: "Cotton Pygmy-Goose",
-    speciesCode: "copgoo1",
+    _id: "copgoo1",
     category: "species",
     taxonOrder: 418.0,
     bandingCodes: [],
@@ -3454,7 +3454,7 @@ const birds = [
   {
     sciName: "Nettapus auritus",
     comName: "African Pygmy-Goose",
-    speciesCode: "afrpyg1",
+    _id: "afrpyg1",
     category: "species",
     taxonOrder: 421.0,
     bandingCodes: [],
@@ -3468,7 +3468,7 @@ const birds = [
   {
     sciName: "Callonetta leucophrys",
     comName: "Ringed Teal",
-    speciesCode: "rintea1",
+    _id: "rintea1",
     category: "species",
     taxonOrder: 422.0,
     bandingCodes: [],
@@ -3482,7 +3482,7 @@ const birds = [
   {
     sciName: "Aix sponsa",
     comName: "Wood Duck",
-    speciesCode: "wooduc",
+    _id: "wooduc",
     category: "species",
     taxonOrder: 423.0,
     bandingCodes: ["WODU"],
@@ -3496,7 +3496,7 @@ const birds = [
   {
     sciName: "Tadorna tadorna x Aix sponsa",
     comName: "Common Shelduck x Wood Duck (hybrid)",
-    speciesCode: "x00940",
+    _id: "x00940",
     category: "hybrid",
     taxonOrder: 424.0,
     bandingCodes: [],
@@ -3510,7 +3510,7 @@ const birds = [
   {
     sciName: "Aix galericulata",
     comName: "Mandarin Duck",
-    speciesCode: "manduc",
+    _id: "manduc",
     category: "species",
     taxonOrder: 425.0,
     bandingCodes: [],
@@ -3524,7 +3524,7 @@ const birds = [
   {
     sciName: "Aix sponsa x galericulata",
     comName: "Wood x Mandarin Duck (hybrid)",
-    speciesCode: "x00833",
+    _id: "x00833",
     category: "hybrid",
     taxonOrder: 426.0,
     bandingCodes: [],
@@ -3538,7 +3538,7 @@ const birds = [
   {
     sciName: "Chenonetta jubata",
     comName: "Maned Duck",
-    speciesCode: "manduc1",
+    _id: "manduc1",
     category: "species",
     taxonOrder: 427.0,
     bandingCodes: [],
@@ -3552,7 +3552,7 @@ const birds = [
   {
     sciName: "Chenonetta finschi",
     comName: "Finsch's Duck",
-    speciesCode: "finduc1",
+    _id: "finduc1",
     category: "species",
     taxonOrder: 428.0,
     bandingCodes: [],
@@ -3568,7 +3568,7 @@ const birds = [
   {
     sciName: "Amazonetta brasiliensis",
     comName: "Brazilian Teal",
-    speciesCode: "bratea1",
+    _id: "bratea1",
     category: "species",
     taxonOrder: 429.0,
     bandingCodes: [],
@@ -3582,7 +3582,7 @@ const birds = [
   {
     sciName: "Hymenolaimus malacorhynchos",
     comName: "Blue Duck",
-    speciesCode: "bluduc1",
+    _id: "bluduc1",
     category: "species",
     taxonOrder: 432.0,
     bandingCodes: [],
@@ -3596,7 +3596,7 @@ const birds = [
   {
     sciName: "Merganetta armata",
     comName: "Torrent Duck",
-    speciesCode: "torduc1",
+    _id: "torduc1",
     category: "species",
     taxonOrder: 435.0,
     bandingCodes: [],
@@ -3610,7 +3610,7 @@ const birds = [
   {
     sciName: "Salvadorina waigiuensis",
     comName: "Salvadori's Teal",
-    speciesCode: "saltea1",
+    _id: "saltea1",
     category: "species",
     taxonOrder: 442.0,
     bandingCodes: [],
@@ -3624,7 +3624,7 @@ const birds = [
   {
     sciName: "Sibirionetta formosa",
     comName: "Baikal Teal",
-    speciesCode: "baitea",
+    _id: "baitea",
     category: "species",
     taxonOrder: 443.0,
     bandingCodes: ["BATE"],
@@ -3638,7 +3638,7 @@ const birds = [
   {
     sciName: "Spatula querquedula",
     comName: "Garganey",
-    speciesCode: "gargan",
+    _id: "gargan",
     category: "species",
     taxonOrder: 444.0,
     bandingCodes: ["GARG"],
@@ -3652,7 +3652,7 @@ const birds = [
   {
     sciName: "Spatula hottentota",
     comName: "Blue-billed Teal",
-    speciesCode: "hottea1",
+    _id: "hottea1",
     category: "species",
     taxonOrder: 445.0,
     bandingCodes: [],
@@ -3666,7 +3666,7 @@ const birds = [
   {
     sciName: "Spatula versicolor",
     comName: "Silver Teal",
-    speciesCode: "siltea1",
+    _id: "siltea1",
     category: "species",
     taxonOrder: 446.0,
     bandingCodes: [],
@@ -3680,7 +3680,7 @@ const birds = [
   {
     sciName: "Spatula puna",
     comName: "Puna Teal",
-    speciesCode: "puntea1",
+    _id: "puntea1",
     category: "species",
     taxonOrder: 449.0,
     bandingCodes: [],
@@ -3694,7 +3694,7 @@ const birds = [
   {
     sciName: "Spatula discors",
     comName: "Blue-winged Teal",
-    speciesCode: "buwtea",
+    _id: "buwtea",
     category: "species",
     taxonOrder: 450.0,
     bandingCodes: ["BWTE"],
@@ -3708,7 +3708,7 @@ const birds = [
   {
     sciName: "Spatula cyanoptera",
     comName: "Cinnamon Teal",
-    speciesCode: "cintea",
+    _id: "cintea",
     category: "species",
     taxonOrder: 451.0,
     bandingCodes: ["CITE"],
@@ -3722,7 +3722,7 @@ const birds = [
   {
     sciName: "Spatula discors x cyanoptera",
     comName: "Blue-winged x Cinnamon Teal (hybrid)",
-    speciesCode: "bwxtea1",
+    _id: "bwxtea1",
     category: "hybrid",
     taxonOrder: 457.0,
     bandingCodes: [],
@@ -3736,7 +3736,7 @@ const birds = [
   {
     sciName: "Spatula discors/cyanoptera",
     comName: "Blue-winged/Cinnamon Teal",
-    speciesCode: "y00314",
+    _id: "y00314",
     category: "slash",
     taxonOrder: 458.0,
     bandingCodes: ["BCTE"],
@@ -3750,7 +3750,7 @@ const birds = [
   {
     sciName: "Spatula platalea",
     comName: "Red Shoveler",
-    speciesCode: "redsho1",
+    _id: "redsho1",
     category: "species",
     taxonOrder: 459.0,
     bandingCodes: [],
@@ -3764,7 +3764,7 @@ const birds = [
   {
     sciName: "Spatula smithii",
     comName: "Cape Shoveler",
-    speciesCode: "capsho1",
+    _id: "capsho1",
     category: "species",
     taxonOrder: 460.0,
     bandingCodes: [],
@@ -3778,7 +3778,7 @@ const birds = [
   {
     sciName: "Spatula rhynchotis",
     comName: "Australasian Shoveler",
-    speciesCode: "aussho1",
+    _id: "aussho1",
     category: "species",
     taxonOrder: 461.0,
     bandingCodes: [],
@@ -3792,7 +3792,7 @@ const birds = [
   {
     sciName: "Spatula clypeata",
     comName: "Northern Shoveler",
-    speciesCode: "norsho",
+    _id: "norsho",
     category: "species",
     taxonOrder: 464.0,
     bandingCodes: ["NSHO"],
@@ -3806,7 +3806,7 @@ const birds = [
   {
     sciName: "Spatula querquedula x clypeata",
     comName: "Garganey x Northern Shoveler (hybrid)",
-    speciesCode: "x00836",
+    _id: "x00836",
     category: "hybrid",
     taxonOrder: 465.0,
     bandingCodes: [],
@@ -3820,7 +3820,7 @@ const birds = [
   {
     sciName: "Spatula discors x clypeata",
     comName: "Blue-winged Teal x Northern Shoveler (hybrid)",
-    speciesCode: "x00629",
+    _id: "x00629",
     category: "hybrid",
     taxonOrder: 466.0,
     bandingCodes: [],
@@ -3834,7 +3834,7 @@ const birds = [
   {
     sciName: "Spatula cyanoptera x clypeata",
     comName: "Cinnamon Teal x Northern Shoveler (hybrid)",
-    speciesCode: "x00630",
+    _id: "x00630",
     category: "hybrid",
     taxonOrder: 467.0,
     bandingCodes: [],
@@ -3848,7 +3848,7 @@ const birds = [
   {
     sciName: "Mareca strepera",
     comName: "Gadwall",
-    speciesCode: "gadwal",
+    _id: "gadwal",
     category: "species",
     taxonOrder: 468.0,
     bandingCodes: ["GADW"],
@@ -3862,7 +3862,7 @@ const birds = [
   {
     sciName: "Mareca strepera strepera",
     comName: "Gadwall (Common)",
-    speciesCode: "gadwal1",
+    _id: "gadwal1",
     category: "issf",
     taxonOrder: 469.0,
     bandingCodes: [],
@@ -3877,7 +3877,7 @@ const birds = [
   {
     sciName: "Mareca strepera couesi",
     comName: "Gadwall (Coues's)",
-    speciesCode: "gadwal2",
+    _id: "gadwal2",
     category: "issf",
     taxonOrder: 470.0,
     bandingCodes: [],
@@ -3894,7 +3894,7 @@ const birds = [
   {
     sciName: "Spatula clypeata x Mareca strepera",
     comName: "Northern Shoveler x Gadwall (hybrid)",
-    speciesCode: "x00457",
+    _id: "x00457",
     category: "hybrid",
     taxonOrder: 471.0,
     bandingCodes: [],
@@ -3908,7 +3908,7 @@ const birds = [
   {
     sciName: "Mareca falcata",
     comName: "Falcated Duck",
-    speciesCode: "falduc",
+    _id: "falduc",
     category: "species",
     taxonOrder: 472.0,
     bandingCodes: ["FADU"],
@@ -3922,7 +3922,7 @@ const birds = [
   {
     sciName: "Sibirionetta formosa x Mareca falcata",
     comName: "Baikal Teal x Falcated Duck (hybrid)",
-    speciesCode: "x00368",
+    _id: "x00368",
     category: "hybrid",
     taxonOrder: 473.0,
     bandingCodes: [],
@@ -3936,7 +3936,7 @@ const birds = [
   {
     sciName: "Mareca strepera x falcata",
     comName: "Gadwall x Falcated Duck (hybrid)",
-    speciesCode: "x00369",
+    _id: "x00369",
     category: "hybrid",
     taxonOrder: 474.0,
     bandingCodes: [],
@@ -3950,7 +3950,7 @@ const birds = [
   {
     sciName: "Mareca penelope",
     comName: "Eurasian Wigeon",
-    speciesCode: "eurwig",
+    _id: "eurwig",
     category: "species",
     taxonOrder: 475.0,
     bandingCodes: ["EUWI"],
@@ -3964,7 +3964,7 @@ const birds = [
   {
     sciName: "Mareca strepera x penelope",
     comName: "Gadwall x Eurasian Wigeon (hybrid)",
-    speciesCode: "x00723",
+    _id: "x00723",
     category: "hybrid",
     taxonOrder: 476.0,
     bandingCodes: [],
@@ -3978,7 +3978,7 @@ const birds = [
   {
     sciName: "Mareca americana",
     comName: "American Wigeon",
-    speciesCode: "amewig",
+    _id: "amewig",
     category: "species",
     taxonOrder: 477.0,
     bandingCodes: ["AMWI"],
@@ -3992,7 +3992,7 @@ const birds = [
   {
     sciName: "Aix sponsa x Mareca americana",
     comName: "Wood Duck x American Wigeon (hybrid)",
-    speciesCode: "x00877",
+    _id: "x00877",
     category: "hybrid",
     taxonOrder: 478.0,
     bandingCodes: [],
@@ -4006,7 +4006,7 @@ const birds = [
   {
     sciName: "Spatula discors x Mareca americana",
     comName: "Blue-winged Teal x American Wigeon (hybrid)",
-    speciesCode: "x00370",
+    _id: "x00370",
     category: "hybrid",
     taxonOrder: 479.0,
     bandingCodes: [],
@@ -4020,7 +4020,7 @@ const birds = [
   {
     sciName: "Spatula clypeata x Mareca americana",
     comName: "Northern Shoveler x American Wigeon (hybrid)",
-    speciesCode: "x00777",
+    _id: "x00777",
     category: "hybrid",
     taxonOrder: 480.0,
     bandingCodes: [],
@@ -4034,7 +4034,7 @@ const birds = [
   {
     sciName: "Mareca strepera x americana",
     comName: "Gadwall x American Wigeon (hybrid)",
-    speciesCode: "x00724",
+    _id: "x00724",
     category: "hybrid",
     taxonOrder: 481.0,
     bandingCodes: [],
@@ -4048,7 +4048,7 @@ const birds = [
   {
     sciName: "Mareca penelope x americana",
     comName: "Eurasian x American Wigeon (hybrid)",
-    speciesCode: "x00421",
+    _id: "x00421",
     category: "hybrid",
     taxonOrder: 482.0,
     bandingCodes: [],
@@ -4062,7 +4062,7 @@ const birds = [
   {
     sciName: "Mareca penelope/americana",
     comName: "Eurasian/American Wigeon",
-    speciesCode: "y00670",
+    _id: "y00670",
     category: "slash",
     taxonOrder: 483.0,
     bandingCodes: [],
@@ -4076,7 +4076,7 @@ const birds = [
   {
     sciName: "Mareca sibilatrix",
     comName: "Chiloe Wigeon",
-    speciesCode: "chiwig1",
+    _id: "chiwig1",
     category: "species",
     taxonOrder: 484.0,
     bandingCodes: [],
@@ -4090,7 +4090,7 @@ const birds = [
   {
     sciName: "Mareca penelope x sibilatrix",
     comName: "Eurasian x Chiloe Wigeon (hybrid)",
-    speciesCode: "x00998",
+    _id: "x00998",
     category: "hybrid",
     taxonOrder: 485.0,
     bandingCodes: [],
@@ -4104,7 +4104,7 @@ const birds = [
   {
     sciName: "Mareca marecula",
     comName: "Amsterdam Duck",
-    speciesCode: "amsduc1",
+    _id: "amsduc1",
     category: "species",
     taxonOrder: 486.0,
     bandingCodes: [],
@@ -4120,7 +4120,7 @@ const birds = [
   {
     sciName: "Anas sparsa",
     comName: "African Black Duck",
-    speciesCode: "afbduc1",
+    _id: "afbduc1",
     category: "species",
     taxonOrder: 487.0,
     bandingCodes: [],
@@ -4134,7 +4134,7 @@ const birds = [
   {
     sciName: "Anas undulata",
     comName: "Yellow-billed Duck",
-    speciesCode: "yebduc1",
+    _id: "yebduc1",
     category: "species",
     taxonOrder: 490.0,
     bandingCodes: [],
@@ -4148,7 +4148,7 @@ const birds = [
   {
     sciName: "Anas melleri",
     comName: "Meller's Duck",
-    speciesCode: "melduc1",
+    _id: "melduc1",
     category: "species",
     taxonOrder: 493.0,
     bandingCodes: [],
@@ -4162,7 +4162,7 @@ const birds = [
   {
     sciName: "Anas superciliosa",
     comName: "Pacific Black Duck",
-    speciesCode: "pabduc1",
+    _id: "pabduc1",
     category: "species",
     taxonOrder: 494.0,
     bandingCodes: [],
@@ -4176,7 +4176,7 @@ const birds = [
   {
     sciName: "Anas laysanensis",
     comName: "Laysan Duck",
-    speciesCode: "layduc",
+    _id: "layduc",
     category: "species",
     taxonOrder: 497.0,
     bandingCodes: ["LAYD"],
@@ -4190,7 +4190,7 @@ const birds = [
   {
     sciName: "Anas wyvilliana",
     comName: "Hawaiian Duck",
-    speciesCode: "hawduc",
+    _id: "hawduc",
     category: "species",
     taxonOrder: 498.0,
     bandingCodes: ["HAWD"],
@@ -4204,7 +4204,7 @@ const birds = [
   {
     sciName: "Anas luzonica",
     comName: "Philippine Duck",
-    speciesCode: "phiduc1",
+    _id: "phiduc1",
     category: "species",
     taxonOrder: 499.0,
     bandingCodes: [],
@@ -4218,7 +4218,7 @@ const birds = [
   {
     sciName: "Anas poecilorhyncha",
     comName: "Indian Spot-billed Duck",
-    speciesCode: "isbduc1",
+    _id: "isbduc1",
     category: "species",
     taxonOrder: 500.0,
     bandingCodes: [],
@@ -4232,7 +4232,7 @@ const birds = [
   {
     sciName: "Anas zonorhyncha",
     comName: "Eastern Spot-billed Duck",
-    speciesCode: "spbduc",
+    _id: "spbduc",
     category: "species",
     taxonOrder: 503.0,
     bandingCodes: ["ESBD"],
@@ -4246,7 +4246,7 @@ const birds = [
   {
     sciName: "Anas poecilorhyncha/zonorhyncha",
     comName: "Indian/Eastern Spot-billed Duck",
-    speciesCode: "y00830",
+    _id: "y00830",
     category: "slash",
     taxonOrder: 504.0,
     bandingCodes: [],
@@ -4260,7 +4260,7 @@ const birds = [
   {
     sciName: "Anas platyrhynchos",
     comName: "Mallard",
-    speciesCode: "mallar3",
+    _id: "mallar3",
     category: "species",
     taxonOrder: 505.0,
     bandingCodes: ["MALL"],
@@ -4274,7 +4274,7 @@ const birds = [
   {
     sciName: "Anas platyrhynchos (Domestic type)",
     comName: "Mallard (Domestic type)",
-    speciesCode: "mallar2",
+    _id: "mallar2",
     category: "domestic",
     taxonOrder: 508.0,
     bandingCodes: [],
@@ -4289,7 +4289,7 @@ const birds = [
   {
     sciName: "Cairina moschata x Anas platyrhynchos",
     comName: "Muscovy Duck x Mallard (hybrid)",
-    speciesCode: "mdxmal1",
+    _id: "mdxmal1",
     category: "hybrid",
     taxonOrder: 509.0,
     bandingCodes: [],
@@ -4303,7 +4303,7 @@ const birds = [
   {
     sciName: "Aix sponsa x Anas platyrhynchos",
     comName: "Wood Duck x Mallard (hybrid)",
-    speciesCode: "x00205",
+    _id: "x00205",
     category: "hybrid",
     taxonOrder: 510.0,
     bandingCodes: [],
@@ -4317,7 +4317,7 @@ const birds = [
   {
     sciName: "Spatula clypeata x Anas platyrhynchos",
     comName: "Northern Shoveler x Mallard (hybrid)",
-    speciesCode: "x00612",
+    _id: "x00612",
     category: "hybrid",
     taxonOrder: 511.0,
     bandingCodes: [],
@@ -4331,7 +4331,7 @@ const birds = [
   {
     sciName: "Mareca strepera x Anas platyrhynchos",
     comName: "Gadwall x Mallard (hybrid)",
-    speciesCode: "x00420",
+    _id: "x00420",
     category: "hybrid",
     taxonOrder: 512.0,
     bandingCodes: [],
@@ -4345,7 +4345,7 @@ const birds = [
   {
     sciName: "Mareca penelope x Anas platyrhynchos",
     comName: "Eurasian Wigeon x Mallard (hybrid)",
-    speciesCode: "x00647",
+    _id: "x00647",
     category: "hybrid",
     taxonOrder: 513.0,
     bandingCodes: [],
@@ -4359,7 +4359,7 @@ const birds = [
   {
     sciName: "Mareca americana x Anas platyrhynchos",
     comName: "American Wigeon x Mallard (hybrid)",
-    speciesCode: "x00611",
+    _id: "x00611",
     category: "hybrid",
     taxonOrder: 514.0,
     bandingCodes: [],
@@ -4373,7 +4373,7 @@ const birds = [
   {
     sciName: "Anas undulata x platyrhynchos",
     comName: "Yellow-billed Duck x Mallard (hybrid)",
-    speciesCode: "x00760",
+    _id: "x00760",
     category: "hybrid",
     taxonOrder: 515.0,
     bandingCodes: [],
@@ -4387,7 +4387,7 @@ const birds = [
   {
     sciName: "Anas platyrhynchos x superciliosa",
     comName: "Mallard x Pacific Black Duck (hybrid)",
-    speciesCode: "x00458",
+    _id: "x00458",
     category: "hybrid",
     taxonOrder: 516.0,
     bandingCodes: [],
@@ -4401,7 +4401,7 @@ const birds = [
   {
     sciName: "Anas platyrhynchos x wyvilliana",
     comName: "Mallard x Hawaiian Duck (hybrid)",
-    speciesCode: "x00423",
+    _id: "x00423",
     category: "hybrid",
     taxonOrder: 517.0,
     bandingCodes: ["MHDH"],
@@ -4415,7 +4415,7 @@ const birds = [
   {
     sciName: "Anas platyrhynchos x poecilorhyncha",
     comName: "Mallard x Indian Spot-billed Duck (hybrid)",
-    speciesCode: "x00834",
+    _id: "x00834",
     category: "hybrid",
     taxonOrder: 518.0,
     bandingCodes: [],
@@ -4429,7 +4429,7 @@ const birds = [
   {
     sciName: "Anas platyrhynchos x zonorhyncha",
     comName: "Mallard x Eastern Spot-billed Duck (hybrid)",
-    speciesCode: "x00835",
+    _id: "x00835",
     category: "hybrid",
     taxonOrder: 519.0,
     bandingCodes: [],
@@ -4443,7 +4443,7 @@ const birds = [
   {
     sciName: "Anas platyrhynchos/superciliosa",
     comName: "Mallard/Pacific Black Duck",
-    speciesCode: "y01128",
+    _id: "y01128",
     category: "slash",
     taxonOrder: 520.0,
     bandingCodes: [],
@@ -4457,7 +4457,7 @@ const birds = [
   {
     sciName: "Anas platyrhynchos/wyvilliana",
     comName: "Mallard/Hawaiian Duck",
-    speciesCode: "y01129",
+    _id: "y01129",
     category: "slash",
     taxonOrder: 521.0,
     bandingCodes: [],
@@ -4471,7 +4471,7 @@ const birds = [
   {
     sciName: "Anas platyrhynchos/poecilorhyncha",
     comName: "Mallard/Indian Spot-billed Duck",
-    speciesCode: "y01130",
+    _id: "y01130",
     category: "slash",
     taxonOrder: 522.0,
     bandingCodes: [],
@@ -4485,7 +4485,7 @@ const birds = [
   {
     sciName: "Anas platyrhynchos/zonorhyncha",
     comName: "Mallard/Eastern Spot-billed Duck",
-    speciesCode: "y01131",
+    _id: "y01131",
     category: "slash",
     taxonOrder: 523.0,
     bandingCodes: [],
@@ -4499,7 +4499,7 @@ const birds = [
   {
     sciName: "Anas diazi",
     comName: "Mexican Duck",
-    speciesCode: "mexduc",
+    _id: "mexduc",
     category: "species",
     taxonOrder: 524.0,
     bandingCodes: ["MEDU"],
@@ -4513,7 +4513,7 @@ const birds = [
   {
     sciName: "Anas platyrhynchos x diazi",
     comName: "Mallard x Mexican Duck (hybrid)",
-    speciesCode: "mallar4",
+    _id: "mallar4",
     category: "hybrid",
     taxonOrder: 525.0,
     bandingCodes: [],
@@ -4527,7 +4527,7 @@ const birds = [
   {
     sciName: "Anas platyrhynchos/diazi",
     comName: "Mallard/Mexican Duck",
-    speciesCode: "mallar",
+    _id: "mallar",
     category: "slash",
     taxonOrder: 526.0,
     bandingCodes: [],
@@ -4541,7 +4541,7 @@ const birds = [
   {
     sciName: "Anas rubripes",
     comName: "American Black Duck",
-    speciesCode: "ambduc",
+    _id: "ambduc",
     category: "species",
     taxonOrder: 527.0,
     bandingCodes: ["ABDU"],
@@ -4555,7 +4555,7 @@ const birds = [
   {
     sciName: "Mareca americana x Anas rubripes",
     comName: "American Wigeon x American Black Duck (hybrid)",
-    speciesCode: "x00941",
+    _id: "x00941",
     category: "hybrid",
     taxonOrder: 528.0,
     bandingCodes: [],
@@ -4569,7 +4569,7 @@ const birds = [
   {
     sciName: "Anas platyrhynchos x rubripes",
     comName: "Mallard x American Black Duck (hybrid)",
-    speciesCode: "x00004",
+    _id: "x00004",
     category: "hybrid",
     taxonOrder: 529.0,
     bandingCodes: ["MBDH"],
@@ -4583,7 +4583,7 @@ const birds = [
   {
     sciName: "Anas platyrhynchos/rubripes",
     comName: "Mallard/American Black Duck",
-    speciesCode: "y00600",
+    _id: "y00600",
     category: "slash",
     taxonOrder: 530.0,
     bandingCodes: [],
@@ -4597,7 +4597,7 @@ const birds = [
   {
     sciName: "Anas fulvigula",
     comName: "Mottled Duck",
-    speciesCode: "motduc",
+    _id: "motduc",
     category: "species",
     taxonOrder: 531.0,
     bandingCodes: ["MODU"],
@@ -4611,7 +4611,7 @@ const birds = [
   {
     sciName: "Anas fulvigula fulvigula",
     comName: "Mottled Duck (Florida)",
-    speciesCode: "motduc1",
+    _id: "motduc1",
     category: "issf",
     taxonOrder: 532.0,
     bandingCodes: [],
@@ -4626,7 +4626,7 @@ const birds = [
   {
     sciName: "Anas fulvigula maculosa",
     comName: "Mottled Duck (Gulf Coast)",
-    speciesCode: "motduc2",
+    _id: "motduc2",
     category: "issf",
     taxonOrder: 533.0,
     bandingCodes: [],
@@ -4641,7 +4641,7 @@ const birds = [
   {
     sciName: "Anas platyrhynchos x fulvigula",
     comName: "Mallard x Mottled Duck (hybrid)",
-    speciesCode: "x00422",
+    _id: "x00422",
     category: "hybrid",
     taxonOrder: 534.0,
     bandingCodes: [],
@@ -4655,7 +4655,7 @@ const birds = [
   {
     sciName: "Anas platyrhynchos/fulvigula",
     comName: "Mallard/Mottled Duck",
-    speciesCode: "y00632",
+    _id: "y00632",
     category: "slash",
     taxonOrder: 535.0,
     bandingCodes: [],
@@ -4669,7 +4669,7 @@ const birds = [
   {
     sciName: "Anas platyrhynchos x diazi/fulvigula",
     comName: "Mallard x Mexican/Mottled Duck (hybrid)",
-    speciesCode: "y01098",
+    _id: "y01098",
     category: "hybrid",
     taxonOrder: 536.0,
     bandingCodes: [],
@@ -4683,7 +4683,7 @@ const birds = [
   {
     sciName: "Anas diazi x fulvigula",
     comName: "Mexican x Mottled Duck (hybrid)",
-    speciesCode: "x00922",
+    _id: "x00922",
     category: "hybrid",
     taxonOrder: 537.0,
     bandingCodes: [],
@@ -4697,7 +4697,7 @@ const birds = [
   {
     sciName: "Anas diazi/fulvigula",
     comName: "Mexican/Mottled Duck",
-    speciesCode: "y01099",
+    _id: "y01099",
     category: "slash",
     taxonOrder: 538.0,
     bandingCodes: [],
@@ -4711,7 +4711,7 @@ const birds = [
   {
     sciName: "Anas rubripes/fulvigula",
     comName: "American Black/Mottled Duck",
-    speciesCode: "y00633",
+    _id: "y00633",
     category: "slash",
     taxonOrder: 539.0,
     bandingCodes: [],
@@ -4725,7 +4725,7 @@ const birds = [
   {
     sciName: "Anas capensis",
     comName: "Cape Teal",
-    speciesCode: "captea1",
+    _id: "captea1",
     category: "species",
     taxonOrder: 540.0,
     bandingCodes: [],
@@ -4739,7 +4739,7 @@ const birds = [
   {
     sciName: "Anas bahamensis",
     comName: "White-cheeked Pintail",
-    speciesCode: "whcpin",
+    _id: "whcpin",
     category: "species",
     taxonOrder: 541.0,
     bandingCodes: ["WCHP"],
@@ -4753,7 +4753,7 @@ const birds = [
   {
     sciName: "Anas bahamensis bahamensis/rubrirostris",
     comName: "White-cheeked Pintail (White-cheeked)",
-    speciesCode: "whcpin1",
+    _id: "whcpin1",
     category: "issf",
     taxonOrder: 542.0,
     bandingCodes: [],
@@ -4768,7 +4768,7 @@ const birds = [
   {
     sciName: "Anas bahamensis galapagensis",
     comName: "White-cheeked Pintail (Galapagos)",
-    speciesCode: "whcpin2",
+    _id: "whcpin2",
     category: "issf",
     taxonOrder: 545.0,
     bandingCodes: [],
@@ -4783,7 +4783,7 @@ const birds = [
   {
     sciName: "Anas platyrhynchos x bahamensis",
     comName: "Mallard x White-cheeked Pintail (hybrid)",
-    speciesCode: "x00778",
+    _id: "x00778",
     category: "hybrid",
     taxonOrder: 546.0,
     bandingCodes: [],
@@ -4797,7 +4797,7 @@ const birds = [
   {
     sciName: "Anas erythrorhyncha",
     comName: "Red-billed Duck",
-    speciesCode: "rebduc1",
+    _id: "rebduc1",
     category: "species",
     taxonOrder: 547.0,
     bandingCodes: [],
@@ -4811,7 +4811,7 @@ const birds = [
   {
     sciName: "Anas acuta",
     comName: "Northern Pintail",
-    speciesCode: "norpin",
+    _id: "norpin",
     category: "species",
     taxonOrder: 548.0,
     bandingCodes: ["NOPI"],
@@ -4825,7 +4825,7 @@ const birds = [
   {
     sciName: "Sibirionetta formosa x Anas acuta",
     comName: "Baikal Teal x Northern Pintail (hybrid)",
-    speciesCode: "x00837",
+    _id: "x00837",
     category: "hybrid",
     taxonOrder: 549.0,
     bandingCodes: [],
@@ -4839,7 +4839,7 @@ const birds = [
   {
     sciName: "Mareca strepera x Anas acuta",
     comName: "Gadwall x Northern Pintail (hybrid)",
-    speciesCode: "x00610",
+    _id: "x00610",
     category: "hybrid",
     taxonOrder: 550.0,
     bandingCodes: [],
@@ -4853,7 +4853,7 @@ const birds = [
   {
     sciName: "Mareca penelope x Anas acuta",
     comName: "Eurasian Wigeon x Northern Pintail (hybrid)",
-    speciesCode: "x00761",
+    _id: "x00761",
     category: "hybrid",
     taxonOrder: 551.0,
     bandingCodes: [],
@@ -4867,7 +4867,7 @@ const birds = [
   {
     sciName: "Mareca americana x Anas acuta",
     comName: "American Wigeon x Northern Pintail (hybrid)",
-    speciesCode: "x00196",
+    _id: "x00196",
     category: "hybrid",
     taxonOrder: 552.0,
     bandingCodes: [],
@@ -4881,7 +4881,7 @@ const birds = [
   {
     sciName: "Anas platyrhynchos x acuta",
     comName: "Mallard x Northern Pintail (hybrid)",
-    speciesCode: "x00628",
+    _id: "x00628",
     category: "hybrid",
     taxonOrder: 553.0,
     bandingCodes: [],
@@ -4895,7 +4895,7 @@ const birds = [
   {
     sciName: "Anas rubripes x acuta",
     comName: "American Black Duck x Northern Pintail (hybrid)",
-    speciesCode: "x00674",
+    _id: "x00674",
     category: "hybrid",
     taxonOrder: 554.0,
     bandingCodes: [],
@@ -4909,7 +4909,7 @@ const birds = [
   {
     sciName: "Anas eatoni",
     comName: "Eaton's Pintail",
-    speciesCode: "eatpin1",
+    _id: "eatpin1",
     category: "species",
     taxonOrder: 555.0,
     bandingCodes: [],
@@ -4923,7 +4923,7 @@ const birds = [
   {
     sciName: "Anas georgica",
     comName: "Yellow-billed Pintail",
-    speciesCode: "yebpin1",
+    _id: "yebpin1",
     category: "species",
     taxonOrder: 558.0,
     bandingCodes: [],
@@ -4937,7 +4937,7 @@ const birds = [
   {
     sciName: "Anas georgica georgica",
     comName: "Yellow-billed Pintail (South Georgia)",
-    speciesCode: "yebpin2",
+    _id: "yebpin2",
     category: "issf",
     taxonOrder: 559.0,
     bandingCodes: [],
@@ -4952,7 +4952,7 @@ const birds = [
   {
     sciName: "Anas georgica spinicauda/niceforoi",
     comName: "Yellow-billed Pintail (South American)",
-    speciesCode: "yebpin3",
+    _id: "yebpin3",
     category: "issf",
     taxonOrder: 560.0,
     bandingCodes: [],
@@ -4967,7 +4967,7 @@ const birds = [
   {
     sciName: "Anas crecca",
     comName: "Green-winged Teal",
-    speciesCode: "gnwtea",
+    _id: "gnwtea",
     category: "species",
     taxonOrder: 563.0,
     bandingCodes: ["GWTE"],
@@ -4981,7 +4981,7 @@ const birds = [
   {
     sciName: "Anas crecca crecca",
     comName: "Green-winged Teal (Eurasian)",
-    speciesCode: "egwtea1",
+    _id: "egwtea1",
     category: "issf",
     taxonOrder: 564.0,
     bandingCodes: ["EGWT"],
@@ -4996,7 +4996,7 @@ const birds = [
   {
     sciName: "Anas crecca carolinensis",
     comName: "Green-winged Teal (American)",
-    speciesCode: "agwtea1",
+    _id: "agwtea1",
     category: "issf",
     taxonOrder: 565.0,
     bandingCodes: ["AGWT"],
@@ -5011,7 +5011,7 @@ const birds = [
   {
     sciName: "Anas crecca crecca x carolinensis",
     comName: "Green-winged Teal (Eurasian x American)",
-    speciesCode: "gnwtea1",
+    _id: "gnwtea1",
     category: "intergrade",
     taxonOrder: 566.0,
     bandingCodes: [],
@@ -5026,7 +5026,7 @@ const birds = [
   {
     sciName: "Sibirionetta formosa x Anas crecca",
     comName: "Baikal x Green-winged Teal (hybrid)",
-    speciesCode: "x00999",
+    _id: "x00999",
     category: "hybrid",
     taxonOrder: 567.0,
     bandingCodes: [],
@@ -5040,7 +5040,7 @@ const birds = [
   {
     sciName: "Spatula querquedula x Anas crecca",
     comName: "Garganey x Green-winged Teal (hybrid)",
-    speciesCode: "x00371",
+    _id: "x00371",
     category: "hybrid",
     taxonOrder: 568.0,
     bandingCodes: [],
@@ -5054,7 +5054,7 @@ const birds = [
   {
     sciName: "Spatula querquedula/Anas crecca",
     comName: "Garganey/Green-winged Teal",
-    speciesCode: "y00766",
+    _id: "y00766",
     category: "slash",
     taxonOrder: 569.0,
     bandingCodes: [],
@@ -5068,7 +5068,7 @@ const birds = [
   {
     sciName: "Spatula discors x Anas crecca",
     comName: "Blue-winged x Green-winged Teal (hybrid)",
-    speciesCode: "x00673",
+    _id: "x00673",
     category: "hybrid",
     taxonOrder: 570.0,
     bandingCodes: [],
@@ -5082,7 +5082,7 @@ const birds = [
   {
     sciName: "Spatula cyanoptera x Anas crecca",
     comName: "Cinnamon x Green-winged Teal (hybrid)",
-    speciesCode: "x00763",
+    _id: "x00763",
     category: "hybrid",
     taxonOrder: 571.0,
     bandingCodes: [],
@@ -5096,7 +5096,7 @@ const birds = [
   {
     sciName: "Mareca strepera x Anas crecca",
     comName: "Gadwall x Green-winged Teal (hybrid)",
-    speciesCode: "x00762",
+    _id: "x00762",
     category: "hybrid",
     taxonOrder: 572.0,
     bandingCodes: [],
@@ -5110,7 +5110,7 @@ const birds = [
   {
     sciName: "Mareca penelope x Anas crecca",
     comName: "Eurasian Wigeon x Green-winged Teal (hybrid)",
-    speciesCode: "x00372",
+    _id: "x00372",
     category: "hybrid",
     taxonOrder: 573.0,
     bandingCodes: [],
@@ -5124,7 +5124,7 @@ const birds = [
   {
     sciName: "Mareca americana x Anas crecca",
     comName: "American Wigeon x Green-winged Teal (hybrid)",
-    speciesCode: "x00646",
+    _id: "x00646",
     category: "hybrid",
     taxonOrder: 574.0,
     bandingCodes: [],
@@ -5138,7 +5138,7 @@ const birds = [
   {
     sciName: "Anas platyrhynchos x crecca",
     comName: "Mallard x Green-winged Teal (hybrid)",
-    speciesCode: "x00670",
+    _id: "x00670",
     category: "hybrid",
     taxonOrder: 575.0,
     bandingCodes: [],
@@ -5152,7 +5152,7 @@ const birds = [
   {
     sciName: "Anas acuta x crecca",
     comName: "Northern Pintail x Green-winged Teal (hybrid)",
-    speciesCode: "x00725",
+    _id: "x00725",
     category: "hybrid",
     taxonOrder: 576.0,
     bandingCodes: [],
@@ -5166,7 +5166,7 @@ const birds = [
   {
     sciName: "Anas andium",
     comName: "Andean Teal",
-    speciesCode: "spetea3",
+    _id: "spetea3",
     category: "species",
     taxonOrder: 577.0,
     bandingCodes: [],
@@ -5180,7 +5180,7 @@ const birds = [
   {
     sciName: "Anas andium altipetens",
     comName: "Andean Teal (Merida)",
-    speciesCode: "andtea2",
+    _id: "andtea2",
     category: "issf",
     taxonOrder: 578.0,
     bandingCodes: [],
@@ -5195,7 +5195,7 @@ const birds = [
   {
     sciName: "Anas andium andium",
     comName: "Andean Teal (Andean)",
-    speciesCode: "andtea3",
+    _id: "andtea3",
     category: "issf",
     taxonOrder: 579.0,
     bandingCodes: [],
@@ -5210,7 +5210,7 @@ const birds = [
   {
     sciName: "Anas flavirostris",
     comName: "Yellow-billed Teal",
-    speciesCode: "yebtea1",
+    _id: "yebtea1",
     category: "species",
     taxonOrder: 580.0,
     bandingCodes: [],
@@ -5224,7 +5224,7 @@ const birds = [
   {
     sciName: "Anas flavirostris flavirostris",
     comName: "Yellow-billed Teal (flavirostris)",
-    speciesCode: "spetea2",
+    _id: "spetea2",
     category: "issf",
     taxonOrder: 581.0,
     bandingCodes: [],
@@ -5239,7 +5239,7 @@ const birds = [
   {
     sciName: "Anas flavirostris oxyptera",
     comName: "Yellow-billed Teal (oxyptera)",
-    speciesCode: "spetea4",
+    _id: "spetea4",
     category: "issf",
     taxonOrder: 582.0,
     bandingCodes: [],
@@ -5254,7 +5254,7 @@ const birds = [
   {
     sciName: "Anas georgica/flavirostris",
     comName: "Yellow-billed Pintail/Yellow-billed Teal",
-    speciesCode: "y00367",
+    _id: "y00367",
     category: "slash",
     taxonOrder: 583.0,
     bandingCodes: [],
@@ -5268,7 +5268,7 @@ const birds = [
   {
     sciName: "Anas andium/flavirostris",
     comName: "Andean/Yellow-billed Teal",
-    speciesCode: "spetea1",
+    _id: "spetea1",
     category: "slash",
     taxonOrder: 584.0,
     bandingCodes: [],
@@ -5282,7 +5282,7 @@ const birds = [
   {
     sciName: "Anas theodori",
     comName: "Mauritius Duck",
-    speciesCode: "mauduc1",
+    _id: "mauduc1",
     category: "species",
     taxonOrder: 585.0,
     bandingCodes: [],
@@ -5298,7 +5298,7 @@ const birds = [
   {
     sciName: "Anas albogularis",
     comName: "Andaman Teal",
-    speciesCode: "andtea1",
+    _id: "andtea1",
     category: "species",
     taxonOrder: 586.0,
     bandingCodes: [],
@@ -5312,7 +5312,7 @@ const birds = [
   {
     sciName: "Anas gibberifrons",
     comName: "Sunda Teal",
-    speciesCode: "suntea1",
+    _id: "suntea1",
     category: "species",
     taxonOrder: 587.0,
     bandingCodes: [],
@@ -5326,7 +5326,7 @@ const birds = [
   {
     sciName: "Anas gracilis",
     comName: "Gray Teal",
-    speciesCode: "gretea1",
+    _id: "gretea1",
     category: "species",
     taxonOrder: 588.0,
     bandingCodes: [],
@@ -5340,7 +5340,7 @@ const birds = [
   {
     sciName: "Anas superciliosa x gracilis",
     comName: "Pacific Black Duck x Gray Teal (hybrid)",
-    speciesCode: "x00926",
+    _id: "x00926",
     category: "hybrid",
     taxonOrder: 591.0,
     bandingCodes: [],
@@ -5354,7 +5354,7 @@ const birds = [
   {
     sciName: "Anas castanea",
     comName: "Chestnut Teal",
-    speciesCode: "chetea1",
+    _id: "chetea1",
     category: "species",
     taxonOrder: 592.0,
     bandingCodes: [],
@@ -5368,7 +5368,7 @@ const birds = [
   {
     sciName: "Anas superciliosa x castanea",
     comName: "Pacific Black Duck x Chestnut Teal (hybrid)",
-    speciesCode: "x00925",
+    _id: "x00925",
     category: "hybrid",
     taxonOrder: 595.0,
     bandingCodes: [],
@@ -5382,7 +5382,7 @@ const birds = [
   {
     sciName: "Anas gracilis x castanea",
     comName: "Gray x Chestnut Teal (hybrid)",
-    speciesCode: "x00913",
+    _id: "x00913",
     category: "hybrid",
     taxonOrder: 596.0,
     bandingCodes: [],
@@ -5396,7 +5396,7 @@ const birds = [
   {
     sciName: "Anas gracilis/castanea",
     comName: "Gray/Chestnut Teal",
-    speciesCode: "y00368",
+    _id: "y00368",
     category: "slash",
     taxonOrder: 597.0,
     bandingCodes: [],
@@ -5410,7 +5410,7 @@ const birds = [
   {
     sciName: "Anas bernieri",
     comName: "Bernier's Teal",
-    speciesCode: "bertea1",
+    _id: "bertea1",
     category: "species",
     taxonOrder: 598.0,
     bandingCodes: [],
@@ -5424,7 +5424,7 @@ const birds = [
   {
     sciName: "Anas aucklandica",
     comName: "Auckland Islands Teal",
-    speciesCode: "auitea1",
+    _id: "auitea1",
     category: "species",
     taxonOrder: 599.0,
     bandingCodes: [],
@@ -5438,7 +5438,7 @@ const birds = [
   {
     sciName: "Anas nesiotis",
     comName: "Campbell Islands Teal",
-    speciesCode: "caitea1",
+    _id: "caitea1",
     category: "species",
     taxonOrder: 600.0,
     bandingCodes: [],
@@ -5452,7 +5452,7 @@ const birds = [
   {
     sciName: "Anas chlorotis",
     comName: "Brown Teal",
-    speciesCode: "brotea1",
+    _id: "brotea1",
     category: "species",
     taxonOrder: 601.0,
     bandingCodes: [],
@@ -5466,7 +5466,7 @@ const birds = [
   {
     sciName: "Anas platyrhynchos x chlorotis",
     comName: "Mallard x Brown Teal (hybrid)",
-    speciesCode: "x00878",
+    _id: "x00878",
     category: "hybrid",
     taxonOrder: 602.0,
     bandingCodes: [],
@@ -5480,7 +5480,7 @@ const birds = [
   {
     sciName: "Anas sp.",
     comName: "Anas sp.",
-    speciesCode: "anas1",
+    _id: "anas1",
     category: "spuh",
     taxonOrder: 603.0,
     bandingCodes: [],
@@ -5494,7 +5494,7 @@ const birds = [
   {
     sciName: "Anatidae sp. (teal sp.)",
     comName: "teal sp.",
-    speciesCode: "teal",
+    _id: "teal",
     category: "spuh",
     taxonOrder: 604.0,
     bandingCodes: [],
@@ -5508,7 +5508,7 @@ const birds = [
   {
     sciName: "Anatidae sp. (dabbling duck sp.)",
     comName: "dabbling duck sp.",
-    speciesCode: "dabduc1",
+    _id: "dabduc1",
     category: "spuh",
     taxonOrder: 605.0,
     bandingCodes: [],
@@ -5522,7 +5522,7 @@ const birds = [
   {
     sciName: "Malacorhynchus membranaceus",
     comName: "Pink-eared Duck",
-    speciesCode: "pieduc1",
+    _id: "pieduc1",
     category: "species",
     taxonOrder: 606.0,
     bandingCodes: [],
@@ -5536,7 +5536,7 @@ const birds = [
   {
     sciName: "Marmaronetta angustirostris",
     comName: "Marbled Teal",
-    speciesCode: "martea1",
+    _id: "martea1",
     category: "species",
     taxonOrder: 607.0,
     bandingCodes: [],
@@ -5550,7 +5550,7 @@ const birds = [
   {
     sciName: "Rhodonessa caryophyllacea",
     comName: "Pink-headed Duck",
-    speciesCode: "pihduc1",
+    _id: "pihduc1",
     category: "species",
     taxonOrder: 608.0,
     bandingCodes: [],
@@ -5566,7 +5566,7 @@ const birds = [
   {
     sciName: "Asarcornis scutulata",
     comName: "White-winged Duck",
-    speciesCode: "whwduc1",
+    _id: "whwduc1",
     category: "species",
     taxonOrder: 609.0,
     bandingCodes: [],
@@ -5580,7 +5580,7 @@ const birds = [
   {
     sciName: "Netta rufina",
     comName: "Red-crested Pochard",
-    speciesCode: "recpoc",
+    _id: "recpoc",
     category: "species",
     taxonOrder: 610.0,
     bandingCodes: [],
@@ -5594,7 +5594,7 @@ const birds = [
   {
     sciName: "Anas platyrhynchos x Netta rufina",
     comName: "Mallard x Red-crested Pochard (hybrid)",
-    speciesCode: "x00648",
+    _id: "x00648",
     category: "hybrid",
     taxonOrder: 611.0,
     bandingCodes: [],
@@ -5608,7 +5608,7 @@ const birds = [
   {
     sciName: "Netta erythrophthalma",
     comName: "Southern Pochard",
-    speciesCode: "soupoc1",
+    _id: "soupoc1",
     category: "species",
     taxonOrder: 612.0,
     bandingCodes: [],
@@ -5622,7 +5622,7 @@ const birds = [
   {
     sciName: "Netta peposaca",
     comName: "Rosy-billed Pochard",
-    speciesCode: "robpoc1",
+    _id: "robpoc1",
     category: "species",
     taxonOrder: 615.0,
     bandingCodes: [],
@@ -5636,7 +5636,7 @@ const birds = [
   {
     sciName: "Aythya valisineria",
     comName: "Canvasback",
-    speciesCode: "canvas",
+    _id: "canvas",
     category: "species",
     taxonOrder: 616.0,
     bandingCodes: ["CANV"],
@@ -5650,7 +5650,7 @@ const birds = [
   {
     sciName: "Aythya americana",
     comName: "Redhead",
-    speciesCode: "redhea",
+    _id: "redhea",
     category: "species",
     taxonOrder: 617.0,
     bandingCodes: ["REDH"],
@@ -5664,7 +5664,7 @@ const birds = [
   {
     sciName: "Anas platyrhynchos x Aythya americana",
     comName: "Mallard x Redhead (hybrid)",
-    speciesCode: "x00879",
+    _id: "x00879",
     category: "hybrid",
     taxonOrder: 618.0,
     bandingCodes: [],
@@ -5678,7 +5678,7 @@ const birds = [
   {
     sciName: "Aythya valisineria x americana",
     comName: "Canvasback x Redhead (hybrid)",
-    speciesCode: "x00684",
+    _id: "x00684",
     category: "hybrid",
     taxonOrder: 619.0,
     bandingCodes: [],
@@ -5692,7 +5692,7 @@ const birds = [
   {
     sciName: "Aythya ferina",
     comName: "Common Pochard",
-    speciesCode: "compoc",
+    _id: "compoc",
     category: "species",
     taxonOrder: 620.0,
     bandingCodes: ["COMP"],
@@ -5706,7 +5706,7 @@ const birds = [
   {
     sciName: "Anas platyrhynchos x Aythya ferina",
     comName: "Mallard x Common Pochard (hybrid)",
-    speciesCode: "x01000",
+    _id: "x01000",
     category: "hybrid",
     taxonOrder: 621.0,
     bandingCodes: [],
@@ -5720,7 +5720,7 @@ const birds = [
   {
     sciName: "Netta rufina x Aythya ferina",
     comName: "Red-crested x Common Pochard (hybrid)",
-    speciesCode: "x00373",
+    _id: "x00373",
     category: "hybrid",
     taxonOrder: 622.0,
     bandingCodes: [],
@@ -5734,7 +5734,7 @@ const birds = [
   {
     sciName: "Aythya collaris",
     comName: "Ring-necked Duck",
-    speciesCode: "rinduc",
+    _id: "rinduc",
     category: "species",
     taxonOrder: 623.0,
     bandingCodes: ["RNDU"],
@@ -5748,7 +5748,7 @@ const birds = [
   {
     sciName: "Anas platyrhynchos x Aythya collaris",
     comName: "Mallard x Ring-necked Duck (hybrid)",
-    speciesCode: "x01001",
+    _id: "x01001",
     category: "hybrid",
     taxonOrder: 624.0,
     bandingCodes: [],
@@ -5762,7 +5762,7 @@ const birds = [
   {
     sciName: "Aythya valisineria x collaris",
     comName: "Canvasback x Ring-necked Duck (hybrid)",
-    speciesCode: "x00880",
+    _id: "x00880",
     category: "hybrid",
     taxonOrder: 625.0,
     bandingCodes: [],
@@ -5776,7 +5776,7 @@ const birds = [
   {
     sciName: "Aythya americana x collaris",
     comName: "Redhead x Ring-necked Duck (hybrid)",
-    speciesCode: "x00679",
+    _id: "x00679",
     category: "hybrid",
     taxonOrder: 626.0,
     bandingCodes: [],
@@ -5790,7 +5790,7 @@ const birds = [
   {
     sciName: "Aythya nyroca",
     comName: "Ferruginous Duck",
-    speciesCode: "ferduc",
+    _id: "ferduc",
     category: "species",
     taxonOrder: 627.0,
     bandingCodes: [],
@@ -5804,7 +5804,7 @@ const birds = [
   {
     sciName: "Netta rufina x Aythya nyroca",
     comName: "Red-crested Pochard x Ferruginous Duck (hybrid)",
-    speciesCode: "x00374",
+    _id: "x00374",
     category: "hybrid",
     taxonOrder: 628.0,
     bandingCodes: [],
@@ -5818,7 +5818,7 @@ const birds = [
   {
     sciName: "Aythya ferina x nyroca",
     comName: "Common Pochard x Ferruginous Duck (hybrid)",
-    speciesCode: "x00764",
+    _id: "x00764",
     category: "hybrid",
     taxonOrder: 629.0,
     bandingCodes: [],
@@ -5832,7 +5832,7 @@ const birds = [
   {
     sciName: "Aythya innotata",
     comName: "Madagascar Pochard",
-    speciesCode: "madpoc1",
+    _id: "madpoc1",
     category: "species",
     taxonOrder: 630.0,
     bandingCodes: [],
@@ -5846,7 +5846,7 @@ const birds = [
   {
     sciName: "Aythya baeri",
     comName: "Baer's Pochard",
-    speciesCode: "baepoc1",
+    _id: "baepoc1",
     category: "species",
     taxonOrder: 631.0,
     bandingCodes: [],
@@ -5860,7 +5860,7 @@ const birds = [
   {
     sciName: "Aythya nyroca x baeri",
     comName: "Ferruginous Duck x Baer's Pochard (hybrid)",
-    speciesCode: "x00838",
+    _id: "x00838",
     category: "hybrid",
     taxonOrder: 632.0,
     bandingCodes: [],
@@ -5874,7 +5874,7 @@ const birds = [
   {
     sciName: "Aythya nyroca/baeri",
     comName: "Ferruginous Duck/Baer's Pochard",
-    speciesCode: "y00709",
+    _id: "y00709",
     category: "slash",
     taxonOrder: 633.0,
     bandingCodes: [],
@@ -5888,7 +5888,7 @@ const birds = [
   {
     sciName: "Aythya australis",
     comName: "Hardhead",
-    speciesCode: "wheduc1",
+    _id: "wheduc1",
     category: "species",
     taxonOrder: 634.0,
     bandingCodes: [],
@@ -5902,7 +5902,7 @@ const birds = [
   {
     sciName: "Anas gracilis x Aythya australis",
     comName: "Gray Teal x Hardhead (hybrid)",
-    speciesCode: "x00912",
+    _id: "x00912",
     category: "hybrid",
     taxonOrder: 635.0,
     bandingCodes: [],
@@ -5916,7 +5916,7 @@ const birds = [
   {
     sciName: "Aythya fuligula",
     comName: "Tufted Duck",
-    speciesCode: "tufduc",
+    _id: "tufduc",
     category: "species",
     taxonOrder: 636.0,
     bandingCodes: ["TUDU"],
@@ -5930,7 +5930,7 @@ const birds = [
   {
     sciName: "Anas platyrhynchos x Aythya fuligula",
     comName: "Mallard x Tufted Duck (hybrid)",
-    speciesCode: "x00375",
+    _id: "x00375",
     category: "hybrid",
     taxonOrder: 637.0,
     bandingCodes: [],
@@ -5944,7 +5944,7 @@ const birds = [
   {
     sciName: "Netta rufina x Aythya fuligula",
     comName: "Red-crested Pochard x Tufted Duck (hybrid)",
-    speciesCode: "x00376",
+    _id: "x00376",
     category: "hybrid",
     taxonOrder: 638.0,
     bandingCodes: [],
@@ -5958,7 +5958,7 @@ const birds = [
   {
     sciName: "Aythya ferina x fuligula",
     comName: "Common Pochard x Tufted Duck (hybrid)",
-    speciesCode: "x00683",
+    _id: "x00683",
     category: "hybrid",
     taxonOrder: 639.0,
     bandingCodes: [],
@@ -5972,7 +5972,7 @@ const birds = [
   {
     sciName: "Aythya collaris x fuligula",
     comName: "Ring-necked x Tufted Duck (hybrid)",
-    speciesCode: "x00652",
+    _id: "x00652",
     category: "hybrid",
     taxonOrder: 640.0,
     bandingCodes: [],
@@ -5986,7 +5986,7 @@ const birds = [
   {
     sciName: "Aythya nyroca x fuligula",
     comName: "Ferruginous x Tufted Duck (hybrid)",
-    speciesCode: "x00839",
+    _id: "x00839",
     category: "hybrid",
     taxonOrder: 641.0,
     bandingCodes: [],
@@ -6000,7 +6000,7 @@ const birds = [
   {
     sciName: "Aythya novaeseelandiae",
     comName: "New Zealand Scaup",
-    speciesCode: "nezsca1",
+    _id: "nezsca1",
     category: "species",
     taxonOrder: 642.0,
     bandingCodes: [],
@@ -6014,7 +6014,7 @@ const birds = [
   {
     sciName: "Aythya marila",
     comName: "Greater Scaup",
-    speciesCode: "gresca",
+    _id: "gresca",
     category: "species",
     taxonOrder: 643.0,
     bandingCodes: ["GRSC"],
@@ -6028,7 +6028,7 @@ const birds = [
   {
     sciName: "Aythya americana x marila",
     comName: "Redhead x Greater Scaup (hybrid)",
-    speciesCode: "x00680",
+    _id: "x00680",
     category: "hybrid",
     taxonOrder: 646.0,
     bandingCodes: [],
@@ -6042,7 +6042,7 @@ const birds = [
   {
     sciName: "Aythya collaris x marila",
     comName: "Ring-necked Duck x Greater Scaup (hybrid)",
-    speciesCode: "x00779",
+    _id: "x00779",
     category: "hybrid",
     taxonOrder: 647.0,
     bandingCodes: [],
@@ -6056,7 +6056,7 @@ const birds = [
   {
     sciName: "Aythya fuligula x marila",
     comName: "Tufted Duck x Greater Scaup (hybrid)",
-    speciesCode: "x00654",
+    _id: "x00654",
     category: "hybrid",
     taxonOrder: 648.0,
     bandingCodes: [],
@@ -6070,7 +6070,7 @@ const birds = [
   {
     sciName: "Aythya affinis",
     comName: "Lesser Scaup",
-    speciesCode: "lessca",
+    _id: "lessca",
     category: "species",
     taxonOrder: 649.0,
     bandingCodes: ["LESC"],
@@ -6084,7 +6084,7 @@ const birds = [
   {
     sciName: "Aythya americana x affinis",
     comName: "Redhead x Lesser Scaup (hybrid)",
-    speciesCode: "x00678",
+    _id: "x00678",
     category: "hybrid",
     taxonOrder: 650.0,
     bandingCodes: [],
@@ -6098,7 +6098,7 @@ const birds = [
   {
     sciName: "Aythya collaris x affinis",
     comName: "Ring-necked Duck x Lesser Scaup (hybrid)",
-    speciesCode: "x00613",
+    _id: "x00613",
     category: "hybrid",
     taxonOrder: 651.0,
     bandingCodes: [],
@@ -6112,7 +6112,7 @@ const birds = [
   {
     sciName: "Aythya fuligula x affinis",
     comName: "Tufted Duck x Lesser Scaup (hybrid)",
-    speciesCode: "x00653",
+    _id: "x00653",
     category: "hybrid",
     taxonOrder: 652.0,
     bandingCodes: [],
@@ -6126,7 +6126,7 @@ const birds = [
   {
     sciName: "Aythya marila/affinis",
     comName: "Greater/Lesser Scaup",
-    speciesCode: "scaup",
+    _id: "scaup",
     category: "slash",
     taxonOrder: 653.0,
     bandingCodes: [],
@@ -6140,7 +6140,7 @@ const birds = [
   {
     sciName: "Aythya valisineria x marila/affinis",
     comName: "Canvasback x scaup sp. (hybrid)",
-    speciesCode: "x00377",
+    _id: "x00377",
     category: "hybrid",
     taxonOrder: 654.0,
     bandingCodes: [],
@@ -6154,7 +6154,7 @@ const birds = [
   {
     sciName: "Aythya americana x marila/affinis",
     comName: "Redhead x scaup sp. (hybrid)",
-    speciesCode: "x00681",
+    _id: "x00681",
     category: "hybrid",
     taxonOrder: 655.0,
     bandingCodes: [],
@@ -6168,7 +6168,7 @@ const birds = [
   {
     sciName: "Aythya collaris x marila/affinis",
     comName: "Ring-necked Duck x scaup sp. (hybrid)",
-    speciesCode: "x00682",
+    _id: "x00682",
     category: "hybrid",
     taxonOrder: 656.0,
     bandingCodes: [],
@@ -6182,7 +6182,7 @@ const birds = [
   {
     sciName: "Aythya fuligula x marila/affinis",
     comName: "Tufted Duck x scaup sp. (hybrid)",
-    speciesCode: "tdxsca1",
+    _id: "tdxsca1",
     category: "hybrid",
     taxonOrder: 657.0,
     bandingCodes: [],
@@ -6196,7 +6196,7 @@ const birds = [
   {
     sciName: "Aythya sp.",
     comName: "Aythya sp.",
-    speciesCode: "aythya1",
+    _id: "aythya1",
     category: "spuh",
     taxonOrder: 658.0,
     bandingCodes: [],
@@ -6210,7 +6210,7 @@ const birds = [
   {
     sciName: "Polysticta stelleri",
     comName: "Steller's Eider",
-    speciesCode: "steeid",
+    _id: "steeid",
     category: "species",
     taxonOrder: 659.0,
     bandingCodes: ["STEI"],
@@ -6224,7 +6224,7 @@ const birds = [
   {
     sciName: "Camptorhynchus labradorius",
     comName: "Labrador Duck",
-    speciesCode: "labduc",
+    _id: "labduc",
     category: "species",
     taxonOrder: 660.0,
     bandingCodes: ["LABD"],
@@ -6240,7 +6240,7 @@ const birds = [
   {
     sciName: "Somateria fischeri",
     comName: "Spectacled Eider",
-    speciesCode: "speeid",
+    _id: "speeid",
     category: "species",
     taxonOrder: 661.0,
     bandingCodes: ["SPEI"],
@@ -6254,7 +6254,7 @@ const birds = [
   {
     sciName: "Somateria spectabilis",
     comName: "King Eider",
-    speciesCode: "kineid",
+    _id: "kineid",
     category: "species",
     taxonOrder: 662.0,
     bandingCodes: ["KIEI"],
@@ -6268,7 +6268,7 @@ const birds = [
   {
     sciName: "Somateria fischeri x spectabilis",
     comName: "Spectacled x King Eider (hybrid)",
-    speciesCode: "x00942",
+    _id: "x00942",
     category: "hybrid",
     taxonOrder: 663.0,
     bandingCodes: [],
@@ -6282,7 +6282,7 @@ const birds = [
   {
     sciName: "Somateria mollissima",
     comName: "Common Eider",
-    speciesCode: "comeid",
+    _id: "comeid",
     category: "species",
     taxonOrder: 664.0,
     bandingCodes: ["COEI"],
@@ -6296,7 +6296,7 @@ const birds = [
   {
     sciName: "Somateria mollissima mollissima",
     comName: "Common Eider (Eurasian)",
-    speciesCode: "comeid5",
+    _id: "comeid5",
     category: "issf",
     taxonOrder: 665.0,
     bandingCodes: [],
@@ -6311,7 +6311,7 @@ const birds = [
   {
     sciName: "Somateria mollissima faeroeensis",
     comName: "Common Eider (Faeroe Is.)",
-    speciesCode: "comeid6",
+    _id: "comeid6",
     category: "issf",
     taxonOrder: 666.0,
     bandingCodes: [],
@@ -6326,7 +6326,7 @@ const birds = [
   {
     sciName: "Somateria mollissima v-nigrum",
     comName: "Common Eider (Pacific)",
-    speciesCode: "comeid1",
+    _id: "comeid1",
     category: "issf",
     taxonOrder: 667.0,
     bandingCodes: [],
@@ -6341,7 +6341,7 @@ const birds = [
   {
     sciName: "Somateria mollissima dresseri",
     comName: "Common Eider (Dresser's)",
-    speciesCode: "comeid2",
+    _id: "comeid2",
     category: "issf",
     taxonOrder: 668.0,
     bandingCodes: [],
@@ -6356,7 +6356,7 @@ const birds = [
   {
     sciName: "Somateria mollissima borealis",
     comName: "Common Eider (Northern)",
-    speciesCode: "comeid3",
+    _id: "comeid3",
     category: "issf",
     taxonOrder: 669.0,
     bandingCodes: [],
@@ -6371,7 +6371,7 @@ const birds = [
   {
     sciName: "Somateria mollissima sedentaria",
     comName: "Common Eider (Hudson Bay)",
-    speciesCode: "comeid4",
+    _id: "comeid4",
     category: "issf",
     taxonOrder: 670.0,
     bandingCodes: [],
@@ -6386,7 +6386,7 @@ const birds = [
   {
     sciName: "Anas platyrhynchos x Somateria mollissima",
     comName: "Mallard x Common Eider (hybrid)",
-    speciesCode: "x00881",
+    _id: "x00881",
     category: "hybrid",
     taxonOrder: 671.0,
     bandingCodes: [],
@@ -6400,7 +6400,7 @@ const birds = [
   {
     sciName: "Somateria spectabilis x mollissima",
     comName: "King x Common Eider (hybrid)",
-    speciesCode: "x00665",
+    _id: "x00665",
     category: "hybrid",
     taxonOrder: 672.0,
     bandingCodes: [],
@@ -6414,7 +6414,7 @@ const birds = [
   {
     sciName: "Somateria spectabilis/mollissima",
     comName: "King/Common Eider",
-    speciesCode: "eider",
+    _id: "eider",
     category: "slash",
     taxonOrder: 673.0,
     bandingCodes: [],
@@ -6428,7 +6428,7 @@ const birds = [
   {
     sciName: "Somateria sp.",
     comName: "eider sp.",
-    speciesCode: "eider1",
+    _id: "eider1",
     category: "spuh",
     taxonOrder: 674.0,
     bandingCodes: [],
@@ -6442,7 +6442,7 @@ const birds = [
   {
     sciName: "Histrionicus histrionicus",
     comName: "Harlequin Duck",
-    speciesCode: "harduc",
+    _id: "harduc",
     category: "species",
     taxonOrder: 675.0,
     bandingCodes: ["HADU"],
@@ -6456,7 +6456,7 @@ const birds = [
   {
     sciName: "Melanitta perspicillata",
     comName: "Surf Scoter",
-    speciesCode: "sursco",
+    _id: "sursco",
     category: "species",
     taxonOrder: 676.0,
     bandingCodes: ["SUSC"],
@@ -6470,7 +6470,7 @@ const birds = [
   {
     sciName: "Melanitta fusca",
     comName: "Velvet Scoter",
-    speciesCode: "whwsco3",
+    _id: "whwsco3",
     category: "species",
     taxonOrder: 677.0,
     bandingCodes: ["VESC"],
@@ -6484,7 +6484,7 @@ const birds = [
   {
     sciName: "Melanitta deglandi",
     comName: "White-winged Scoter",
-    speciesCode: "whwsco2",
+    _id: "whwsco2",
     category: "species",
     taxonOrder: 678.0,
     bandingCodes: ["WWSC"],
@@ -6498,7 +6498,7 @@ const birds = [
   {
     sciName: "Melanitta stejnegeri",
     comName: "Stejneger's Scoter",
-    speciesCode: "whwsco1",
+    _id: "whwsco1",
     category: "species",
     taxonOrder: 679.0,
     bandingCodes: ["STSC"],
@@ -6512,7 +6512,7 @@ const birds = [
   {
     sciName: "Melanitta perspicillata x deglandi",
     comName: "Surf x White-winged Scoter (hybrid)",
-    speciesCode: "x00882",
+    _id: "x00882",
     category: "hybrid",
     taxonOrder: 680.0,
     bandingCodes: [],
@@ -6526,7 +6526,7 @@ const birds = [
   {
     sciName: "Melanitta fusca/deglandi/stejnegeri",
     comName: "Velvet/White-winged/Stejneger's Scoter",
-    speciesCode: "whwsco",
+    _id: "whwsco",
     category: "slash",
     taxonOrder: 681.0,
     bandingCodes: [],
@@ -6540,7 +6540,7 @@ const birds = [
   {
     sciName: "Melanitta deglandi/stejnegeri",
     comName: "White-winged/Stejneger's Scoter",
-    speciesCode: "whwsco4",
+    _id: "whwsco4",
     category: "slash",
     taxonOrder: 682.0,
     bandingCodes: [],
@@ -6554,7 +6554,7 @@ const birds = [
   {
     sciName: "Melanitta nigra",
     comName: "Common Scoter",
-    speciesCode: "blksco1",
+    _id: "blksco1",
     category: "species",
     taxonOrder: 683.0,
     bandingCodes: ["COSC"],
@@ -6568,7 +6568,7 @@ const birds = [
   {
     sciName: "Melanitta americana",
     comName: "Black Scoter",
-    speciesCode: "blksco2",
+    _id: "blksco2",
     category: "species",
     taxonOrder: 684.0,
     bandingCodes: ["BLSC"],
@@ -6582,7 +6582,7 @@ const birds = [
   {
     sciName: "Melanitta perspicillata/americana",
     comName: "Surf/Black Scoter",
-    speciesCode: "dawsco",
+    _id: "dawsco",
     category: "slash",
     taxonOrder: 685.0,
     bandingCodes: [],
@@ -6596,7 +6596,7 @@ const birds = [
   {
     sciName: "Melanitta nigra/americana",
     comName: "Common/Black Scoter",
-    speciesCode: "blksco",
+    _id: "blksco",
     category: "slash",
     taxonOrder: 686.0,
     bandingCodes: [],
@@ -6610,7 +6610,7 @@ const birds = [
   {
     sciName: "Melanitta sp.",
     comName: "scoter sp.",
-    speciesCode: "scoter",
+    _id: "scoter",
     category: "spuh",
     taxonOrder: 687.0,
     bandingCodes: [],
@@ -6624,7 +6624,7 @@ const birds = [
   {
     sciName: "Clangula hyemalis",
     comName: "Long-tailed Duck",
-    speciesCode: "lotduc",
+    _id: "lotduc",
     category: "species",
     taxonOrder: 688.0,
     bandingCodes: ["LTDU"],
@@ -6638,7 +6638,7 @@ const birds = [
   {
     sciName: "Bucephala albeola",
     comName: "Bufflehead",
-    speciesCode: "buffle",
+    _id: "buffle",
     category: "species",
     taxonOrder: 689.0,
     bandingCodes: ["BUFF"],
@@ -6652,7 +6652,7 @@ const birds = [
   {
     sciName: "Bucephala clangula",
     comName: "Common Goldeneye",
-    speciesCode: "comgol",
+    _id: "comgol",
     category: "species",
     taxonOrder: 690.0,
     bandingCodes: ["COGO"],
@@ -6666,7 +6666,7 @@ const birds = [
   {
     sciName: "Bucephala albeola x clangula",
     comName: "Bufflehead x Common Goldeneye (hybrid)",
-    speciesCode: "x00655",
+    _id: "x00655",
     category: "hybrid",
     taxonOrder: 693.0,
     bandingCodes: [],
@@ -6680,7 +6680,7 @@ const birds = [
   {
     sciName: "Bucephala albeola x clangula/islandica",
     comName: "Bufflehead x goldeneye sp. (hybrid)",
-    speciesCode: "x00909",
+    _id: "x00909",
     category: "hybrid",
     taxonOrder: 694.0,
     bandingCodes: [],
@@ -6694,7 +6694,7 @@ const birds = [
   {
     sciName: "Bucephala islandica",
     comName: "Barrow's Goldeneye",
-    speciesCode: "bargol",
+    _id: "bargol",
     category: "species",
     taxonOrder: 695.0,
     bandingCodes: ["BAGO"],
@@ -6708,7 +6708,7 @@ const birds = [
   {
     sciName: "Bucephala clangula x islandica",
     comName: "Common x Barrow's Goldeneye (hybrid)",
-    speciesCode: "cxbgol1",
+    _id: "cxbgol1",
     category: "hybrid",
     taxonOrder: 696.0,
     bandingCodes: [],
@@ -6722,7 +6722,7 @@ const birds = [
   {
     sciName: "Bucephala clangula/islandica",
     comName: "Common/Barrow's Goldeneye",
-    speciesCode: "y00004",
+    _id: "y00004",
     category: "slash",
     taxonOrder: 697.0,
     bandingCodes: [],
@@ -6736,7 +6736,7 @@ const birds = [
   {
     sciName: "Mergellus albellus",
     comName: "Smew",
-    speciesCode: "smew",
+    _id: "smew",
     category: "species",
     taxonOrder: 698.0,
     bandingCodes: ["SMEW"],
@@ -6750,7 +6750,7 @@ const birds = [
   {
     sciName: "Bucephala clangula x Mergellus albellus",
     comName: "Common Goldeneye x Smew (hybrid)",
-    speciesCode: "x00378",
+    _id: "x00378",
     category: "hybrid",
     taxonOrder: 699.0,
     bandingCodes: [],
@@ -6764,7 +6764,7 @@ const birds = [
   {
     sciName: "Lophodytes cucullatus",
     comName: "Hooded Merganser",
-    speciesCode: "hoomer",
+    _id: "hoomer",
     category: "species",
     taxonOrder: 700.0,
     bandingCodes: ["HOME"],
@@ -6778,7 +6778,7 @@ const birds = [
   {
     sciName: "Aix sponsa x Lophodytes cucullatus",
     comName: "Wood Duck x Hooded Merganser (hybrid)",
-    speciesCode: "x00202",
+    _id: "x00202",
     category: "hybrid",
     taxonOrder: 701.0,
     bandingCodes: [],
@@ -6792,7 +6792,7 @@ const birds = [
   {
     sciName: "Bucephala albeola x Lophodytes cucullatus",
     comName: "Bufflehead x Hooded Merganser (hybrid)",
-    speciesCode: "x00424",
+    _id: "x00424",
     category: "hybrid",
     taxonOrder: 702.0,
     bandingCodes: [],
@@ -6806,7 +6806,7 @@ const birds = [
   {
     sciName: "Bucephala clangula x Lophodytes cucullatus",
     comName: "Common Goldeneye x Hooded Merganser (hybrid)",
-    speciesCode: "x00425",
+    _id: "x00425",
     category: "hybrid",
     taxonOrder: 703.0,
     bandingCodes: [],
@@ -6820,7 +6820,7 @@ const birds = [
   {
     sciName: "Bucephala islandica x Lophodytes cucullatus",
     comName: "Barrow's Goldeneye x Hooded Merganser (hybrid)",
-    speciesCode: "x00426",
+    _id: "x00426",
     category: "hybrid",
     taxonOrder: 704.0,
     bandingCodes: [],
@@ -6834,7 +6834,7 @@ const birds = [
   {
     sciName: "Bucephala clangula/islandica x Lophodytes cucullatus",
     comName: "goldeneye sp. x Hooded Merganser (hybrid)",
-    speciesCode: "x00631",
+    _id: "x00631",
     category: "hybrid",
     taxonOrder: 705.0,
     bandingCodes: [],
@@ -6848,7 +6848,7 @@ const birds = [
   {
     sciName: "Mergellus albellus x Lophodytes cucullatus",
     comName: "Smew x Hooded Merganser (hybrid)",
-    speciesCode: "x00379",
+    _id: "x00379",
     category: "hybrid",
     taxonOrder: 706.0,
     bandingCodes: [],
@@ -6862,7 +6862,7 @@ const birds = [
   {
     sciName: "Mergus australis",
     comName: "Auckland Islands Merganser",
-    speciesCode: "auimer1",
+    _id: "auimer1",
     category: "species",
     taxonOrder: 707.0,
     bandingCodes: [],
@@ -6878,7 +6878,7 @@ const birds = [
   {
     sciName: "Mergus merganser",
     comName: "Common Merganser",
-    speciesCode: "commer",
+    _id: "commer",
     category: "species",
     taxonOrder: 708.0,
     bandingCodes: ["COME"],
@@ -6892,7 +6892,7 @@ const birds = [
   {
     sciName: "Mergus merganser merganser/orientalis",
     comName: "Common Merganser (Eurasian)",
-    speciesCode: "goosan1",
+    _id: "goosan1",
     category: "issf",
     taxonOrder: 709.0,
     bandingCodes: [],
@@ -6907,7 +6907,7 @@ const birds = [
   {
     sciName: "Mergus merganser americanus",
     comName: "Common Merganser (North American)",
-    speciesCode: "commer1",
+    _id: "commer1",
     category: "issf",
     taxonOrder: 712.0,
     bandingCodes: [],
@@ -6922,7 +6922,7 @@ const birds = [
   {
     sciName: "Somateria mollissima x Mergus merganser",
     comName: "Common Eider x Common Merganser (hybrid)",
-    speciesCode: "x00840",
+    _id: "x00840",
     category: "hybrid",
     taxonOrder: 713.0,
     bandingCodes: [],
@@ -6936,7 +6936,7 @@ const birds = [
   {
     sciName: "Lophodytes cucullatus x Mergus merganser",
     comName: "Hooded x Common Merganser (hybrid)",
-    speciesCode: "x00726",
+    _id: "x00726",
     category: "hybrid",
     taxonOrder: 714.0,
     bandingCodes: [],
@@ -6950,7 +6950,7 @@ const birds = [
   {
     sciName: "Mergus octosetaceus",
     comName: "Brazilian Merganser",
-    speciesCode: "bramer1",
+    _id: "bramer1",
     category: "species",
     taxonOrder: 715.0,
     bandingCodes: [],
@@ -6964,7 +6964,7 @@ const birds = [
   {
     sciName: "Mergus serrator",
     comName: "Red-breasted Merganser",
-    speciesCode: "rebmer",
+    _id: "rebmer",
     category: "species",
     taxonOrder: 716.0,
     bandingCodes: ["RBME"],
@@ -6978,7 +6978,7 @@ const birds = [
   {
     sciName: "Aythya collaris x Mergus serrator",
     comName: "Ring-necked Duck x Red-breasted Merganser (hybrid)",
-    speciesCode: "x00614",
+    _id: "x00614",
     category: "hybrid",
     taxonOrder: 717.0,
     bandingCodes: [],
@@ -6992,7 +6992,7 @@ const birds = [
   {
     sciName: "Mergus merganser x serrator",
     comName: "Common x Red-breasted Merganser (hybrid)",
-    speciesCode: "x00780",
+    _id: "x00780",
     category: "hybrid",
     taxonOrder: 718.0,
     bandingCodes: [],
@@ -7006,7 +7006,7 @@ const birds = [
   {
     sciName: "Mergus merganser/serrator",
     comName: "Common/Red-breasted Merganser",
-    speciesCode: "y00224",
+    _id: "y00224",
     category: "slash",
     taxonOrder: 719.0,
     bandingCodes: [],
@@ -7020,7 +7020,7 @@ const birds = [
   {
     sciName: "Mergus squamatus",
     comName: "Scaly-sided Merganser",
-    speciesCode: "scsmer1",
+    _id: "scsmer1",
     category: "species",
     taxonOrder: 720.0,
     bandingCodes: [],
@@ -7034,7 +7034,7 @@ const birds = [
   {
     sciName: "Mergellus/Lophodytes/Mergus sp.",
     comName: "merganser sp.",
-    speciesCode: "mergan1",
+    _id: "mergan1",
     category: "spuh",
     taxonOrder: 721.0,
     bandingCodes: [],
@@ -7048,7 +7048,7 @@ const birds = [
   {
     sciName: "Heteronetta atricapilla",
     comName: "Black-headed Duck",
-    speciesCode: "blhduc1",
+    _id: "blhduc1",
     category: "species",
     taxonOrder: 722.0,
     bandingCodes: [],
@@ -7062,7 +7062,7 @@ const birds = [
   {
     sciName: "Nomonyx dominicus",
     comName: "Masked Duck",
-    speciesCode: "masduc",
+    _id: "masduc",
     category: "species",
     taxonOrder: 723.0,
     bandingCodes: ["MADU"],
@@ -7076,7 +7076,7 @@ const birds = [
   {
     sciName: "Oxyura jamaicensis",
     comName: "Ruddy Duck",
-    speciesCode: "rudduc",
+    _id: "rudduc",
     category: "species",
     taxonOrder: 724.0,
     bandingCodes: ["RUDU"],
@@ -7090,7 +7090,7 @@ const birds = [
   {
     sciName: "Oxyura ferruginea",
     comName: "Andean Duck",
-    speciesCode: "andduc1",
+    _id: "andduc1",
     category: "species",
     taxonOrder: 725.0,
     bandingCodes: [],
@@ -7104,7 +7104,7 @@ const birds = [
   {
     sciName: "Oxyura ferruginea andina",
     comName: "Andean Duck (andina)",
-    speciesCode: "andduc2",
+    _id: "andduc2",
     category: "issf",
     taxonOrder: 726.0,
     bandingCodes: [],
@@ -7119,7 +7119,7 @@ const birds = [
   {
     sciName: "Oxyura ferruginea ferruginea",
     comName: "Andean Duck (ferruginea)",
-    speciesCode: "rudduc2",
+    _id: "rudduc2",
     category: "issf",
     taxonOrder: 727.0,
     bandingCodes: [],
@@ -7134,7 +7134,7 @@ const birds = [
   {
     sciName: "Nomonyx dominicus/Oxyura jamaicensis",
     comName: "Masked/Ruddy Duck",
-    speciesCode: "y00710",
+    _id: "y00710",
     category: "slash",
     taxonOrder: 728.0,
     bandingCodes: [],
@@ -7148,7 +7148,7 @@ const birds = [
   {
     sciName: "Oxyura leucocephala",
     comName: "White-headed Duck",
-    speciesCode: "whhduc1",
+    _id: "whhduc1",
     category: "species",
     taxonOrder: 729.0,
     bandingCodes: [],
@@ -7162,7 +7162,7 @@ const birds = [
   {
     sciName: "Oxyura jamaicensis x leucocephala",
     comName: "Ruddy x White-headed Duck (hybrid)",
-    speciesCode: "x00705",
+    _id: "x00705",
     category: "hybrid",
     taxonOrder: 730.0,
     bandingCodes: [],
@@ -7176,7 +7176,7 @@ const birds = [
   {
     sciName: "Oxyura maccoa",
     comName: "Maccoa Duck",
-    speciesCode: "macduc1",
+    _id: "macduc1",
     category: "species",
     taxonOrder: 731.0,
     bandingCodes: [],
@@ -7190,7 +7190,7 @@ const birds = [
   {
     sciName: "Oxyura vittata",
     comName: "Lake Duck",
-    speciesCode: "lakduc1",
+    _id: "lakduc1",
     category: "species",
     taxonOrder: 732.0,
     bandingCodes: [],
@@ -7204,7 +7204,7 @@ const birds = [
   {
     sciName: "Oxyura ferruginea/vittata",
     comName: "Andean/Lake Duck",
-    speciesCode: "y00601",
+    _id: "y00601",
     category: "slash",
     taxonOrder: 733.0,
     bandingCodes: [],
@@ -7218,7 +7218,7 @@ const birds = [
   {
     sciName: "Oxyura australis",
     comName: "Blue-billed Duck",
-    speciesCode: "blbduc1",
+    _id: "blbduc1",
     category: "species",
     taxonOrder: 734.0,
     bandingCodes: [],
@@ -7232,7 +7232,7 @@ const birds = [
   {
     sciName: "Biziura lobata",
     comName: "Musk Duck",
-    speciesCode: "musduc1",
+    _id: "musduc1",
     category: "species",
     taxonOrder: 735.0,
     bandingCodes: [],
@@ -7246,7 +7246,7 @@ const birds = [
   {
     sciName: "Anatidae (duck sp.)",
     comName: "duck sp.",
-    speciesCode: "duck1",
+    _id: "duck1",
     category: "spuh",
     taxonOrder: 738.0,
     bandingCodes: [],
@@ -7260,7 +7260,7 @@ const birds = [
   {
     sciName: "Anatidae sp.",
     comName: "waterfowl sp.",
-    speciesCode: "waterf1",
+    _id: "waterf1",
     category: "spuh",
     taxonOrder: 739.0,
     bandingCodes: [],
@@ -7274,7 +7274,7 @@ const birds = [
   {
     sciName: "Alectura lathami",
     comName: "Australian Brushturkey",
-    speciesCode: "ausbrt1",
+    _id: "ausbrt1",
     category: "species",
     taxonOrder: 741.0,
     bandingCodes: [],
@@ -7288,7 +7288,7 @@ const birds = [
   {
     sciName: "Aepypodius arfakianus",
     comName: "Wattled Brushturkey",
-    speciesCode: "watbrt1",
+    _id: "watbrt1",
     category: "species",
     taxonOrder: 744.0,
     bandingCodes: [],
@@ -7302,7 +7302,7 @@ const birds = [
   {
     sciName: "Aepypodius bruijnii",
     comName: "Waigeo Brushturkey",
-    speciesCode: "brubrt1",
+    _id: "brubrt1",
     category: "species",
     taxonOrder: 747.0,
     bandingCodes: [],
@@ -7316,7 +7316,7 @@ const birds = [
   {
     sciName: "Talegalla cuvieri",
     comName: "Red-billed Brushturkey",
-    speciesCode: "rebbrt1",
+    _id: "rebbrt1",
     category: "species",
     taxonOrder: 748.0,
     bandingCodes: [],
@@ -7330,7 +7330,7 @@ const birds = [
   {
     sciName: "Talegalla fuscirostris",
     comName: "Yellow-legged Brushturkey",
-    speciesCode: "bkbbrt1",
+    _id: "bkbbrt1",
     category: "species",
     taxonOrder: 751.0,
     bandingCodes: [],
@@ -7344,7 +7344,7 @@ const birds = [
   {
     sciName: "Talegalla jobiensis",
     comName: "Red-legged Brushturkey",
-    speciesCode: "bncbrt1",
+    _id: "bncbrt1",
     category: "species",
     taxonOrder: 756.0,
     bandingCodes: [],
@@ -7358,7 +7358,7 @@ const birds = [
   {
     sciName: "Talegalla sp.",
     comName: "Talegalla sp.",
-    speciesCode: "talega1",
+    _id: "talega1",
     category: "spuh",
     taxonOrder: 759.0,
     bandingCodes: [],
@@ -7372,7 +7372,7 @@ const birds = [
   {
     sciName: "Leipoa ocellata",
     comName: "Malleefowl",
-    speciesCode: "mallee1",
+    _id: "mallee1",
     category: "species",
     taxonOrder: 760.0,
     bandingCodes: [],
@@ -7386,7 +7386,7 @@ const birds = [
   {
     sciName: "Macrocephalon maleo",
     comName: "Maleo",
-    speciesCode: "maleo1",
+    _id: "maleo1",
     category: "species",
     taxonOrder: 761.0,
     bandingCodes: [],
@@ -7400,7 +7400,7 @@ const birds = [
   {
     sciName: "Eulipoa wallacei",
     comName: "Moluccan Megapode",
-    speciesCode: "molscr1",
+    _id: "molscr1",
     category: "species",
     taxonOrder: 762.0,
     bandingCodes: [],
@@ -7414,7 +7414,7 @@ const birds = [
   {
     sciName: "Megapodius pritchardii",
     comName: "Tongan Megapode",
-    speciesCode: "niuscr1",
+    _id: "niuscr1",
     category: "species",
     taxonOrder: 763.0,
     bandingCodes: [],
@@ -7428,7 +7428,7 @@ const birds = [
   {
     sciName: "Megapodius laperouse",
     comName: "Micronesian Megapode",
-    speciesCode: "micscr1",
+    _id: "micscr1",
     category: "species",
     taxonOrder: 764.0,
     bandingCodes: [],
@@ -7442,7 +7442,7 @@ const birds = [
   {
     sciName: "Megapodius nicobariensis",
     comName: "Nicobar Megapode",
-    speciesCode: "nicscr1",
+    _id: "nicscr1",
     category: "species",
     taxonOrder: 767.0,
     bandingCodes: [],
@@ -7456,7 +7456,7 @@ const birds = [
   {
     sciName: "Megapodius cumingii",
     comName: "Philippine Megapode",
-    speciesCode: "tabscr1",
+    _id: "tabscr1",
     category: "species",
     taxonOrder: 770.0,
     bandingCodes: [],
@@ -7470,7 +7470,7 @@ const birds = [
   {
     sciName: "Megapodius bernsteinii",
     comName: "Sula Megapode",
-    speciesCode: "sulscr1",
+    _id: "sulscr1",
     category: "species",
     taxonOrder: 778.0,
     bandingCodes: [],
@@ -7484,7 +7484,7 @@ const birds = [
   {
     sciName: "Megapodius tenimberensis",
     comName: "Tanimbar Megapode",
-    speciesCode: "tanscr1",
+    _id: "tanscr1",
     category: "species",
     taxonOrder: 779.0,
     bandingCodes: [],
@@ -7498,7 +7498,7 @@ const birds = [
   {
     sciName: "Megapodius freycinet",
     comName: "Dusky Megapode",
-    speciesCode: "dusscr1",
+    _id: "dusscr1",
     category: "species",
     taxonOrder: 780.0,
     bandingCodes: [],
@@ -7512,7 +7512,7 @@ const birds = [
   {
     sciName: "Megapodius freycinet [freycinet Group]",
     comName: "Dusky Megapode (Dusky)",
-    speciesCode: "dusscr2",
+    _id: "dusscr2",
     category: "issf",
     taxonOrder: 781.0,
     bandingCodes: [],
@@ -7527,7 +7527,7 @@ const birds = [
   {
     sciName: "Megapodius freycinet forsteni/buruensis",
     comName: "Dusky Megapode (Forsten's)",
-    speciesCode: "forscr1",
+    _id: "forscr1",
     category: "issf",
     taxonOrder: 785.0,
     bandingCodes: [],
@@ -7542,7 +7542,7 @@ const birds = [
   {
     sciName: "Megapodius geelvinkianus",
     comName: "Biak Megapode",
-    speciesCode: "dusscr3",
+    _id: "dusscr3",
     category: "species",
     taxonOrder: 788.0,
     bandingCodes: [],
@@ -7556,7 +7556,7 @@ const birds = [
   {
     sciName: "Megapodius eremita",
     comName: "Melanesian Megapode",
-    speciesCode: "melscr1",
+    _id: "melscr1",
     category: "species",
     taxonOrder: 789.0,
     bandingCodes: [],
@@ -7570,7 +7570,7 @@ const birds = [
   {
     sciName: "Megapodius layardi",
     comName: "Vanuatu Megapode",
-    speciesCode: "vanscr1",
+    _id: "vanscr1",
     category: "species",
     taxonOrder: 790.0,
     bandingCodes: [],
@@ -7584,7 +7584,7 @@ const birds = [
   {
     sciName: "Megapodius decollatus",
     comName: "New Guinea Megapode",
-    speciesCode: "negscr1",
+    _id: "negscr1",
     category: "species",
     taxonOrder: 791.0,
     bandingCodes: [],
@@ -7598,7 +7598,7 @@ const birds = [
   {
     sciName: "Megapodius reinwardt",
     comName: "Orange-footed Megapode",
-    speciesCode: "orfscr1",
+    _id: "orfscr1",
     category: "species",
     taxonOrder: 792.0,
     bandingCodes: [],
@@ -7612,7 +7612,7 @@ const birds = [
   {
     sciName: "Ortalis vetula",
     comName: "Plain Chachalaca",
-    speciesCode: "placha",
+    _id: "placha",
     category: "species",
     taxonOrder: 799.0,
     bandingCodes: ["PLCH"],
@@ -7626,7 +7626,7 @@ const birds = [
   {
     sciName: "Ortalis cinereiceps",
     comName: "Gray-headed Chachalaca",
-    speciesCode: "grhcha1",
+    _id: "grhcha1",
     category: "species",
     taxonOrder: 804.0,
     bandingCodes: ["GHEC"],
@@ -7640,7 +7640,7 @@ const birds = [
   {
     sciName: "Ortalis garrula",
     comName: "Chestnut-winged Chachalaca",
-    speciesCode: "chwcha1",
+    _id: "chwcha1",
     category: "species",
     taxonOrder: 805.0,
     bandingCodes: [],
@@ -7654,7 +7654,7 @@ const birds = [
   {
     sciName: "Ortalis ruficauda",
     comName: "Rufous-vented Chachalaca",
-    speciesCode: "ruvcha1",
+    _id: "ruvcha1",
     category: "species",
     taxonOrder: 806.0,
     bandingCodes: ["RVCH"],
@@ -7668,7 +7668,7 @@ const birds = [
   {
     sciName: "Ortalis ruficauda ruficrissa",
     comName: "Rufous-vented Chachalaca (Rufous-vented)",
-    speciesCode: "ruvcha2",
+    _id: "ruvcha2",
     category: "issf",
     taxonOrder: 807.0,
     bandingCodes: [],
@@ -7683,7 +7683,7 @@ const birds = [
   {
     sciName: "Ortalis ruficauda ruficauda",
     comName: "Rufous-vented Chachalaca (Rufous-tipped)",
-    speciesCode: "ruvcha3",
+    _id: "ruvcha3",
     category: "issf",
     taxonOrder: 808.0,
     bandingCodes: [],
@@ -7698,7 +7698,7 @@ const birds = [
   {
     sciName: "Ortalis erythroptera",
     comName: "Rufous-headed Chachalaca",
-    speciesCode: "ruhcha1",
+    _id: "ruhcha1",
     category: "species",
     taxonOrder: 809.0,
     bandingCodes: [],
@@ -7712,7 +7712,7 @@ const birds = [
   {
     sciName: "Ortalis wagleri",
     comName: "Rufous-bellied Chachalaca",
-    speciesCode: "rubcha1",
+    _id: "rubcha1",
     category: "species",
     taxonOrder: 810.0,
     bandingCodes: ["RBEC"],
@@ -7726,7 +7726,7 @@ const birds = [
   {
     sciName: "Ortalis poliocephala",
     comName: "West Mexican Chachalaca",
-    speciesCode: "wemcha1",
+    _id: "wemcha1",
     category: "species",
     taxonOrder: 811.0,
     bandingCodes: ["WMCH"],
@@ -7740,7 +7740,7 @@ const birds = [
   {
     sciName: "Ortalis canicollis",
     comName: "Chaco Chachalaca",
-    speciesCode: "chacha1",
+    _id: "chacha1",
     category: "species",
     taxonOrder: 812.0,
     bandingCodes: [],
@@ -7754,7 +7754,7 @@ const birds = [
   {
     sciName: "Ortalis leucogastra",
     comName: "White-bellied Chachalaca",
-    speciesCode: "whbcha1",
+    _id: "whbcha1",
     category: "species",
     taxonOrder: 815.0,
     bandingCodes: ["WBCH"],
@@ -7768,7 +7768,7 @@ const birds = [
   {
     sciName: "Ortalis columbiana",
     comName: "Colombian Chachalaca",
-    speciesCode: "colcha1",
+    _id: "colcha1",
     category: "species",
     taxonOrder: 816.0,
     bandingCodes: [],
@@ -7782,7 +7782,7 @@ const birds = [
   {
     sciName: "Ortalis guttata",
     comName: "Speckled Chachalaca",
-    speciesCode: "specha3",
+    _id: "specha3",
     category: "species",
     taxonOrder: 817.0,
     bandingCodes: [],
@@ -7796,7 +7796,7 @@ const birds = [
   {
     sciName: "Ortalis guttata guttata/subaffinis",
     comName: "Speckled Chachalaca (Speckled)",
-    speciesCode: "specha6",
+    _id: "specha6",
     category: "issf",
     taxonOrder: 818.0,
     bandingCodes: [],
@@ -7811,7 +7811,7 @@ const birds = [
   {
     sciName: "Ortalis guttata remota",
     comName: "Speckled Chachalaca (Parana)",
-    speciesCode: "specha5",
+    _id: "specha5",
     category: "issf",
     taxonOrder: 821.0,
     bandingCodes: [],
@@ -7826,7 +7826,7 @@ const birds = [
   {
     sciName: "Ortalis araucuan",
     comName: "East Brazilian Chachalaca",
-    speciesCode: "specha2",
+    _id: "specha2",
     category: "species",
     taxonOrder: 822.0,
     bandingCodes: [],
@@ -7840,7 +7840,7 @@ const birds = [
   {
     sciName: "Ortalis squamata",
     comName: "Scaled Chachalaca",
-    speciesCode: "specha4",
+    _id: "specha4",
     category: "species",
     taxonOrder: 823.0,
     bandingCodes: [],
@@ -7854,7 +7854,7 @@ const birds = [
   {
     sciName: "Ortalis motmot",
     comName: "Variable Chachalaca",
-    speciesCode: "varcha1",
+    _id: "varcha1",
     category: "species",
     taxonOrder: 824.0,
     bandingCodes: [],
@@ -7868,7 +7868,7 @@ const birds = [
   {
     sciName: "Ortalis ruficeps",
     comName: "Chestnut-headed Chachalaca",
-    speciesCode: "varcha3",
+    _id: "varcha3",
     category: "species",
     taxonOrder: 825.0,
     bandingCodes: [],
@@ -7882,7 +7882,7 @@ const birds = [
   {
     sciName: "Ortalis superciliaris",
     comName: "Buff-browed Chachalaca",
-    speciesCode: "bubcha1",
+    _id: "bubcha1",
     category: "species",
     taxonOrder: 826.0,
     bandingCodes: [],
@@ -7896,7 +7896,7 @@ const birds = [
   {
     sciName: "Ortalis sp.",
     comName: "chachalaca sp.",
-    speciesCode: "chacha2",
+    _id: "chacha2",
     category: "spuh",
     taxonOrder: 827.0,
     bandingCodes: [],
@@ -7910,7 +7910,7 @@ const birds = [
   {
     sciName: "Penelope argyrotis",
     comName: "Band-tailed Guan",
-    speciesCode: "batgua1",
+    _id: "batgua1",
     category: "species",
     taxonOrder: 828.0,
     bandingCodes: [],
@@ -7924,7 +7924,7 @@ const birds = [
   {
     sciName: "Penelope barbata",
     comName: "Bearded Guan",
-    speciesCode: "beagua1",
+    _id: "beagua1",
     category: "species",
     taxonOrder: 832.0,
     bandingCodes: [],
@@ -7938,7 +7938,7 @@ const birds = [
   {
     sciName: "Penelope ortoni",
     comName: "Baudo Guan",
-    speciesCode: "baugua1",
+    _id: "baugua1",
     category: "species",
     taxonOrder: 833.0,
     bandingCodes: [],
@@ -7952,7 +7952,7 @@ const birds = [
   {
     sciName: "Penelope montagnii",
     comName: "Andean Guan",
-    speciesCode: "andgua1",
+    _id: "andgua1",
     category: "species",
     taxonOrder: 834.0,
     bandingCodes: [],
@@ -7966,7 +7966,7 @@ const birds = [
   {
     sciName: "Penelope marail",
     comName: "Marail Guan",
-    speciesCode: "margua1",
+    _id: "margua1",
     category: "species",
     taxonOrder: 840.0,
     bandingCodes: [],
@@ -7980,7 +7980,7 @@ const birds = [
   {
     sciName: "Penelope superciliaris",
     comName: "Rusty-margined Guan",
-    speciesCode: "rumgua1",
+    _id: "rumgua1",
     category: "species",
     taxonOrder: 843.0,
     bandingCodes: [],
@@ -7994,7 +7994,7 @@ const birds = [
   {
     sciName: "Penelope dabbenei",
     comName: "Red-faced Guan",
-    speciesCode: "refgua1",
+    _id: "refgua1",
     category: "species",
     taxonOrder: 847.0,
     bandingCodes: [],
@@ -8008,7 +8008,7 @@ const birds = [
   {
     sciName: "Penelope jacquacu",
     comName: "Spix's Guan",
-    speciesCode: "spigua1",
+    _id: "spigua1",
     category: "species",
     taxonOrder: 848.0,
     bandingCodes: [],
@@ -8022,7 +8022,7 @@ const birds = [
   {
     sciName: "Penelope jacquacu granti",
     comName: "Spix's Guan (Grant's)",
-    speciesCode: "spigua3",
+    _id: "spigua3",
     category: "issf",
     taxonOrder: 849.0,
     bandingCodes: [],
@@ -8037,7 +8037,7 @@ const birds = [
   {
     sciName: "Penelope jacquacu [jacquacu Group]",
     comName: "Spix's Guan (Spix's)",
-    speciesCode: "spigua2",
+    _id: "spigua2",
     category: "issf",
     taxonOrder: 850.0,
     bandingCodes: [],
@@ -8052,7 +8052,7 @@ const birds = [
   {
     sciName: "Penelope marail/jacquacu",
     comName: "Marail/Spix's Guan",
-    speciesCode: "y00657",
+    _id: "y00657",
     category: "slash",
     taxonOrder: 854.0,
     bandingCodes: [],
@@ -8066,7 +8066,7 @@ const birds = [
   {
     sciName: "Penelope purpurascens",
     comName: "Crested Guan",
-    speciesCode: "cregua1",
+    _id: "cregua1",
     category: "species",
     taxonOrder: 855.0,
     bandingCodes: ["CRGU"],
@@ -8080,7 +8080,7 @@ const birds = [
   {
     sciName: "Penelope perspicax",
     comName: "Cauca Guan",
-    speciesCode: "caugua1",
+    _id: "caugua1",
     category: "species",
     taxonOrder: 859.0,
     bandingCodes: [],
@@ -8094,7 +8094,7 @@ const birds = [
   {
     sciName: "Penelope albipennis",
     comName: "White-winged Guan",
-    speciesCode: "whwgua1",
+    _id: "whwgua1",
     category: "species",
     taxonOrder: 860.0,
     bandingCodes: [],
@@ -8108,7 +8108,7 @@ const birds = [
   {
     sciName: "Penelope obscura",
     comName: "Dusky-legged Guan",
-    speciesCode: "dulgua1",
+    _id: "dulgua1",
     category: "species",
     taxonOrder: 861.0,
     bandingCodes: [],
@@ -8122,7 +8122,7 @@ const birds = [
   {
     sciName: "Penelope bridgesi",
     comName: "Yungas Guan",
-    speciesCode: "dulgua3",
+    _id: "dulgua3",
     category: "species",
     taxonOrder: 864.0,
     bandingCodes: [],
@@ -8136,7 +8136,7 @@ const birds = [
   {
     sciName: "Penelope pileata",
     comName: "White-crested Guan",
-    speciesCode: "whcgua1",
+    _id: "whcgua1",
     category: "species",
     taxonOrder: 865.0,
     bandingCodes: [],
@@ -8150,7 +8150,7 @@ const birds = [
   {
     sciName: "Penelope ochrogaster",
     comName: "Chestnut-bellied Guan",
-    speciesCode: "chbgua1",
+    _id: "chbgua1",
     category: "species",
     taxonOrder: 866.0,
     bandingCodes: [],
@@ -8164,7 +8164,7 @@ const birds = [
   {
     sciName: "Penelope jacucaca",
     comName: "White-browed Guan",
-    speciesCode: "whbgua1",
+    _id: "whbgua1",
     category: "species",
     taxonOrder: 867.0,
     bandingCodes: [],
@@ -8178,7 +8178,7 @@ const birds = [
   {
     sciName: "Penelope sp.",
     comName: "Penelope sp.",
-    speciesCode: "penelo1",
+    _id: "penelo1",
     category: "spuh",
     taxonOrder: 868.0,
     bandingCodes: [],
@@ -8192,7 +8192,7 @@ const birds = [
   {
     sciName: "Pipile pipile",
     comName: "Trinidad Piping-Guan",
-    speciesCode: "trpgua1",
+    _id: "trpgua1",
     category: "species",
     taxonOrder: 869.0,
     bandingCodes: [],
@@ -8206,7 +8206,7 @@ const birds = [
   {
     sciName: "Pipile cumanensis",
     comName: "Blue-throated Piping-Guan",
-    speciesCode: "butpig1",
+    _id: "butpig1",
     category: "species",
     taxonOrder: 870.0,
     bandingCodes: [],
@@ -8220,7 +8220,7 @@ const birds = [
   {
     sciName: "Pipile grayi",
     comName: "White-throated Piping-Guan",
-    speciesCode: "butpig2",
+    _id: "butpig2",
     category: "species",
     taxonOrder: 871.0,
     bandingCodes: [],
@@ -8234,7 +8234,7 @@ const birds = [
   {
     sciName: "Pipile cumanensis/grayi",
     comName: "Blue-throated/White-throated Piping-Guan",
-    speciesCode: "btpgua1",
+    _id: "btpgua1",
     category: "slash",
     taxonOrder: 872.0,
     bandingCodes: [],
@@ -8248,7 +8248,7 @@ const birds = [
   {
     sciName: "Pipile cujubi",
     comName: "Red-throated Piping-Guan",
-    speciesCode: "rtpgua1",
+    _id: "rtpgua1",
     category: "species",
     taxonOrder: 873.0,
     bandingCodes: [],
@@ -8262,7 +8262,7 @@ const birds = [
   {
     sciName: "Pipile cujubi nattereri",
     comName: "Red-throated Piping-Guan (White-crested)",
-    speciesCode: "retpig2",
+    _id: "retpig2",
     category: "issf",
     taxonOrder: 874.0,
     bandingCodes: [],
@@ -8277,7 +8277,7 @@ const birds = [
   {
     sciName: "Pipile cujubi cujubi",
     comName: "Red-throated Piping-Guan (Gray-crested)",
-    speciesCode: "retpig1",
+    _id: "retpig1",
     category: "issf",
     taxonOrder: 875.0,
     bandingCodes: [],
@@ -8292,7 +8292,7 @@ const birds = [
   {
     sciName: "Pipile cumanensis/cujubi",
     comName: "Blue-throated/Red-throated Piping-Guan",
-    speciesCode: "y00831",
+    _id: "y00831",
     category: "slash",
     taxonOrder: 876.0,
     bandingCodes: [],
@@ -8306,7 +8306,7 @@ const birds = [
   {
     sciName: "Pipile jacutinga",
     comName: "Black-fronted Piping-Guan",
-    speciesCode: "bfpgua1",
+    _id: "bfpgua1",
     category: "species",
     taxonOrder: 877.0,
     bandingCodes: [],
@@ -8320,7 +8320,7 @@ const birds = [
   {
     sciName: "Aburria aburri",
     comName: "Wattled Guan",
-    speciesCode: "watgua1",
+    _id: "watgua1",
     category: "species",
     taxonOrder: 878.0,
     bandingCodes: [],
@@ -8334,7 +8334,7 @@ const birds = [
   {
     sciName: "Chamaepetes unicolor",
     comName: "Black Guan",
-    speciesCode: "blagua1",
+    _id: "blagua1",
     category: "species",
     taxonOrder: 879.0,
     bandingCodes: ["BLAG"],
@@ -8348,7 +8348,7 @@ const birds = [
   {
     sciName: "Chamaepetes goudotii",
     comName: "Sickle-winged Guan",
-    speciesCode: "siwgua1",
+    _id: "siwgua1",
     category: "species",
     taxonOrder: 880.0,
     bandingCodes: [],
@@ -8362,7 +8362,7 @@ const birds = [
   {
     sciName: "Penelopina nigra",
     comName: "Highland Guan",
-    speciesCode: "higgua1",
+    _id: "higgua1",
     category: "species",
     taxonOrder: 886.0,
     bandingCodes: ["HIGU"],
@@ -8376,7 +8376,7 @@ const birds = [
   {
     sciName: "Oreophasis derbianus",
     comName: "Horned Guan",
-    speciesCode: "horgua1",
+    _id: "horgua1",
     category: "species",
     taxonOrder: 887.0,
     bandingCodes: ["HOGU"],
@@ -8390,7 +8390,7 @@ const birds = [
   {
     sciName: "Nothocrax urumutum",
     comName: "Nocturnal Curassow",
-    speciesCode: "noccur1",
+    _id: "noccur1",
     category: "species",
     taxonOrder: 888.0,
     bandingCodes: [],
@@ -8404,7 +8404,7 @@ const birds = [
   {
     sciName: "Mitu tomentosum",
     comName: "Crestless Curassow",
-    speciesCode: "crecur2",
+    _id: "crecur2",
     category: "species",
     taxonOrder: 889.0,
     bandingCodes: [],
@@ -8418,7 +8418,7 @@ const birds = [
   {
     sciName: "Mitu salvini",
     comName: "Salvin's Curassow",
-    speciesCode: "salcur1",
+    _id: "salcur1",
     category: "species",
     taxonOrder: 890.0,
     bandingCodes: [],
@@ -8432,7 +8432,7 @@ const birds = [
   {
     sciName: "Mitu tuberosum",
     comName: "Razor-billed Curassow",
-    speciesCode: "rabcur2",
+    _id: "rabcur2",
     category: "species",
     taxonOrder: 891.0,
     bandingCodes: [],
@@ -8446,7 +8446,7 @@ const birds = [
   {
     sciName: "Mitu mitu",
     comName: "Alagoas Curassow",
-    speciesCode: "alacur1",
+    _id: "alacur1",
     category: "species",
     taxonOrder: 892.0,
     bandingCodes: [],
@@ -8460,7 +8460,7 @@ const birds = [
   {
     sciName: "Pauxi pauxi",
     comName: "Helmeted Curassow",
-    speciesCode: "helcur1",
+    _id: "helcur1",
     category: "species",
     taxonOrder: 893.0,
     bandingCodes: [],
@@ -8474,7 +8474,7 @@ const birds = [
   {
     sciName: "Pauxi koepckeae",
     comName: "Sira Curassow",
-    speciesCode: "horcur2",
+    _id: "horcur2",
     category: "species",
     taxonOrder: 896.0,
     bandingCodes: [],
@@ -8488,7 +8488,7 @@ const birds = [
   {
     sciName: "Pauxi unicornis",
     comName: "Horned Curassow",
-    speciesCode: "horcur3",
+    _id: "horcur3",
     category: "species",
     taxonOrder: 897.0,
     bandingCodes: [],
@@ -8502,7 +8502,7 @@ const birds = [
   {
     sciName: "Crax rubra",
     comName: "Great Curassow",
-    speciesCode: "grecur1",
+    _id: "grecur1",
     category: "species",
     taxonOrder: 898.0,
     bandingCodes: ["GRCU"],
@@ -8516,7 +8516,7 @@ const birds = [
   {
     sciName: "Crax alberti",
     comName: "Blue-billed Curassow",
-    speciesCode: "bubcur1",
+    _id: "bubcur1",
     category: "species",
     taxonOrder: 901.0,
     bandingCodes: [],
@@ -8530,7 +8530,7 @@ const birds = [
   {
     sciName: "Crax daubentoni",
     comName: "Yellow-knobbed Curassow",
-    speciesCode: "yekcur1",
+    _id: "yekcur1",
     category: "species",
     taxonOrder: 902.0,
     bandingCodes: [],
@@ -8544,7 +8544,7 @@ const birds = [
   {
     sciName: "Crax alector",
     comName: "Black Curassow",
-    speciesCode: "blacur1",
+    _id: "blacur1",
     category: "species",
     taxonOrder: 903.0,
     bandingCodes: [],
@@ -8558,7 +8558,7 @@ const birds = [
   {
     sciName: "Crax globulosa",
     comName: "Wattled Curassow",
-    speciesCode: "watcur1",
+    _id: "watcur1",
     category: "species",
     taxonOrder: 906.0,
     bandingCodes: [],
@@ -8572,7 +8572,7 @@ const birds = [
   {
     sciName: "Crax fasciolata",
     comName: "Bare-faced Curassow",
-    speciesCode: "bafcur1",
+    _id: "bafcur1",
     category: "species",
     taxonOrder: 907.0,
     bandingCodes: [],
@@ -8586,7 +8586,7 @@ const birds = [
   {
     sciName: "Crax fasciolata pinima",
     comName: "Bare-faced Curassow (Belem)",
-    speciesCode: "bafcur2",
+    _id: "bafcur2",
     category: "issf",
     taxonOrder: 908.0,
     bandingCodes: [],
@@ -8601,7 +8601,7 @@ const birds = [
   {
     sciName: "Crax fasciolata fasciolata/grayi",
     comName: "Bare-faced Curassow (Bare-faced)",
-    speciesCode: "bafcur3",
+    _id: "bafcur3",
     category: "issf",
     taxonOrder: 909.0,
     bandingCodes: [],
@@ -8616,7 +8616,7 @@ const birds = [
   {
     sciName: "Crax blumenbachii",
     comName: "Red-billed Curassow",
-    speciesCode: "rebcur1",
+    _id: "rebcur1",
     category: "species",
     taxonOrder: 912.0,
     bandingCodes: [],
@@ -8630,7 +8630,7 @@ const birds = [
   {
     sciName: "Cracidae sp. (curassow sp.)",
     comName: "curassow sp.",
-    speciesCode: "curass1",
+    _id: "curass1",
     category: "spuh",
     taxonOrder: 913.0,
     bandingCodes: [],
@@ -8644,7 +8644,7 @@ const birds = [
   {
     sciName: "Cracidae sp.",
     comName: "Cracidae sp.",
-    speciesCode: "cracid1",
+    _id: "cracid1",
     category: "spuh",
     taxonOrder: 914.0,
     bandingCodes: [],
@@ -8658,7 +8658,7 @@ const birds = [
   {
     sciName: "Numida meleagris",
     comName: "Helmeted Guineafowl",
-    speciesCode: "helgui",
+    _id: "helgui",
     category: "species",
     taxonOrder: 916.0,
     bandingCodes: ["HELG"],
@@ -8672,7 +8672,7 @@ const birds = [
   {
     sciName: "Numida meleagris sabyi",
     comName: "Helmeted Guineafowl (Moroccan)",
-    speciesCode: "helgui2",
+    _id: "helgui2",
     category: "issf",
     taxonOrder: 917.0,
     bandingCodes: [],
@@ -8687,7 +8687,7 @@ const birds = [
   {
     sciName: "Numida meleagris galeatus",
     comName: "Helmeted Guineafowl (West African)",
-    speciesCode: "helgui4",
+    _id: "helgui4",
     category: "issf",
     taxonOrder: 918.0,
     bandingCodes: [],
@@ -8702,7 +8702,7 @@ const birds = [
   {
     sciName: "Numida meleagris meleagris/somaliensis",
     comName: "Helmeted Guineafowl (Helmeted)",
-    speciesCode: "helgui3",
+    _id: "helgui3",
     category: "issf",
     taxonOrder: 919.0,
     bandingCodes: [],
@@ -8717,7 +8717,7 @@ const birds = [
   {
     sciName: "Numida meleagris reichenowi",
     comName: "Helmeted Guineafowl (Reichenow's)",
-    speciesCode: "helgui5",
+    _id: "helgui5",
     category: "issf",
     taxonOrder: 922.0,
     bandingCodes: [],
@@ -8732,7 +8732,7 @@ const birds = [
   {
     sciName: "Numida meleagris [mitratus Group]",
     comName: "Helmeted Guineafowl (Tufted)",
-    speciesCode: "helgui6",
+    _id: "helgui6",
     category: "issf",
     taxonOrder: 923.0,
     bandingCodes: [],
@@ -8747,7 +8747,7 @@ const birds = [
   {
     sciName: "Numida meleagris (Domestic type)",
     comName: "Helmeted Guineafowl (Domestic type)",
-    speciesCode: "helgui1",
+    _id: "helgui1",
     category: "domestic",
     taxonOrder: 928.0,
     bandingCodes: [],

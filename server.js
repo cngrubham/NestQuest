@@ -70,21 +70,26 @@ app.get("/", authMiddleware, function (req, res) {
 app.get("/seed", function (req, res) {
   // Remove any existing birds list
   const delPromises = [
-    // db.Region.deleteMany({}),
     db.Bird.deleteMany({}),
-    db.Sighting.deleteMany({}),
-    db.User.deleteMany({}),
-    db.Region.deleteMany({}),
+    // db.Sighting.deleteMany({}),
+    // db.User.deleteMany({}),
+    // db.Region.deleteMany({}),
   ];
   Promise.all(delPromises).then((listsOfRemovedItems) => {
+    listsOfRemovedItems.forEach((collection) => {
+      console.log(`Removed items`, collection);
+    });
+
     const insertPromises = [
-      //   db.Region.insertMany(db.seedRegions),
       db.Bird.insertMany(db.seedBirds),
-      db.Sighting.insertMany(db.seedSightings),
-      db.User.insertMany(db.seedUsers),
-      db.Region.insertMany(db.seedRegions),
+      // db.Sighting.insertMany(db.seedSightings),
+      // db.User.insertMany(db.seedUsers),
+      // db.Region.insertMany(db.seedRegions),
     ];
     Promise.all(insertPromises).then((listsOfInserted) => {
+      listsOfInserted.forEach((collection) => {
+        console.log(`Inserted ${collection.length} items`);
+      });
       res.send("Database seeded");
     });
   });

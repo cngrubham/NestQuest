@@ -13,6 +13,7 @@ db.on("connected", function () {
 module.exports = {
   Bird: require("./bird"),
   seedBirds: require("./seeds/bird-seed"),
+  seedRegions: require("./seeds/region-seed"),
   seedUsers: require("./seeds/user-seed"),
   seedSightings: require("./seeds/sighting-seed"),
   Sighting: require("./sighting"),
