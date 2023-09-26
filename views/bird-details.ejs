@@ -14,22 +14,29 @@
 <body>
     <main>
         <h1>Details</h1>
-        <%= region.birds.length %> birds are in this area
-            </h1>
-            <div class="birds-container">
-                <h2>Bird Information</h2>
-                <ul>
-                    <% birdData.forEach(function(bird) { %>
-                        <li>Name: <%= bird.comName %>
-                        </li>
-                        <li>Scientific Name: <%= bird.sciName %>
-                        </li>
-                        <li>Family: <%= bird.familyComName %>
-                        </li>
-                        <% }); %>
-                </ul>
-            </div>
-            </section>
+        <div class="birds-container">
+            <h2>Bird Information</h2>
+            <ul>
+                <li>Name: <%= bird.comName %>
+                </li>
+                <li>Scientific Name: <%= bird.sciName %>
+                </li>
+                <li>Family: <%= bird.familyComName %>
+                </li>
+            </ul>
+            <p>Sightings: <%= sightings.length %>
+            </p>
+            <% sightings.forEach(function(sighting) { %>
+                <div class="sighting-tile">
+                    <p>Region: <%= sighting.region %>
+                    </p>
+                    <p>User: <%= sighting.user %>
+                    </p>
+                </div>
+                <% }); %>
+
+        </div>
+        </section>
     </main>
     <script src="/public/js/nav.js"></script>
     <%- include('./partials/footer.ejs') %>

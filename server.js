@@ -8,6 +8,7 @@ const connectLiveReload = require("connect-livereload");
 const methodOverride = require("method-override");
 // https://www.freecodecamp.org/news/authenticate-users-node-app/
 const cookieParser = require("cookie-parser");
+const bodyParser = require("body-parser");
 
 /* Require the db connection, models, and seed data
 --------------------------------------------------------------- */
@@ -58,7 +59,8 @@ app.use("/imgs", express.static("imgs"));
 // Body parser: used for POST/PUT/PATCH routes:
 // this will take incoming strings from the body that are URL encoded and parse them
 // into an object that can be accessed in the request parameter as a property called body (req.body).
-app.use(express.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 app.use(cookieParser());
 
@@ -73,7 +75,7 @@ app.get("/seed", async function (req, res) {
   // Remove any existing birds list
   const deletionPromises = [
     db.Bird.deleteMany({}),
-    // db.Sighting.deleteMany({}),
+    db.Sighting.deleteMany({}),
     // db.User.deleteMany({}),
     db.Region.deleteMany({}),
   ];
@@ -86,7 +88,7 @@ app.get("/seed", async function (req, res) {
   const birdData = await db.Bird.insertMany(db.seedBirds);
   console.log(`Inserted ${birdData.length} birds`);
   const insertPromises = [
-    // db.Sighting.insertMany(db.seedSightings),
+    db.Sighting.insertMany(db.seedSightings),
     // db.User.insertMany(db.seedUsers),
     db.Region.insertMany(associateBirdIdsToRegions(db.seedRegions, birdData)),
   ];

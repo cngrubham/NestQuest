@@ -8,7 +8,8 @@ function toggleModal() {
 }
 
 function submitUserDetails() {
-  const inputName = document.getElementById("name-input").value;
-  alert(`Thanks ${inputName} for signing up!`);
+  const inputName = document.getElementById("login-username-input").value;
+  const inputPassword = document.getElementById("login-password-input").value;
+ 
   toggleModal();
 }

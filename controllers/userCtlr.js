@@ -15,15 +15,18 @@ const authMiddleware = require("../middleware/auth");
 router.get("/new", (req, res) => {
   res.render("new-user");
 });
+
 // login
 router.post("/login", (req, res) => {
+  console.log("body", req.body);
   const { userName, password } = req.body;
   db.User.findOne({ userName }).then((user) => {
+    console.log("user", user);
     if (!user || user.password !== password) {
       res.render("404");
     } else {
       res.cookie("userName", userName);
-      res.redirect("/regions-index");
+      res.redirect("/regions");
     }
   });
 });

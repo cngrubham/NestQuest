@@ -19,31 +19,22 @@
             <!-- login -->
             <div id="user-modal" class="modal-wrapper">
                 <div class="modal-box">
-                    <form class="form-input">
-                        <!-- add form method? -->
+                    <form action="/user/login" class="form-input" method="POST">
                         <div class="mb-3 input-group-cng">
-                            <label for="name-input" class="form-label">Name</label>
-                            <input class="form-control" id="name-input">
-
+                            <label for="login-username-input" class="form-label">User Name</label>
+                            <input class="form-control" name="userName" id="login-username-input">
                         </div>
                         <div class="mb-3 input-group-cng">
-                            <label for="username-input" class="form-label">User Name</label>
-                            <input class="form-control" id="username-input">
-                        </div>
-                        <div class="mb-3 input-group-cng">
-                            <label for="passwor-input" class="form-label">Password</label>
-                            <input class="form-control" id="password-input"></input>
-
+                            <label for="login-password-input" class="form-label">Password</label>
+                            <input class="form-control" name="password" id="login-password-input"></input>
                         </div>
 
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button id="close-modal-button" onclick="toggleModal()">close</button>
                     </form>
-                    <button onclick="submitUserDetails()" class="btn btn-primary">Submit</button>
-                    <button id="close-modal-button" onclick="toggleModal()">close</button>
                 </div>
 
                 <!-- new user link-->
-
-
         </section>
         <a href="user/new">New User</a>
     </main>

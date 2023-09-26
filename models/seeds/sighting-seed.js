@@ -1,6 +1,6 @@
 const sightingSeed = [
   {
-    bird: "cangoo4",
+    bird: "bbwduc",
     region: "US-ID",
     user: "Test",
   },

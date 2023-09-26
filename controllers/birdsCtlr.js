@@ -20,6 +20,7 @@ router.get("/bird-index", function (req, res) {
 
 //Show Route: display individual bird info
 router.get("/:id", function (req, res) {
+  console.log("user", req.user);
   const birdId = req.params.id;
   //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all
   Promise.all([
@@ -31,10 +32,14 @@ router.get("/:id", function (req, res) {
       res.render("bird-details", {
         bird,
         sightings,
+        user: req.user,
       });
       // res.json({ bird, sightings });
     })
-    .catch(() => res.redirect("404"));
+    .catch((error) => {
+      console.log("error", error);
+      res.redirect("404");
+    });
 });
 
 //Bird/:id/sightings
