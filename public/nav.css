@@ -29,9 +29,6 @@
 
 }
 
-.show {
-    display: flex;
-}
 
 .nav-bar-links {
     display: none;
@@ -90,4 +87,8 @@
     .nav-container {
         width: 100%;
     }
+}
+
+.show {
+    display: flex;
 }

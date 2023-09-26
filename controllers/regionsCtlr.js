@@ -19,14 +19,26 @@ router.get("/", async (req, res) => {
 
 //Region byIds SHOW
 //https://mongoosejs.com/docs/populate.html
-router.get("/:id", (req, res) => {
-  const regionId = req.params.id;
-  // const region = await db.Region.findOne({}).populate("birds");
-  db.Region.findOne({ code: regionId })
-    .populate("birds")
-    .then((region) => {
-      res.render("region-details", { region });
+router.get("/:id", async (req, res) => {
+  try {
+    const regionId = req.params.id;
+    const region = await db.Region.findOne({ code: regionId }).populate(
+      "birds"
+    );
+    const uniqueFamilyComNames = [
+      ...new Set(region.birds.map((bird) => bird.familyComName)),
+    ];
+    const birdData = region.birds.map((bird) => {
+      return {
+        sciName: bird.sciName,
+        comName: bird.comName,
+        familyComName: bird.familyComName,
+      };
     });
+    res.render("region-details", { region, birdData, uniqueFamilyComNames });
+  } catch (error) {
+    res.redirect("404");
+  }
 });
 
 //Region sightings?

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%- include('./partials/head.ejs', {title: 'Bird Details | NestQuest' }) %>
         <title>NestQuest | Bird Details</title>
+        <link rel="stylesheet" href="/public/nav.css">
         <%- include('./partials/nav.ejs') %>
 
 </head>
@@ -13,21 +14,22 @@
 <body>
     <main>
         <h1>Details</h1>
-
-        <ul>
-            <% birds.forEach((bird)=> { %>
-                <li>
-                    <%= bird.comName %>
-                        <span style="font-style: italic;">
-                            <%= bird.sciName %>
-                        </span>
-                </li>
-                <li>
-                    <%= bird.familyComName %>
-                </li>
-                <% }); %>
-
-        </ul>
+        <%= region.birds.length %> birds are in this area
+            </h1>
+            <div class="birds-container">
+                <h2>Bird Information</h2>
+                <ul>
+                    <% birdData.forEach(function(bird) { %>
+                        <li>Name: <%= bird.comName %>
+                        </li>
+                        <li>Scientific Name: <%= bird.sciName %>
+                        </li>
+                        <li>Family: <%= bird.familyComName %>
+                        </li>
+                        <% }); %>
+                </ul>
+            </div>
+            </section>
     </main>
     <%- include('./partials/footer.ejs') %>
 </body>

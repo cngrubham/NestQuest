@@ -31,12 +31,46 @@ router.post("/login", (req, res) => {
 router.get("/logout", (req, res) => {
   //https://expressjs.com/en/api.html#res.clearCookie
   res.clearCookie("userName");
-  // res.set("userName", { expires: Date.now() });
   res.redirect("/");
 });
 // update profile
+router.get("/edit-user", authMiddleware, (req, res) => {
+  res.render("edit-user");
+});
 
-// post profile
+// Update user profile (POST request)
+router.post("/user-profile/edit", authMiddleware, (req, res) => {
+  const { userName } = req.cookies;
+  const { userName: newUserName, profilePic: newProfilePic } = req.body;
+
+  db.User.findOneAndUpdate(
+    { userName },
+    { $set: { userName: newUserName, profilePic: newProfilePic } },
+    { new: true },
+    (err, updatedUser) => {
+      if (err) {
+        console.error(err);
+        res.render("error");
+      } else {
+        res.redirect("/user-profile");
+      }
+    }
+  );
+});
+
+// Create user profile (POST request)
+router.post("/user-profile", authMiddleware, (req, res) => {
+  const { userName, profilePic } = req.body;
+
+  db.User.create({ userName, profilePic }, (err, newUser) => {
+    if (err) {
+      console.error(err);
+      res.render("error");
+    } else {
+      res.redirect("/user-profile");
+    }
+  });
+});
 
 // get profile
 router.get("/user-profile", authMiddleware, (req, res) => {

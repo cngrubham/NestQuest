@@ -14,21 +14,38 @@
     </h1>
     <main>
         <section class="nestQuest-regions">
+            <!-- might add drop down search criteria -->
             <!--for each us region -->
             <h1>
                 <%= region.birds.length %> birds are in this area
             </h1>
             <div class="birds-container">
-                <% region.birds.forEach(function(bird) { %>
-                    <ul>
-                        <li>
-                            Name: <%= bird%>
+                <h2>Bird Information</h2>
+
+                <!-- form for searching by familyComName -->
+                
+                <form action="/search" method="GET">
+                    <label for="familyComName">Select by Family:</label>
+                    <select name="familyComName" id="familyComName">
+                        <% uniqueFamilyComNames.forEach(function(familyComName) { %>
+                            <option value="<%= familyComName %>">
+                                <%= familyComName %>
+                            </option>
+                            <% }); %>
+                    </select>
+                    <button type="submit">Filter Results</button>
+                </form>
+
+                <ul>
+                    <% birdData.forEach(function(bird) { %>
+                        <li>Name: <%= bird.comName %>
                         </li>
-                    </ul>
+                        <% }); %>
+                </ul>
             </div>
-            <% }); %>
         </section>
     </main>
+    <script src="/public/js/nav.js"></script>
     <%- include('./partials/footer.ejs') %>
 </body>
 
