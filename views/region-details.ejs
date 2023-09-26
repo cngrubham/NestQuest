@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head.ejs', {title: 'NestQuest | Region Details' }) %>
+        <link rel="stylesheet" href="/public/nav.css">
+        <%- include('./partials/nav.ejs') %>
+            <script src="/public/js/nav.js"></script>
+</head>
+
+<body>
+    <h1>
+        <%=region.name%> Region Birds
+    </h1>
+    <main>
+        <section class="nestQuest-regions">
+            <!--for each us region -->
+            <h1>
+                <%= region.birds.length %> birds are in this area
+            </h1>
+            <div class="birds-container">
+                <% region.birds.forEach(function(bird) { %>
+                    <ul>
+                        <li>
+                            Name: <%= bird%>
+                        </li>
+                    </ul>
+            </div>
+            <% }); %>
+        </section>
+    </main>
+</body>
+
+</html>

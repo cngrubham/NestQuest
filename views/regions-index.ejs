@@ -3,7 +3,7 @@
 
 <head>
     <%- include('./partials/head.ejs', {title: 'NestQuest | Regions' }) %>
-        <link rel="stylesheet" href="/styles/main.css">
+        <link rel="stylesheet" href="/public/main.css">
         <%- include('./partials/nav.ejs') %>
             <script src="/public/js/nav.js"></script>
 </head>
@@ -14,22 +14,18 @@
         <section class="nestQuest-regions">
             <!--for each us region -->
             <% regions.forEach(function(region) { %>
-                <div class="region card">
+                <a href="/regions/<%=region.code%>" class="region card">
                     <ul>
                         <li><strong>Region:</strong>
                             <%= region.code %><br>
                                 <%= region.name %>
                         </li>
                         <li>
-                            <strong>Birds:</strong>
-                            <ul>
-                                <% region.birds.forEach(function(bird) { %>
-                                    <li><a href="/bird-details/<%= bird._id %>">View Bird</a></li>
-                                    <% }); %>
-                            </ul>
+                            <strong>Birds: <%= region.birds.length %></strong>
+
                         </li>
                     </ul>
-                </div>
+                </a>
                 <% }); %>
 
         </section>

@@ -6,7 +6,7 @@ const birdSchema = require("./bird.js");
 const regionSchema = new mongoose.Schema({
   code: String,
   name: String,
-  birds: [{type: mongoose.Schema.Types.ObjectId, ref: "Bird"}],
+  birds: [{ type: mongoose.Schema.Types.ObjectId, ref: "Bird" }],
 });
 
 // Export the schema as a Mongoose model.

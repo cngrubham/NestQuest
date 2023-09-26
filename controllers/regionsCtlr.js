@@ -13,7 +13,7 @@ const db = require("../models");
 //All regions GET
 router.get("/", async (req, res) => {
   const regionsData = await db.Region.find();
-  console.log("regionsData", regionsData);
+  console.log("regionsData", regionsData[0].birds[0]);
   res.render("regions-index", { regions: regionsData });
 });
 
@@ -21,9 +21,11 @@ router.get("/", async (req, res) => {
 router.get("/:id", (req, res) => {
   const regionId = req.params.id;
   // const region = await db.Region.findOne({}).populate("birds");
-  db.Region.findById(regionId).then((region) => {
-    res.render("region-details", { region });
-  });
+  db.Region.findOne({ code: regionId })
+    // .populate("Bird")
+    .then((region) => {
+      res.render("region-details", { region });
+    });
 });
 
 //Region sightings?

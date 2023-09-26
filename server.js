@@ -12,7 +12,7 @@ const cookieParser = require("cookie-parser");
 /* Require the db connection, models, and seed data
 --------------------------------------------------------------- */
 const db = require("./models");
-const birds = require("./models/seeds/bird-seed");
+const { associateBirdIdsToRegions } = require("./dbUtils/utils");
 
 /* Require the routes in the controllers folder
 --------------------------------------------------------------- */
@@ -67,31 +67,32 @@ app.get("/", authMiddleware, function (req, res) {
 });
 
 // When a GET request is sent to `/seed`, the birds collection is seeded
-app.get("/seed", function (req, res) {
+app.get("/seed", async function (req, res) {
   // Remove any existing birds list
-  const delPromises = [
+  const deletionPromises = [
     db.Bird.deleteMany({}),
     // db.Sighting.deleteMany({}),
     // db.User.deleteMany({}),
-    // db.Region.deleteMany({}),
+    db.Region.deleteMany({}),
   ];
-  Promise.all(delPromises).then((listsOfRemovedItems) => {
-    listsOfRemovedItems.forEach((collection) => {
-      console.log(`Removed items`, collection);
-    });
+  const listsOfRemovedItems = await Promise.all(deletionPromises);
+  listsOfRemovedItems.forEach((collection) => {
+    console.log(`Removed items`, collection);
+  });
 
-    const insertPromises = [
-      db.Bird.insertMany(db.seedBirds),
-      // db.Sighting.insertMany(db.seedSightings),
-      // db.User.insertMany(db.seedUsers),
-      // db.Region.insertMany(db.seedRegions),
-    ];
-    Promise.all(insertPromises).then((listsOfInserted) => {
-      listsOfInserted.forEach((collection) => {
-        console.log(`Inserted ${collection.length} items`);
-      });
-      res.send("Database seeded");
+  // insert seed data
+  const birdData = await db.Bird.insertMany(db.seedBirds);
+  console.log(`Inserted ${birdData.length} birds`);
+  const insertPromises = [
+    // db.Sighting.insertMany(db.seedSightings),
+    // db.User.insertMany(db.seedUsers),
+    db.Region.insertMany(associateBirdIdsToRegions(db.seedRegions, birdData)),
+  ];
+  Promise.all(insertPromises).then((listsOfInserted) => {
+    listsOfInserted.forEach((collection) => {
+      console.log(`Inserted ${collection.length} items`);
     });
+    res.send("Database seeded");
   });
 });
 
