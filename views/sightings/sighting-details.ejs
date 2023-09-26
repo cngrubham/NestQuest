@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('./partials/head.ejs', {title: 'Sighting Details | NestQuest' }) %>
     <title>NestQuest | Sighting Details</title>
     <%- include('./partials/nav.ejs') %>
-        <script src="./public/js/nav.js"></script>
+        
 </head>
 
 <body>
@@ -32,6 +33,7 @@
             Picture -->
 
     </ul>
+    <%- include('./partials/footer.ejs') %>
 </body>
 
 </html>

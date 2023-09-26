@@ -18,11 +18,12 @@ router.get("/", async (req, res) => {
 });
 
 //Region byIds SHOW
+//https://mongoosejs.com/docs/populate.html
 router.get("/:id", (req, res) => {
   const regionId = req.params.id;
   // const region = await db.Region.findOne({}).populate("birds");
   db.Region.findOne({ code: regionId })
-    // .populate("Bird")
+    .populate("Bird")
     .then((region) => {
       res.render("region-details", { region });
     });

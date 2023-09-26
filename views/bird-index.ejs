@@ -5,25 +5,28 @@
     <%- include('./partials/head.ejs', {title: 'NestQuest | Birds by Region' }) %>
         <link rel="stylesheet" href="/styles/home.css">
         <%- include('./partials/nav.ejs') %>
-        <script src="/public/js/nav.js"></script>
+
 </head>
 
 
 <body>
-    <h1>Birds by Region</h1>
-    <ul>
-        <% birds.forEach((bird)=> { %>
-            <li>
-                <p>
-                    <%= bird.comName %>
-                        <span style="font-style: italic;">
-                            <%= bird.sciName %>
-                        </span>
-                </p>
-            </li>
-            <% }); %>
+    <main>
+        <h1>Birds by Region</h1>
+        <ul>
+            <% birds.forEach((bird)=> { %>
+                <li>
+                    <p>
+                        <%= bird.comName %>
+                            <span style="font-style: italic;">
+                                <%= bird.sciName %>
+                            </span>
+                    </p>
+                </li>
+                <% }); %>
 
-    </ul>
+        </ul>
+    </main>
+    <%- include('./partials/footer.ejs') %>
 </body>
 
 </html>

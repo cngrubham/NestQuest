@@ -13,4 +13,7 @@ const birdSchema = new mongoose.Schema({
 
 // Export the schema as a Mongoose model.
 // The Mongoose model will be accessed in `models/index.js`
-module.exports = mongoose.model("Bird", birdSchema);
+module.exports = {
+  model: mongoose.model("Bird", birdSchema),
+  schema: birdSchema,
+};

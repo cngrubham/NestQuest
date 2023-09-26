@@ -51,6 +51,8 @@ app.set("views", path.join(__dirname, "views"));
 // console.log(publicPath);
 // app.use(express.static());
 app.use("/public", express.static("public"));
+// app.use(express.static(path.join(__dirname, "/public")));
+
 app.use(connectLiveReload());
 app.use("/imgs", express.static("imgs"));
 // Body parser: used for POST/PUT/PATCH routes:

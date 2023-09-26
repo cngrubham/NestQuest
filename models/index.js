@@ -11,7 +11,7 @@ db.on("connected", function () {
 });
 
 module.exports = {
-  Bird: require("./bird"),
+  Bird: require("./bird").model,
   seedBirds: require("./seeds/bird-seed"),
   seedRegions: require("./seeds/region-seed"),
   seedUsers: require("./seeds/user-seed"),
