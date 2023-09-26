@@ -25,17 +25,16 @@ router.get("/:id", async (req, res) => {
     const region = await db.Region.findOne({ code: regionId }).populate(
       "birds"
     );
-    const uniqueFamilyComNames = [
-      ...new Set(region.birds.map((bird) => bird.familyComName)),
-    ];
-    const birdData = region.birds.map((bird) => {
-      return {
-        sciName: bird.sciName,
-        comName: bird.comName,
-        familyComName: bird.familyComName,
-      };
+    const birdSet = new Set();
+    region.birds.forEach((bird) => birdSet.add(bird.familyComName));
+    const uniqueFamilyComNames = [];
+    birdSet.forEach((fam) => uniqueFamilyComNames.push(fam));
+    console.log("uniqueFamilyComNames", uniqueFamilyComNames);
+    res.render("region-details", {
+      region,
+      birdData: region.birds,
+      uniqueFamilyComNames,
     });
-    res.render("region-details", { region, birdData, uniqueFamilyComNames });
   } catch (error) {
     res.redirect("404");
   }
