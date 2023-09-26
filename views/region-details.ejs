@@ -19,7 +19,7 @@
         </h2>
         <div class="birds-container">
             <!-- Form for searching by familyComName -->
-            <form action="/search" method="GET">
+            <form action="/regions/<%=region.code %>" method="GET">
                 <label for="familyComName">Select by Family:</label>
                 <select name="familyComName" id="familyComName">
                     <% uniqueFamilyComNames.forEach(function(familyComName) { %>

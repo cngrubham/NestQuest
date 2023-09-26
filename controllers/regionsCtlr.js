@@ -22,20 +22,24 @@ router.get("/", async (req, res) => {
 router.get("/:id", async (req, res) => {
   try {
     const regionId = req.params.id;
+    const familySearchTerm = req.query.familyComName;
     const region = await db.Region.findOne({ code: regionId }).populate(
       "birds"
     );
-    const birdSet = new Set();
-    region.birds.forEach((bird) => birdSet.add(bird.familyComName));
-    const uniqueFamilyComNames = [];
-    birdSet.forEach((fam) => uniqueFamilyComNames.push(fam));
-    console.log("uniqueFamilyComNames", uniqueFamilyComNames);
+    const uniqueFamilyComNames = [
+      ...new Set(region.birds.map((bird) => bird.familyComName)),
+    ];
+    const displayBirds =
+      familySearchTerm && uniqueFamilyComName.includes(familySearchTerm)
+        ? region.birds.filter((b) => b.familyComName === familySearchTerm)
+        : region.birds;
     res.render("region-details", {
       region,
-      birdData: region.birds,
+      birdData: displayBirds,
       uniqueFamilyComNames,
     });
   } catch (error) {
+    console.error("error", error);
     res.redirect("404");
   }
 });
