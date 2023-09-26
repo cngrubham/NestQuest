@@ -23,7 +23,7 @@ router.get("/:id", (req, res) => {
   const regionId = req.params.id;
   // const region = await db.Region.findOne({}).populate("birds");
   db.Region.findOne({ code: regionId })
-    .populate("Bird")
+    .populate("birds")
     .then((region) => {
       res.render("region-details", { region });
     });
