@@ -2,18 +2,15 @@
 <html lang="en">
 
 <head>
-    <%- include('./partials/head.ejs', {title: 'NestQuest | User Sightings' }) %>
-        <link rel="stylesheet" href="/public/home.css">
-        <link rel="stylesheet" href="/public/user-profile.css">
-        <link rel="stylesheet" href="/public/nav.css">
-        <%- include('./partials/nav.ejs') %>
-
+    <%- include("./partials/head.ejs", {title: "NestQuest | User Sightings" }) %>
+        <link rel="stylesheet" href="/public/home.css" />
+        <link rel="stylesheet" href="/public/user-profile.css" />
+        <link rel="stylesheet" href="/public/nav.css" />
+        <%- include("./partials/nav.ejs") %>
 </head>
 
 <body>
-
     <main>
-
         <!-- check if logged in -->
         <h1>Profile</h1>
         <!-- account info -->
@@ -23,46 +20,57 @@
                     <%= user.userName %>
                 </h3>
                 <img src="<%= user.profilePic %>" alt="profile pic" />
-
             </div>
 
-            <!-- <div class="sighting-action">
-                <a href="/user/edit-user">Edit Profile</a>
-            </div> -->
+            <div class="sighting-action">
+                <a href="/edit-user">Edit Profile</a>
+            </div>
         </div>
 
         <section class="user-sightings">
-            <h3>User Sightings: <%= sightings.length %>
-            </h3>
-
             <div class="sightings-card">
-                <!-- User Sighting Details -->
-                <!-- For Each Sighting -->
-                <ul>
-                    <!-- sighting info -->
-                    <li>
-                        <!-- Edit Sighting Button -->
-                        <div class="sighting-action">
-                            <a href="/edit-sighting">Edit</a>
-                        </div>
-                        <!-- Delete Sighting Button -->
-                        <div class="sighting-action">
-                            <a href="/delete-sighting">Delete</a>
-                        </div>
-                        <!-- View Sighting Button -->
-                        <!-- <div class="sighting-action">
-                                <a href="/sighting/details">View</a>
-                            </div> -->
-                    </li>
-                </ul>
-            </div>
-            </div>
+                <div class="sightings-card">
+                    <!-- User Sighting Details -->
+                    <h3>User Sightings:</h3>
+                    <p>
+                        <%= sightings.length %>
+                    </p>
+                    <!-- For Each Sighting -->
+                    <div>
+                        <% sightings.forEach(function(sighting) { %>
+                            <!-- sighting info -->
+                            <div style="
+                  border: 1px solid black;
+                  border-radius: 8px;
+                  padding: 8px;
+                  margin-bottom: 16px;
+                ">
+                                <%= sighting.bird.comName %> in <%= sighting.region.name %>
+                                        <img src="/<%= sighting.picture %>" alt="<%= sighting.bird.comName %>" />
+                                        <div>
+                                            <!-- Edit Sighting Button -->
+                                            <div class="sighting-action">
+                                                <a href="/edit-sighting">Edit</a>
+                                            </div>
+                                            <!-- Delete Sighting Button -->
+                                            <div class="sighting-action">
+                                                <a href="/delete-sighting">Delete</a>
+                                            </div>
+                                            <!-- View Sighting Button -->
+                                            <div class="sighting-action">
+                                                <a href="/sighting/details">View</a>
+                                            </div>
+                                        </div>
+                            </div>
 
-
+                            <% }) %>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <script src="/public/js/nav.js"></script>
-    <%- include('./partials/footer.ejs') %>
+    <%- include("./partials/footer.ejs") %>
 </body>
 
 </html>

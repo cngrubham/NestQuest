@@ -23,9 +23,8 @@ router.get("/:id", async (req, res) => {
   try {
     const regionId = req.params.id;
     const familySearchTerm = req.query.familyComName;
-    const region = await db.Region.findOne({ code: regionId }).populate(
-      "birds"
-    );
+    const region = await db.Region.findById(regionId).populate("birds");
+    console.log("region", region)
     const uniqueFamilyComNames = [
       ...new Set(region.birds.map((bird) => bird.familyComName)),
     ];

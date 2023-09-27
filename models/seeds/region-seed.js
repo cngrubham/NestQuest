@@ -1,6 +1,6 @@
 const regionSeed = [
   {
-    code: "US-AL",
+    _id: "US-AL",
     name: "Alabama",
     birds: [
       "emu1",
@@ -513,7 +513,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-AK",
+    _id: "US-AK",
     name: "Alaska",
     birds: [
       "empgoo",
@@ -1137,7 +1137,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-AZ",
+    _id: "US-AZ",
     name: "Arizona",
     birds: [
       "emu1",
@@ -1832,7 +1832,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-AR",
+    _id: "US-AR",
     name: "Arkansas",
     birds: [
       "bbwduc",
@@ -2302,7 +2302,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-CA",
+    _id: "US-CA",
     name: "California",
     birds: [
       "emu1",
@@ -3307,7 +3307,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-CO",
+    _id: "US-CO",
     name: "Colorado",
     birds: [
       "emu1",
@@ -3962,7 +3962,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-CT",
+    _id: "US-CT",
     name: "Connecticut",
     birds: [
       "bbwduc",
@@ -4473,7 +4473,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-DE",
+    _id: "US-DE",
     name: "Delaware",
     birds: [
       "bbwduc",
@@ -4949,7 +4949,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-DC",
+    _id: "US-DC",
     name: "District of Columbia",
     birds: [
       "bbwduc",
@@ -5305,7 +5305,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-FL",
+    _id: "US-FL",
     name: "Florida",
     birds: [
       "emu1",
@@ -6068,7 +6068,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-GA",
+    _id: "US-GA",
     name: "Georgia",
     birds: [
       "bbwduc",
@@ -6565,7 +6565,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-HI",
+    _id: "US-HI",
     name: "Hawaii",
     birds: [
       "wfwduc1",
@@ -6906,7 +6906,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-ID",
+    _id: "US-ID",
     name: "Idaho",
     birds: [
       "bahgoo",
@@ -7408,7 +7408,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-IL",
+    _id: "US-IL",
     name: "Illinois",
     birds: [
       "bbwduc",
@@ -7964,7 +7964,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-IN",
+    _id: "US-IN",
     name: "Indiana",
     birds: [
       "bbwduc",
@@ -8451,7 +8451,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-IA",
+    _id: "US-IA",
     name: "Iowa",
     birds: [
       "bbwduc",
@@ -8947,7 +8947,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-KS",
+    _id: "US-KS",
     name: "Kansas",
     birds: [
       "bbwduc",
@@ -9467,7 +9467,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-KY",
+    _id: "US-KY",
     name: "Kentucky",
     birds: [
       "bbwduc",
@@ -9903,7 +9903,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-LA",
+    _id: "US-LA",
     name: "Louisiana",
     birds: [
       "wfwduc1",
@@ -10441,7 +10441,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-ME",
+    _id: "US-ME",
     name: "Maine",
     birds: [
       "bbwduc",
@@ -10947,7 +10947,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-MD",
+    _id: "US-MD",
     name: "Maryland",
     birds: [
       "emu1",
@@ -11499,7 +11499,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-MA",
+    _id: "US-MA",
     name: "Massachusetts",
     birds: [
       "bbwduc",
@@ -12116,7 +12116,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-MI",
+    _id: "US-MI",
     name: "Michigan",
     birds: [
       "lesrhe2",
@@ -12644,7 +12644,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-MN",
+    _id: "US-MN",
     name: "Minnesota",
     birds: [
       "emu1",
@@ -13154,7 +13154,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-MS",
+    _id: "US-MS",
     name: "Mississippi",
     birds: [
       "wfwduc1",
@@ -13600,7 +13600,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-MO",
+    _id: "US-MO",
     name: "Missouri",
     birds: [
       "bbwduc",
@@ -14075,7 +14075,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-MT",
+    _id: "US-MT",
     name: "Montana",
     birds: [
       "snogoo",
@@ -14574,7 +14574,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-NE",
+    _id: "US-NE",
     name: "Nebraska",
     birds: [
       "bbwduc",
@@ -15111,7 +15111,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-NV",
+    _id: "US-NV",
     name: "Nevada",
     birds: [
       "emu1",
@@ -15661,7 +15661,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-NH",
+    _id: "US-NH",
     name: "New Hampshire",
     birds: [
       "bbwduc",
@@ -16129,7 +16129,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-NJ",
+    _id: "US-NJ",
     name: "New Jersey",
     birds: [
       "bbwduc",
@@ -16709,7 +16709,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-NM",
+    _id: "US-NM",
     name: "New Mexico",
     birds: [
       "bbwduc",
@@ -17351,7 +17351,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-NY",
+    _id: "US-NY",
     name: "New York",
     birds: [
       "emu1",
@@ -18009,7 +18009,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-NC",
+    _id: "US-NC",
     name: "North Carolina",
     birds: [
       "plwduc1",
@@ -18558,7 +18558,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-ND",
+    _id: "US-ND",
     name: "North Dakota",
     birds: [
       "bbwduc",
@@ -19019,7 +19019,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-OH",
+    _id: "US-OH",
     name: "Ohio",
     birds: [
       "bbwduc",
@@ -19548,7 +19548,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-OK",
+    _id: "US-OK",
     name: "Oklahoma",
     birds: [
       "bbwduc",
@@ -20063,7 +20063,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-OR",
+    _id: "US-OR",
     name: "Oregon",
     birds: [
       "fuwduc",
@@ -20719,7 +20719,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-PA",
+    _id: "US-PA",
     name: "Pennsylvania",
     birds: [
       "bbwduc",
@@ -21263,7 +21263,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-RI",
+    _id: "US-RI",
     name: "Rhode Island",
     birds: [
       "bbwduc",
@@ -21729,7 +21729,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-SC",
+    _id: "US-SC",
     name: "South Carolina",
     birds: [
       "bbwduc",
@@ -22230,7 +22230,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-SD",
+    _id: "US-SD",
     name: "South Dakota",
     birds: [
       "bbwduc",
@@ -22690,7 +22690,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-TN",
+    _id: "US-TN",
     name: "Tennessee",
     birds: [
       "bbwduc",
@@ -23195,7 +23195,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-TX",
+    _id: "US-TX",
     name: "Texas",
     birds: [
       "grerhe1",
@@ -24079,7 +24079,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-UT",
+    _id: "US-UT",
     name: "Utah",
     birds: [
       "fuwduc",
@@ -24642,7 +24642,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-VT",
+    _id: "US-VT",
     name: "Vermont",
     birds: [
       "emu1",
@@ -25083,7 +25083,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-VA",
+    _id: "US-VA",
     name: "Virginia",
     birds: [
       "bbwduc",
@@ -25645,7 +25645,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-WA",
+    _id: "US-WA",
     name: "Washington",
     birds: [
       "chitin1",
@@ -26286,7 +26286,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-WV",
+    _id: "US-WV",
     name: "West Virginia",
     birds: [
       "emu1",
@@ -26701,7 +26701,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-WI",
+    _id: "US-WI",
     name: "Wisconsin",
     birds: [
       "bbwduc",
@@ -27245,7 +27245,7 @@ const regionSeed = [
     ],
   },
   {
-    code: "US-WY",
+    _id: "US-WY",
     name: "Wyoming",
     birds: [
       "emu1",

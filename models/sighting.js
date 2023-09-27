@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 const sightingSchema = new mongoose.Schema({
-  user: String,
-  bird: String,
-  region: String,
+  user: { type: String, ref: "User" },
+  bird: { type: String, ref: "Bird" },
+  region: { type: String, ref: "Region" },
   picture: { type: String, default: "public/assets/imgs/bunting.png" }, //may need to change input type
   description: String,
   dateAdded: { type: Date, default: Date.now },

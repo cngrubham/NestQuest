@@ -2,17 +2,17 @@ const sightingSeed = [
   {
     bird: "bbwduc",
     region: "US-ID",
-    user: "Test",
+    user: "Lloyd",
   },
   {
     bird: "cangoo3",
     region: "US-ID",
-    user: "Test",
+    user: "Cami",
   },
   {
     bird: "cangoo1",
     region: "US-ID",
-    user: "Test",
+    user: "Cami",
   },
 ];
 module.exports = sightingSeed;

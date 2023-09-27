@@ -1,12 +1,11 @@
 // Require the Mongoose package
 const mongoose = require("mongoose");
-const birdSchema = require("./bird.js");
 
 //
 const regionSchema = new mongoose.Schema({
-  code: String,
+  _id: String,
   name: String,
-  birds: [{ type: mongoose.Schema.Types.ObjectId, ref: "Bird" }],
+  birds: [{ type: String, ref: "Bird" }],
 });
 
 // Export the schema as a Mongoose model.

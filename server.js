@@ -13,7 +13,6 @@ const bodyParser = require("body-parser");
 /* Require the db connection, models, and seed data
 --------------------------------------------------------------- */
 const db = require("./models");
-const { associateBirdIdsToRegions } = require("./dbUtils/utils");
 
 /* Require the routes in the controllers folder
 --------------------------------------------------------------- */
@@ -76,7 +75,7 @@ app.get("/seed", async function (req, res) {
   const deletionPromises = [
     db.Bird.deleteMany({}),
     db.Sighting.deleteMany({}),
-    // db.User.deleteMany({}),
+    db.User.deleteMany({}),
     db.Region.deleteMany({}),
   ];
   const listsOfRemovedItems = await Promise.all(deletionPromises);
@@ -85,12 +84,11 @@ app.get("/seed", async function (req, res) {
   });
 
   // insert seed data
-  const birdData = await db.Bird.insertMany(db.seedBirds);
-  console.log(`Inserted ${birdData.length} birds`);
   const insertPromises = [
+    db.Bird.insertMany(db.seedBirds),
     db.Sighting.insertMany(db.seedSightings),
-    // db.User.insertMany(db.seedUsers),
-    db.Region.insertMany(associateBirdIdsToRegions(db.seedRegions, birdData)),
+    db.User.insertMany(db.seedUsers),
+    db.Region.insertMany(db.seedRegions),
   ];
   Promise.all(insertPromises).then((listsOfInserted) => {
     listsOfInserted.forEach((collection) => {

@@ -15,10 +15,10 @@
             <!--for each us region -->
             <% regions.forEach(function(region) { %>
                 <div class="bird-card">
-                    <a href="/regions/<%=region.code%>" class="region card">
+                    <a href="/regions/<%=region._id%>" class="region card">
                         <ul>
                             <li><strong>Region:</strong>
-                                <%= region.code %><br>
+                                <%= region._id %><br>
                                     <%= region.name %>
                             </li>
                             <li>

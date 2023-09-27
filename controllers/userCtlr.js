@@ -24,8 +24,8 @@ router.get("/new", (req, res) => {
 // login
 router.post("/login", (req, res) => {
   const { userName, password } = req.body;
-  db.User.findOne({ userName }).then((user) => {
-    console.log("user", user);
+  db.User.findById(userName).then((user) => {
+    // console.log("user", user);
     if (!user || user.password !== password) {
       res.render("404");
     } else {
@@ -34,6 +34,7 @@ router.post("/login", (req, res) => {
     }
   });
 });
+
 // Logout Get
 router.get("/logout", (req, res) => {
   //https://expressjs.com/en/api.html#res.clearCookie
@@ -46,14 +47,13 @@ router.get("/edit-user", authMiddleware, (req, res) => {
   res.render("edit-user");
 });
 
-
 // Update user profile (POST request)
 router.post("/user-profile/edit", authMiddleware, (req, res) => {
   const { userName } = req.cookies;
   const { userName: newUserName, profilePic: newProfilePic } = req.body;
 
   db.User.findOneAndUpdate(
-    { userName },
+    { _id: userName },
     { $set: { userName: newUserName, profilePic: newProfilePic } },
     { new: true },
     (err, updatedUser) => {
@@ -72,7 +72,7 @@ router.post("/user-profile", authMiddleware, async (req, res) => {
   try {
     const { userName = "", profilePic, password = "" } = req.body;
     const trimmedUserName = userName.trim();
-    const foundUser = await db.User.findOne({ userName: trimmedUserName });
+    const foundUser = await db.User.findById(trimmedUserName);
     if (foundUser) {
       return res.redirect("/user/new?err=unavailable");
     }
@@ -90,7 +90,10 @@ router.get("/user-profile", authMiddleware, async (req, res) => {
   try {
     const user = req.user;
     if (!user) return res.redirect("/");
-    const sightings = await db.Sighting.find({ user: user.userName });
+    const sightings = await db.Sighting.find({ user: user._id }).populate([
+      "bird",
+      "region",
+    ]);
     res.render("user-profile", { user, sightings });
   } catch (err) {
     console.error(err);
