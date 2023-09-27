@@ -17,9 +17,9 @@
         <div class="profile-info">
             <div>
                 <h3>
-                    <%= user.userName %>
+                    <%= user._id %>
                 </h3>
-                <img src="<%= user.profilePic %>" alt="profile pic" />
+                <img style="height: 100px; width: 100px;" src="/<%= user.profilePic %>" alt="profile pic" />
             </div>
 
             <div class="sighting-action">
@@ -46,20 +46,19 @@
                   margin-bottom: 16px;
                 ">
                                 <%= sighting.bird.comName %> in <%= sighting.region.name %>
-                                        <img src="/<%= sighting.picture %>" alt="<%= sighting.bird.comName %>" />
+                                        <img style="height: 100px; width: 100px;" src="/<%= sighting.picture %>"
+                                            alt="<%= sighting.bird.comName %>" />
                                         <div>
                                             <!-- Edit Sighting Button -->
                                             <div class="sighting-action">
                                                 <a href="/edit-sighting">Edit</a>
                                             </div>
                                             <!-- Delete Sighting Button -->
-                                            <div class="sighting-action">
-                                                <a href="/delete-sighting">Delete</a>
-                                            </div>
-                                            <!-- View Sighting Button -->
-                                            <div class="sighting-action">
-                                                <a href="/sighting/details">View</a>
-                                            </div>
+                                            <form action="/sightings/<%= sighting._id %>?_method=DELETE" method="POST">
+                                                <button type="submit" class="sighting-action">
+                                                    Delete
+                                                </button>
+                                            </form>
                                         </div>
                             </div>
 

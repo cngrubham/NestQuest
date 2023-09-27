@@ -110,6 +110,7 @@ app.use("/user", userCtrl);
 app.get("*", function (req, res) {
   res.render("404");
 });
+
 /* Tell the app to listen on the specified port
 --------------------------------------------------------------- */
 app.listen(process.env.PORT, function () {

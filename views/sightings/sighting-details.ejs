@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./public/nav.css">
-    <%- include('./partials/head.ejs', {title: 'Sighting Details | NestQuest' }) %>
+    <link rel="stylesheet" href="/public/nav.css">
+    <%- include('../partials/head.ejs', {title: 'Sighting Details | NestQuest' }) %>
         <title>NestQuest | Sighting Details</title>
-        <%- include('./partials/nav.ejs') %>
+        <%- include('../partials/nav.ejs') %>
 
 </head>
 
@@ -15,19 +15,21 @@
     <h1>Details</h1>
 
     <ul>
-        <% birds.forEach((bird)=> { %>
-            <li>
-                <%= bird.comName %>
-                    <span style="font-style: italic;">
-                        <%= bird.sciName %>
-                    </span>
-            </li>
-            <li>
-                <%= bird.familyComName %>
-            </li>
-            <% }); %>
-                <!-- Sighting Details -->
-                <!-- user
+        <li>
+            <%= bird.comName %>
+                <span style="font-style: italic;">
+                    <%= bird.sciName %>
+                </span>
+        </li>
+        <li>
+            <%= bird.familyComName %>
+        </li>
+        <!-- Sighting Details -->
+        <%= user._id %>
+            <div>
+                <%= region.name %>
+            </div>
+            <!-- user
             date
             region
             Details 
@@ -35,7 +37,7 @@
 
     </ul>
     <script src="./public/js/nav.js"></script>
-    <%- include('./partials/footer.ejs') %>
+    <%- include('../partials/footer.ejs') %>
 </body>
 
 </html>

@@ -4,7 +4,7 @@ const sightingSchema = new mongoose.Schema({
   bird: { type: String, ref: "Bird" },
   region: { type: String, ref: "Region" },
   picture: { type: String, default: "public/assets/imgs/bunting.png" }, //may need to change input type
-  description: String,
+  description: { type: String, default: "" },
   dateAdded: { type: Date, default: Date.now },
 });
 

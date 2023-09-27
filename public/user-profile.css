@@ -30,9 +30,7 @@ ul {
 .sighting-action {
     display: inline-block;
     margin: 20px;
-}
-
-.sighting-action a {
+    cursor: pointer;
     text-decoration: none;
     background-color: #1d1d1d;
     color: #fff;
@@ -40,9 +38,12 @@ ul {
     border-radius: 5px;
     margin: 20px;
     transition: background-color 0.3s ease;
+    border: none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
 }
 
-.sighting-action a:hover {
+.sighting-action:hover {
     background-color: #000000;
 }
 
