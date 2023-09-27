@@ -13,7 +13,12 @@ const authMiddleware = require("../middleware/auth");
 --------------------------------------------------------------- */
 // create account
 router.get("/new", (req, res) => {
-  res.render("new-user");
+  const errorMessage =
+    req.query.err === "unavailable"
+      ? "Username has been taken. Please try again."
+      : "";
+
+  res.render("new-user", { errorMessage });
 });
 
 // login
@@ -62,22 +67,33 @@ router.post("/user-profile/edit", authMiddleware, (req, res) => {
 });
 
 // Create user profile (POST request)
-router.post("/user-profile", authMiddleware, (req, res) => {
-  const { userName, profilePic } = req.body;
-
-  db.User.create({ userName, profilePic }, (err, newUser) => {
-    if (err) {
-      console.error(err);
-      res.render("error");
-    } else {
-      res.redirect("/user-profile");
+router.post("/user-profile", authMiddleware, async (req, res) => {
+  try {
+    const { userName = "", profilePic, password = "" } = req.body;
+    const trimmedUserName = userName.trim();
+    const foundUser = await db.User.findOne({ userName: trimmedUserName });
+    if (foundUser) {
+      return res.redirect("/user/new?err=unavailable");
     }
-  });
+    await db.User.create({ userName: trimmedUserName, profilePic, password });
+    res.cookie("userName", trimmedUserName);
+    res.redirect("/user/user-profile");
+  } catch (err) {
+    console.error(err);
+    res.render("404");
+  }
 });
 
 // get profile
-router.get("/user-profile", authMiddleware, (req, res) => {
-  res.render("user-profile");
+router.get("/user-profile", authMiddleware, async (req, res) => {
+  try {
+    const user = req.user;
+    const sightings = await db.Sighting.find({ user: user.userName });
+    res.render("user-profile", { user, sightings });
+  } catch (err) {
+    console.error(err);
+    res.render("404");
+  }
 });
 
 /* Export these routes so that they are accessible in `server.js`

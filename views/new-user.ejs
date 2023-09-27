@@ -16,11 +16,14 @@
         <h4><i>Enter your information below</i></h4>
     </section>
     <div class="form-container">
-        <form method="POST" action="/user-profile">
+        <p>
+            <%= errorMessage %>
+        </p>
+        <form method="POST" action="/user/user-profile">
             <!-- might need to change link -->
             <!-- User Name input -->
             <label for="name" class="form-label">User Name:</label>
-            <input type="text" id="name" name="name" class="form-input" required>
+            <input type="text" id="name" name="userName" class="form-input" required>
             <br>
             <!-- Password input -->
             <label for="password" class="form-label">Password:</label>

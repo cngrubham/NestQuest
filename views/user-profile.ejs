@@ -13,22 +13,33 @@
 <body>
 
     <main>
+
         <!-- check if logged in -->
-        <h1>User Sightings</h1>
-        <section class="user-sightings">
-            <!-- account info -->
-            <div class="profile-info">
-                <div class="sighting-action">
-                    <a href="/edit-user">Edit Profile</a>
-                </div>
+        <h1>Profile</h1>
+        <!-- account info -->
+        <div class="profile-info">
+            <div>
+                <h3>
+                    <%= user.userName %>
+                </h3>
+                <img src="<%= user.profilePic %>" alt="profile pic" />
+
             </div>
 
+            <div class="sighting-action">
+                <a href="/edit-user">Edit Profile</a>
+            </div>
+        </div>
+
+        <section class="user-sightings">
 
             <div class="sightings-card">
                 <div class="sightings-card">
                     <!-- User Sighting Details -->
-                    <h3>User Sightings</h3>
-
+                    <h3>User Sightings: </h3>
+                    <p>
+                        <%= sightings.length %>
+                    </p>
                     <!-- For Each Sighting -->
                     <ul>
                         <!-- sighting info -->
