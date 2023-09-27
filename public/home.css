@@ -1,3 +1,19 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#open-modal-button {
+    margin-bottom: 20px; 
+}
+a[href="user/new"] {
+    text-decoration: none; 
+    color: #292d2c; 
+    font-weight: bold;
+    font-size: 18px;
+}
 .modal-wrapper {
     position: absolute;
     height: 100vh;
@@ -68,3 +84,6 @@
         /* font-size: 12px; */
     }
 }
+
+
+

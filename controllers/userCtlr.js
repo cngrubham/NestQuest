@@ -23,7 +23,6 @@ router.get("/new", (req, res) => {
 
 // login
 router.post("/login", (req, res) => {
-  console.log("body", req.body);
   const { userName, password } = req.body;
   db.User.findOne({ userName }).then((user) => {
     console.log("user", user);
@@ -41,10 +40,12 @@ router.get("/logout", (req, res) => {
   res.clearCookie("userName");
   res.redirect("/");
 });
+
 // update profile
 router.get("/edit-user", authMiddleware, (req, res) => {
   res.render("edit-user");
 });
+
 
 // Update user profile (POST request)
 router.post("/user-profile/edit", authMiddleware, (req, res) => {
@@ -88,6 +89,7 @@ router.post("/user-profile", authMiddleware, async (req, res) => {
 router.get("/user-profile", authMiddleware, async (req, res) => {
   try {
     const user = req.user;
+    if (!user) return res.redirect("/");
     const sightings = await db.Sighting.find({ user: user.userName });
     res.render("user-profile", { user, sightings });
   } catch (err) {
