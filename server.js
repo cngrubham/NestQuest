@@ -4,7 +4,28 @@ require("dotenv").config();
 const path = require("path");
 const express = require("express");
 const livereload = require("livereload");
-const connectLiveReload = require("connect-livereload");
+// const connectLiveReload = require("connect-livereload");
+// Detect if running in a dev environment
+if (process.env.ON_HEROKU === "false") {
+  // Configure the app to refresh the browser when nodemon restarts
+  const liveReloadServer = livereload.createServer();
+  liveReloadServer.server.once("connection", () => {
+    // wait for nodemon to fully restart before refreshing the page
+    setTimeout(() => {
+      liveReloadServer.refresh("/");
+    }, 100);
+  });
+  app.use(connectLiveReload());
+}
+
+// Body parser: used for POST/PUT/PATCH routes:
+// this will take incoming strings from the body that are URL encoded and parse them
+// into an object that can be accessed in the request parameter as a property called body (req.body).
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static("public"));
+// Allows us to interpret POST requests from the browser as another request type: DELETE, PUT, etc.
+app.use(methodOverride("_method"));
+
 const methodOverride = require("method-override");
 // https://www.freecodecamp.org/news/authenticate-users-node-app/
 const cookieParser = require("cookie-parser");
@@ -53,7 +74,7 @@ app.set("views", path.join(__dirname, "views"));
 app.use("/public", express.static("public"));
 // app.use(express.static(path.join(__dirname, "/public")));
 
-app.use(connectLiveReload());
+// app.use(connectLiveReload());
 app.use("/imgs", express.static("imgs"));
 // Body parser: used for POST/PUT/PATCH routes:
 // this will take incoming strings from the body that are URL encoded and parse them
