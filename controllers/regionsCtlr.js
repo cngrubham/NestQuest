@@ -12,8 +12,12 @@ const db = require("../models");
 --------------------------------------------------------------- */
 //All regions GET
 router.get("/", async (req, res) => {
-  const regionsData = await db.Region.find().populate("birds");
-  res.render("regions-index", { regions: regionsData });
+  const regionsData = await db.Region.find()
+    .sort({ name: 1 })
+    .populate("birds");
+  res.render("regions-index", {
+    regions: regionsData,
+  });
 });
 
 //Region byIds SHOW
@@ -27,7 +31,7 @@ router.get("/:id", async (req, res) => {
       ...new Set(region.birds.map((bird) => bird.familyComName)),
     ];
     const displayBirds =
-      familySearchTerm && uniqueFamilyComName.includes(familySearchTerm)
+      familySearchTerm && uniqueFamilyComNames.includes(familySearchTerm)
         ? region.birds.filter((b) => b.familyComName === familySearchTerm)
         : region.birds;
     res.render("region-details", {

@@ -43,7 +43,7 @@ router.get("/new/bird/:id", async (req, res) => {
   const user = req.user;
   if (!user) return res.redirect("403");
   const bird = await db.Bird.findById(req.params.id);
-  const regionList = await db.Region.find({});
+  const regionList = await db.Region.find({}).sort({ name: 1 });
   res.render("sightings/new-sighting", { user, bird, regionList });
 });
 
