@@ -1,154 +1,150 @@
-/* Styles for the navigation bar */
-header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding: 10px;
-    transition: width 0.3s ease;
-    overflow: hidden;
-    height: fit-content;
-    /* z-index: 1000; */
-}
+ header {
+     position: fixed;
+     top: 0;
+     transition: width 0.3s ease;
+     overflow: hidden;
+     height: fit-content;
 
-.nav-container {
-    position: relative;
-    /* z-index: 1001; */
-    height: fit-content;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+ }
 
-}
+ .nav-container {
+     position: relative;
+     height: fit-content;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
 
-.circle {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin: 20px;
-    background-color: #52BD7F;
-    border-color: solid black;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+ }
 
-}
+ .circle {
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     margin: 20px;
+     background-color: #52BD7F;
+     border-color: solid black;
+     color: #fff;
+     border: none;
+     cursor: pointer;
+
+ }
 
 
-.nav-bar-links {
-    display: none;
-    flex-direction: column;
-    background-color: #5FC173;
-    padding: 10px;
-    width: 100%;
-    height: 160px;
-    overflow: hidden;
+ .nav-bar-links {
+     display: none;
+     flex-direction: column;
+     background-color: #5FC173;
+     padding: 10px;
+     width: 100%;
+     height: 160px;
+     overflow: hidden;
 
-}
+ }
 
-.nav-bar-links ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: left;
-    white-space: no-wrap;
-}
+ .nav-bar-links ul {
+     list-style-type: none;
+     padding: 0;
+     text-align: left;
+     white-space: no-wrap;
+ }
 
-.nav-bar-links ul li {
-    margin-bottom: 10px;
-    display: block;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    max-width: 100%;
-}
+ .nav-bar-links ul li {
+     margin-bottom: 10px;
+     display: block;
+     text-overflow: ellipsis;
+     overflow: hidden;
+     max-width: 100%;
+ }
 
-.nav-bar-links ul li a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-}
-
-
-#nav-toggle.expanded {
-    border-radius: 2px;
-
-}
+ .nav-bar-links ul li a {
+     color: #fff;
+     text-decoration: none;
+     display: block;
+ }
 
 
-.nav-icon {
-    background-color: transparent;
-    color: white;
-    border: none;
-    cursor: pointer;
-    display: none;
-    position: absolute;
-    right: 40px;
-    top: 20px;
+ #nav-toggle.expanded {
+     border-radius: 2px;
+
+ }
 
 
-}
+ .nav-icon {
+     background-color: transparent;
+     color: white;
+     border: none;
+     cursor: pointer;
+     display: none;
+     position: absolute;
+     right: 40px;
+     top: 20px;
 
 
-.nav-bar-links .nav-icon {
-    display: block;
-    float: left;
-}
-
-@media (max-width: 700px) {
-    header {
-        width: 100%;
-        height: 250px;
-    }
-
-    .nav-container {
-        width: 100%;
-        height: 100%;
-    }
-
-    .nav-bar-links {
-        height: 100%;
-        width: 100%;
-        /* flex-direction: row-reverse; */
-        padding-left: 20px;
-        padding-top: 20px;
-    }
-
-    .nav-logo {
-        width: auto;
-    }
-
-    .circle {
-        margin-right: 40px;
-    }
-}
-
-@media (min-width: 700px) {
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-    }
-
-    .nav-container {
-        width: 200px;
-        height: 100%;
-
-    }
-
-    .nav-bar-links ul {
-        text-align: left;
-    }
+ }
 
 
-    .nav-bar-links li {
-        padding: 10px;
-    }
+ .nav-bar-links .nav-icon {
+     display: block;
+     float: left;
+ }
 
-    .nav-bar-links {
-        height: 100%;
-    }
+ @media (max-width: 700px) {
+     header {
+         width: 100%;
+         height: 250px;
+     }
 
-}
+     .nav-container {
+         width: 100%;
+         height: 100%;
+     }
 
-.show {
-    display: flex;
-}
+     .nav-bar-links {
+         height: 100%;
+         width: 100%;
+         /* flex-direction: row-reverse; */
+         padding-left: 20px;
+         padding-top: 20px;
+     }
+
+     .nav-logo {
+         width: auto;
+     }
+
+     .circle {
+         margin-right: 40px;
+     }
+ }
+
+ @media (min-width: 700px) {
+     header {
+         position: fixed;
+         top: 0;
+         left: 0;
+         height: 100%;
+     }
+
+     .nav-container {
+         width: 200px;
+         height: 100%;
+
+     }
+
+     .nav-bar-links ul {
+         text-align: left;
+     }
+
+
+     .nav-bar-links li {
+         padding: 10px;
+     }
+
+     .nav-bar-links {
+         height: 100%;
+     }
+
+ }
+
+ .show {
+     display: flex;
+ }

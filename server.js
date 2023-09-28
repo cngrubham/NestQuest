@@ -4,11 +4,19 @@ require("dotenv").config();
 const path = require("path");
 const express = require("express");
 const livereload = require("livereload");
-// const connectLiveReload = require("connect-livereload");
+const methodOverride = require("method-override");
+// https://www.freecodecamp.org/news/authenticate-users-node-app/
+const cookieParser = require("cookie-parser");
+const bodyParser = require("body-parser");
+/* Create the Express app
+--------------------------------------------------------------- */
+const app = express();
+
+const connectLiveReload = require("connect-livereload");
 // Detect if running in a dev environment
 if (process.env.ON_HEROKU === "false") {
   // Configure the app to refresh the browser when nodemon restarts
-  const liveReloadServer = livereload.createServer();
+  const liveReloadServer = livereload.createServer({ port: 35730 });
   liveReloadServer.server.once("connection", () => {
     // wait for nodemon to fully restart before refreshing the page
     setTimeout(() => {
@@ -26,11 +34,6 @@ app.use(express.static("public"));
 // Allows us to interpret POST requests from the browser as another request type: DELETE, PUT, etc.
 app.use(methodOverride("_method"));
 
-const methodOverride = require("method-override");
-// https://www.freecodecamp.org/news/authenticate-users-node-app/
-const cookieParser = require("cookie-parser");
-const bodyParser = require("body-parser");
-
 /* Require the db connection, models, and seed data
 --------------------------------------------------------------- */
 const db = require("./models");
@@ -42,10 +45,6 @@ const sightingsCtrl = require("./controllers/sightingCtlr");
 const regionsCtrl = require("./controllers/regionsCtlr");
 const userCtrl = require("./controllers/userCtlr");
 const authMiddleware = require("./middleware/auth");
-
-/* Create the Express app
---------------------------------------------------------------- */
-const app = express();
 
 /* Attach db to app
 --------------------------------------------------------------- */
