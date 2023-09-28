@@ -27,7 +27,10 @@ router.post("/login", (req, res) => {
   db.User.findById(userName).then((user) => {
     // console.log("user", user);
     if (!user || user.password !== password) {
-      res.render("404");
+      res.render("custom-error", {
+        title: "credentials not found",
+        message: "Please check your login info",
+      });
     } else {
       res.cookie("userName", userName);
       res.redirect("/regions");
@@ -76,7 +79,7 @@ router.post("/user-profile", authMiddleware, async (req, res) => {
     if (foundUser) {
       return res.redirect("/user/new?err=unavailable");
     }
-    await db.User.create({ userName: trimmedUserName, profilePic, password });
+    await db.User.create({ _id: trimmedUserName, profilePic, password });
     res.cookie("userName", trimmedUserName);
     res.redirect("/user/user-profile");
   } catch (err) {

@@ -74,7 +74,7 @@ app.get("/seed", async function (req, res) {
   // Remove any existing birds list
   const deletionPromises = [
     // db.Bird.deleteMany({}),
-    db.Sighting.deleteMany({}),
+    // db.Sighting.deleteMany({}),
     db.User.deleteMany({}),
     // db.Region.deleteMany({}),
   ];

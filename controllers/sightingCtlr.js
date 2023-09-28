@@ -50,11 +50,9 @@ router.get("/new/bird/:id", async (req, res) => {
 // TODO: Route: post "/"
 router.post("/", (req, res) => {
   const user = req.user;
-  console.log("sightings details body 1", req.body);
-  req.body.user = user._id;
-  console.log("sightings details body 2", req.body);
-  db.Sighting.create(req.body).then((createdSighting) => {
-    console.log("created sighting", createdSighting);
+  const formData = req.body;
+  formData.user = user._id;
+  db.Sighting.create(formData).then((createdSighting) => {
     res.redirect("/user/user-profile");
   });
 });
