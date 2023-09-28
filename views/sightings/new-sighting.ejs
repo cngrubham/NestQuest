@@ -21,7 +21,7 @@
             <!-- might need to change link -->
             <!-- Region -->
             <label for="sightingRegion">Region:</label>
-            <select name="region" id="sightingRegion">
+            <select name="region" id="sightingRegion" autocomplete="off" required>
                 <option value="">Please Select a Region</option>
                 <% regionList.forEach(function(region) { %>
                     <option value="<%= region._id %>">
