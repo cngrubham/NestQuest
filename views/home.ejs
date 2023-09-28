@@ -13,17 +13,17 @@
 
 <body>
     <main>
+
+        <div id="top-slide">
+            <h1 id="home-title">NestQuest</h1>
+        </div>
+
+        <div class="image-container">
+            <img class="bird-logo bird-logo-1" src="/public/assets/imgs/bunting.png" />
+            <img class="bird-logo bird-logo-2" src="/public/assets/imgs/bunting2.png" />
+        </div>
+        <button id="open-modal-button" onclick="toggleModal()">Log In</button>
         <%- include('./partials/nav.ejs') %>
-            <div id="top-slide">
-                <h1>NestQuest</h1>
-            </div>
-
-            <div class="image-container">
-                <img class="bird-logo bird-logo-1" src="/public/assets/imgs/bunting.png" />
-                <img class="bird-logo bird-logo-2" src="/public/assets/imgs/bunting2.png" />
-            </div>
-            <button id="open-modal-button" onclick="toggleModal()">Log In</button>
-
             <section class="nestQuest-home">
                 <!-- login -->
                 <div id="user-modal" class="modal-wrapper">

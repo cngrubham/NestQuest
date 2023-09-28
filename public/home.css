@@ -22,6 +22,7 @@ main {
     background-color: #292d2c;
 }
 
+
 #top-slide h1 {
     opacity: 0;
     color: white;
@@ -164,11 +165,10 @@ a[href="user/new"] {
     background-color: rgba(0, 0, 0, 0.803);
     top: 0;
     left: 0;
-    display: flex;
     justify-content: center;
     align-items: center;
     display: none;
-    
+    z-index: 100;
 }
 
 .modal-box {
@@ -232,4 +232,9 @@ a[href="user/new"] {
     #top-slide h1 {
         font-size: 60px;
     }
+}
+
+.show {
+    display: flex;
+    height: 100%;
 }

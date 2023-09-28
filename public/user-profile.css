@@ -32,8 +32,9 @@
 
 .user-sightings {
     flex: 2;
-    max-height: 80vh;
-    overflow-y: auto;
+    /* max-height: 80vh; */
+
+    /* overflow-y: auto; */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     padding: 20px;
@@ -43,18 +44,11 @@
 }
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
-    height: 100%;
-    overflow-y: auto;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(0, 0, 0, 0.162);
-    background-color: #fff;
-    padding: 20px;
-    width: calc(33.33% - 20px);
-    border-radius: 8px;
-    margin: 60px;
+    height: 60vh;
+    overflow-y: scroll;
 }
 
 .sightings-card {
@@ -66,11 +60,17 @@
     border-radius: 8px;
     margin-bottom: 16px;
     transition: transform 0.3s ease;
+    /* height: 200px;
+    width: 400px; */
 }
 
 .sightings-card img {
     height: 100px;
     width: auto;
+}
+
+.button-box {
+    display: flex;
 }
 
 .sightings-card:hover {
@@ -111,6 +111,6 @@ ul {
         height: 80%;
         margin: 40px 20px 0 20px;
         flex-basis: auto;
-        max-width: 100%;
+        max-width: 90%;
     }
 }

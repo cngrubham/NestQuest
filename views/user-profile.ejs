@@ -34,42 +34,42 @@
                     <h3>User Sightings: <%= sightings.length %>
                     </h3>
                     <!-- For Each Sighting -->
-                    <div>
-                        <div class="sightings-card">
-                            <% sightings.forEach(function(sighting) { %>
+
+                    <div class="gallery">
+                        <% sightings.forEach(function(sighting) { %>
+                            <div class="sightings-card">
                                 <!-- sighting info -->
-                                <div class="gallery">
-                                    <p>
-                                        <%= user._id %> saw a <%= sighting.bird.comName %> in <%= sighting.region.name
-                                                    %>
-                                    </p>
-                                    <img src="<%= sighting.picture || '/public/assets/imgs/bunting.png' %>"
-                                        alt="<%= sighting.bird.comName %>" class="img-thumbnail"
-                                        style="width: 200px; height: 150px;" />
-                                    <p>
-                                        <%= sighting.description %>
-                                    </p>
-                                    <div>
-                                        <div class="sighting-action">
-                                            <a href="/sightings/<%= sighting._id %>">View</a>
-                                        </div>
-
-                                        <!-- Edit Sighting Button -->
-                                        <div class="sighting-action">
-                                            <a href="/sightings/<%= sighting._id %>/edit">Edit</a>
-                                        </div>
-
-                                        <!-- Delete Sighting Button -->
-                                        <form action="/sightings/<%= sighting._id %>?_method=DELETE" method="POST">
-                                            <button type="submit" class="sighting-action">
-                                                Delete
-                                            </button>
-                                        </form>
+                                <p>
+                                    <%= user._id %> saw a <%= sighting.bird.comName %> in <%= sighting.region.name %>
+                                </p>
+                                <img src="<%= sighting.picture || '/public/assets/imgs/bunting.png' %>"
+                                    alt="<%= sighting.bird.comName %>" class="img-thumbnail"
+                                    style="width: 200px; height: 150px;" />
+                                <p>
+                                    <%= sighting.description %>
+                                </p>
+                                <div class="button-box">
+                                    <!-- View Sighting Button -->
+                                    <div class="sighting-action">
+                                        <a href="/sightings/<%= sighting._id %>">View</a>
                                     </div>
+
+                                    <!-- Edit Sighting Button -->
+                                    <div class="sighting-action">
+                                        <a href="/sightings/<%= sighting._id %>/edit">Edit</a>
+                                    </div>
+
+                                    <!-- Delete Sighting Button -->
+                                    <form action="/sightings/<%= sighting._id %>?_method=DELETE" method="POST">
+                                        <button type="submit" class="sighting-action">
+                                            Delete
+                                        </button>
+                                    </form>
                                 </div>
-                        </div>
-                        <% }) %>
+                            </div>
+                            <% }) %>
                     </div>
+
                 </div>
 
             </section>

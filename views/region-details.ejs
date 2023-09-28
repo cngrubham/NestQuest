@@ -36,10 +36,15 @@
                 <section class="nestQuest-regions">
                     <% birdData.forEach(function(bird) { %>
                         <div class="bird-card">
-                            <p>Common Name: <%= bird.comName %>
-                            </p>
-                            <a href="/birds/<%= bird._id %>">Details</a>
-                            <a href="/sightings/new/bird/<%= bird._id %>"><button>Add a Sighting!</button></a>
+                            <div class="img-container"><img
+                                    src="<%= bird.img || 'https://wybeaconnews.org/wp-content/uploads/2019/03/aposematic.png' %>"
+                                    alt="bird picture"></div>
+                            <div class="info">
+                                <p>Common Name: <%= bird.comName %>
+                                </p>
+                                <a href="/birds/<%= bird._id %>">Details</a>
+                                <a href="/sightings/new/bird/<%= bird._id %>"><button>Add a Sighting!</button></a>
+                            </div>
                         </div>
                         <% }); %>
             </div>

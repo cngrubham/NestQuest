@@ -4,7 +4,7 @@
      transition: width 0.3s ease;
      overflow: hidden;
      height: fit-content;
-    
+
  }
 
  .nav-container {
@@ -13,7 +13,7 @@
      display: flex;
      justify-content: space-between;
      align-items: center;
-
+     z-index: 50;
  }
 
  .circle {
@@ -38,7 +38,7 @@
      width: 100%;
      height: 160px;
      overflow: hidden;
-
+     z-index: 51;
  }
 
  .nav-bar-links ul {
