@@ -26,6 +26,9 @@
             </ul>
             <p>Sightings: <%= sightings.length %>
             </p>
+
+            <a href="/sightings/new/bird/<%= bird._id %>"><button>Add a Sighting!</button></a>
+
             <% sightings.forEach(function(sighting) { %>
                 <div class="sighting-tile">
                     <p>Region: <%= sighting.region %>

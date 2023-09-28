@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <%- include('./partials/head.ejs', {title: 'Edit Sighting | NestQuest' }) %>
+    <%- include('../partials/head.ejs', {title: 'Edit Sighting | NestQuest' }) %>
         <link rel="stylesheet" href="./public/nav.css">
-        <link rel="stylesheet" href="/public/form.css">
-        <%- include('./partials/nav.ejs') %>
+        <link rel="stylesheet" href="./public/form.css">
+        <%- include('../partials/nav.ejs') %>
 
 </head>
 
@@ -13,17 +13,17 @@
 
     <section class="form-head">
         <h2>Edit Sighting</h2>
-        <h1>You're editing a sighting for <%bird.comName%>
+        <h1>You're editing a sighting for <%= sighting.bird.comName%>
         </h1>
     </section>
     <div class="form-container">
-        <form method="POST" action="/sighting">
+        <form method="POST" action="/sightings/<%= sighting._id%>?_method=PUT">
             <!-- might need to change link -->
             <!-- Date -->
             <!-- Region -->
             <!-- Details -->
-            <label for="content">Details:</label><br>
-            <textarea type="text" id="content" name="content" required></textarea><br>
+            <label for="description">Details:</label><br>
+            <textarea type="text" id="description" name="description" required></textarea><br>
             <!-- Bird Pic input -->
             <label for="profile-pic" class="form-label">Picture:</label>
             <input type="file" id="profile-pic" name="file" class="form-input">
@@ -33,8 +33,8 @@
         </form>
         </form>
     </div>
-    <script src="./public/js/nav.js"></script>
-    <%- include('./partials/footer.ejs') %>
+    <script src="../public/js/nav.js"></script>
+    <%- include('../partials/footer.ejs') %>
 </body>
 
 </html>

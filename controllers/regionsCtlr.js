@@ -37,7 +37,7 @@ router.get("/:id", async (req, res) => {
     });
   } catch (error) {
     console.error("error", error);
-    res.redirect("404");
+    res.redirect(404, "404");
   }
 });
 

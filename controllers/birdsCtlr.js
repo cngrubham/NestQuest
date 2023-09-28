@@ -32,7 +32,7 @@ router.get("/:id", function (req, res) {
     })
     .catch((error) => {
       console.log("error", error);
-      res.redirect("404");
+      res.redirect(404, "404");
     });
 });
 
@@ -46,7 +46,7 @@ router.get("/:id/sightings", function (req, res) {
         sightings,
       });
     })
-    .catch(() => res.redirect("404"));
+    .catch(() => res.redirect(404, "404"));
 });
 
 /* Export these routes so that they are accessible in `server.js`

@@ -16,6 +16,7 @@
 
     <ul>
         <li>
+
             <%= bird.comName %>
                 <span style="font-style: italic;">
                     <%= bird.sciName %>
@@ -29,14 +30,23 @@
             <div>
                 <%= region.name %>
             </div>
-            <!-- user
-            date
-            region
-            Details 
-            Picture -->
+            <img src="/<%= picture %>" />
+            <ul>
+
+                <li>Date Added:
+                    <%= dateAdded %>
+                </li>
+                <li>Description:
+                    <%= description||"none" %>
+                </li>
+                <li>
+                    <%= region.name %>
+                </li>
+
+            </ul>
 
     </ul>
-    <script src="./public/js/nav.js"></script>
+    <script src="../public/js/nav.js"></script>
     <%- include('../partials/footer.ejs') %>
 </body>
 

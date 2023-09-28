@@ -3,7 +3,6 @@
 
 <head>
     <%- include("./partials/head.ejs", {title: "NestQuest | User Sightings" }) %>
-        <link rel="stylesheet" href="/public/home.css" />
         <link rel="stylesheet" href="/public/user-profile.css" />
         <link rel="stylesheet" href="/public/nav.css" />
         <%- include("./partials/nav.ejs") %>
@@ -22,50 +21,57 @@
                 <img style="height: 100px; width: 100px;" src="/<%= user.profilePic %>" alt="profile pic" />
             </div>
 
-            <div class="sighting-action">
-                <a href="/edit-user">Edit Profile</a>
+            <div>
+                <p>Welcome to your Nest</p>
+                <!-- <a href="/edit-user">Edit Profile</a> -->
             </div>
         </div>
 
         <section class="user-sightings">
-            <div class="sightings-card">
-                <div class="sightings-card">
-                    <!-- User Sighting Details -->
-                    <h3>User Sightings:</h3>
-                    <p>
-                        <%= sightings.length %>
-                    </p>
-                    <!-- For Each Sighting -->
-                    <div>
-                        <% sightings.forEach(function(sighting) { %>
-                            <!-- sighting info -->
-                            <div style="
-                  border: 1px solid black;
-                  border-radius: 8px;
-                  padding: 8px;
-                  margin-bottom: 16px;
-                ">
-                                <%= sighting.bird.comName %> in <%= sighting.region.name %>
-                                        <img style="height: 100px; width: 100px;" src="/<%= sighting.picture %>"
-                                            alt="<%= sighting.bird.comName %>" />
-                                        <div>
-                                            <!-- Edit Sighting Button -->
-                                            <div class="sighting-action">
-                                                <a href="/edit-sighting">Edit</a>
-                                            </div>
-                                            <!-- Delete Sighting Button -->
-                                            <form action="/sightings/<%= sighting._id %>?_method=DELETE" method="POST">
-                                                <button type="submit" class="sighting-action">
-                                                    Delete
-                                                </button>
-                                            </form>
-                                        </div>
-                            </div>
 
-                            <% }) %>
-                    </div>
+            <div class="user-label-box">
+                <!-- User Sighting Details -->
+                <h3>User Sightings:</h3>
+                <p>
+                    <%= sightings.length %>
+                </p>
+                <!-- For Each Sighting -->
+                <div>
+                    <% sightings.forEach(function(sighting) { %>
+                        <!-- sighting info -->
+                        <div class="sightings-card">
+
+                            <p>
+                                <%= user._id %> saw a <%= sighting.bird.comName %> in <%= sighting.region.name %>
+                            </p>
+                            <img style="height: 100px; width: 100px;" src="/<%= sighting.picture %>"
+                                alt="<%= sighting.bird.comName %>" />
+                            <p>
+                                <%= sighting.description %>
+                            </p>
+                            <div>
+                                <div class="sighting-action">
+                                    <a href="/sightings/<%= sighting._id %>">View</a>
+                                </div>
+
+                                <!-- Edit Sighting Button -->
+                                <div class="sighting-action">
+                                    <a href="/sightings/<%= sighting._id %>/edit">Edit</a>
+                                </div>
+
+                                <!-- Delete Sighting Button -->
+                                <form action="/sightings/<%= sighting._id %>?_method=DELETE" method="POST">
+                                    <button type="submit" class="sighting-action">
+                                        Delete
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <% }) %>
                 </div>
             </div>
+
         </section>
     </main>
     <script src="/public/js/nav.js"></script>
