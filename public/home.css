@@ -1,31 +1,175 @@
+html {
+    background-color: #292d2c;
+}
+
+body {
+    background-color: #292d2c;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
 main {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
+    background-color: #292d2c;
 }
+
+#top-slide h1 {
+    opacity: 0;
+    color: white;
+    font-size: 80px;
+    position: relative;
+    margin: 40px;
+    top: -50px;
+    animation: top-fade-in 2s cubic-bezier(0.42, 0, 0.57, 1.42) forwards;
+}
+
+@keyframes top-fade-in {
+    from {
+        opacity: 0;
+        top: -50vh;
+    }
+
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.bird-logo-1 {
+    height: 200px;
+    width: auto;
+    margin: 40px;
+    opacity: 0;
+    position: relative;
+    right: -50%;
+    animation: birdHop 2s ease-in-out forwards;
+    animation-iteration-count: 1;
+    transform-origin: right center;
+}
+
+@keyframes birdHop {
+    0% {
+        opacity: 0;
+        right: -100%;
+        transform: translateY(0) translateX(0);
+    }
+
+    10% {
+        opacity: 0.2;
+        right: -90%;
+        transform: translateY(-20px) translateX(0);
+    }
+
+    20% {
+        opacity: 0.4;
+        right: -80%;
+        transform: translateY(0) translateX(0);
+    }
+
+    30% {
+        opacity: 0.6;
+        right: -70%;
+        transform: translateY(-20px) translateX(0);
+    }
+
+    40% {
+        opacity: 0.8;
+        right: -60%;
+        transform: translateY(0) translateX(0);
+    }
+
+    50% {
+        opacity: 1;
+        right: -50%;
+        transform: translateY(-20px) translateX(0);
+    }
+
+    60% {
+        opacity: 1;
+        right: -40%;
+        transform: translateY(0) translateX(0);
+    }
+
+    70% {
+        opacity: 1;
+        right: -30%;
+        transform: translateY(-20px) translateX(0);
+    }
+
+    80% {
+        opacity: 1;
+        right: -20%;
+        transform: translateY(0) translateX(0);
+    }
+
+    90% {
+        opacity: 1;
+        right: -10%;
+        transform: translateY(-20px) translateX(0);
+    }
+
+    100% {
+        opacity: 1;
+        right: 0;
+        transform: translateY(0) translateX(0);
+    }
+}
+
+.bird-logo-2 {
+    display: none;
+}
+
+.image-container {
+    height: 300px;
+}
+
+/* .image-container:hover .bird-logo {
+    display: none;
+}
+
+.image-container:hover .bird-logo-2 {
+    display: inline-block;
+    height: 200px;
+    width: auto;
+    padding-top: 20px;
+} */
+
 #open-modal-button {
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
+    width: 100px;
+    height: 50px;
+
 }
+
+
 a[href="user/new"] {
-    text-decoration: none; 
-    color: #292d2c; 
-    font-weight: bold;
+    text-decoration: none;
+    color: #6BB1E9;
     font-size: 18px;
 }
+
 .modal-wrapper {
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.803);
     top: 0;
     left: 0;
-    z-index: 100;
+    /* z-index: 100; */
     display: flex;
     justify-content: center;
     align-items: center;
     display: none;
+    /* z-index: 2000; */
 }
 
 .modal-box {
@@ -58,13 +202,15 @@ a[href="user/new"] {
 
 .btn-primary {
     color: white;
-    background-color: #292d2c;
+    background-color: #5FC173;
     border: none;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .btn-primary:hover {
     color: black;
-    background-color: white;
+    background-color: #79BB6E;
     cursor: pointer;
 }
 
@@ -83,7 +229,8 @@ a[href="user/new"] {
         padding: 10px;
         /* font-size: 12px; */
     }
+
+    #top-slide h1 {
+        font-size: 60px;
+    }
 }
-
-
-

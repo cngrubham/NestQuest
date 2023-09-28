@@ -1,33 +1,80 @@
-main {
+.main {
     padding: 20px;
 }
 
-h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.user-sightings {
+.user-nest-container {
     display: flex;
-    flex-wrap: wrap;
     gap: 20px;
     margin-top: 20px;
     width: 100%;
+    flex-direction: row;
 }
 
-.sightings-card {
-    /* flex-basis: calc(33.33% - 20px); */
+.profile-info {
+    flex: .8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     padding: 20px;
+    height: 60vh;
     border: 1px solid black;
     border-radius: 8px;
-    margin-bottom: 16px;
-
+    margin: 80px;
 }
 
-.user-label-box {
-    width: 90vh;
+.profile-info img {
+    width: 250px;
+    height: auto;
+}
+
+.user-sightings {
+    flex: 2;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.028);
+    border-radius: 8px;
+    margin: 60px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 100%;
+    overflow-y: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.162);
+    background-color: #fff;
+    padding: 20px;
+    width: calc(33.33% - 20px);
+    border-radius: 8px;
+    margin: 60px;
+}
+
+.sightings-card {
+    flex: 0 0 calc(33.33% - 20px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.162);
+    border-radius: 8px;
+    margin-bottom: 16px;
+    transition: transform 0.3s ease;
+}
+
+.sightings-card img {
+    height: 100px;
+    width: auto;
+}
+
+.sightings-card:hover {
+    transform: scale(1.05);
 }
 
 ul {
@@ -37,7 +84,6 @@ ul {
 
 .sighting-action {
     display: inline-block;
-    margin: 20px;
     cursor: pointer;
     text-decoration: none;
     background-color: #1d1d1d;
@@ -55,63 +101,16 @@ ul {
     background-color: #000000;
 }
 
-
-.sighting-action {
-    display: inline-block;
-    margin: 20px;
-}
-
-.sighting-action a {
-    text-decoration: none;
-    background-color: #1d1d1d;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin: 20px;
-    transition: background-color 0.3s ease;
-}
-
-.sighting-action a:hover {
-    background-color: #000000;
-}
-
-.profile-info {
-    flex-basis: 90%;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    padding: 20px;
-    float: left;
-}
-
-.profile-info ul {
-    list-style: none;
-    padding: 0;
-}
-
-.profile-info ul {
-    list-style: none;
-    padding: 0;
-}
-
 @media screen and (max-width: 768px) {
-    .profile-info {
-        float: none;
-        margin: 0 auto;
+    .user-nest-container {
+        flex-direction: column;
     }
 
-    .sightings-card {
-        flex-basis: 100%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .profile-info {
-        float: none;
-        margin: 0 auto;
-    }
-
-    .sightings-card {
-        flex-basis: 100%;
+    .profile-info,
+    .user-sightings {
+        height: 80%;
+        margin: 40px 20px 0 20px;
+        flex-basis: auto;
+        max-width: 100%;
     }
 }
