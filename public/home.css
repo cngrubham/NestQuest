@@ -164,7 +164,7 @@ a[href="user/new"] {
     background-color: rgba(0, 0, 0, 0.803);
     top: 0;
     left: 0;
-    /* z-index: 100; */
+    z-index: 101;
     display: flex;
     justify-content: center;
     align-items: center;

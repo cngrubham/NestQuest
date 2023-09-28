@@ -4,7 +4,7 @@
      transition: width 0.3s ease;
      overflow: hidden;
      height: fit-content;
-
+     z-index: 100;
  }
 
  .nav-container {
