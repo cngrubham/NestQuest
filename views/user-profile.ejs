@@ -43,9 +43,9 @@
                                         <%= user._id %> saw a <%= sighting.bird.comName %> in <%= sighting.region.name
                                                     %>
                                     </p>
-                                    <img 
-                                        src="<%= sighting.picture || '/public/assets/imgs/bunting.png' %>"
-                                        alt="<%= sighting.bird.comName %>" class="img-thumbnail" />
+                                    <img src="<%= sighting.picture || '/public/assets/imgs/bunting.png' %>"
+                                        alt="<%= sighting.bird.comName %>" class="img-thumbnail"
+                                        style="width: 200px; height: 150px;" />
                                     <p>
                                         <%= sighting.description %>
                                     </p>

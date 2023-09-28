@@ -2,8 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    /* background-color: #292d3a; */
-    background-image: radial-gradient(#292d3a 90%, black 10%);
+    background-color: #292d3a;
+
 }
 
 .footer-info {
