@@ -1,5 +1,6 @@
 .region-header {
     text-align: center;
+    padding: 20px;
 }
 
 .region-card {
@@ -34,9 +35,7 @@
     transform: translateY(-5px);
 }
 
-.region-birds-header {
-    text-align: center;
-}
+
 
 .nestQuest-regions {
     display: flex;
@@ -54,6 +53,15 @@
     .region-page-content {
         margin-left: 0;
         padding-top: 20px;
+    }
+
+    .region-header {
+        height: 200px;
+        padding: 40px 30px 0 30px;
+    }
+
+    .region-header h2 {
+        font-size: 20px;
     }
 }
 

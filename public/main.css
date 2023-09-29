@@ -53,6 +53,9 @@ body {
     transform: translateY(-5px);
 }
 
+.region-birds-header {
+    text-align: center;
+}
 
 .region-sort-button {
     color: white;
