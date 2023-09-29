@@ -4,32 +4,38 @@
 <head>
     <%- include('./partials/head.ejs', {title: 'NestQuest | Regions' }) %>
         <link rel="stylesheet" href="/public/nav.css">
+        <link rel="stylesheet" href="/public/regions-index.css">
         <%- include('./partials/nav.ejs') %>
 
 </head>
 
 <body>
-    <h1>Regions</h1>
-    <main>
-        <section class="nestQuest-regions">
-            <!--for each us region -->
-            <% regions.forEach(function(region) { %>
-                <div class="bird-card">
-                    <a href="/regions/<%=region._id%>" class="region card">
-                        <ul>
-                            <li><strong>Region:</strong>
-                                <%= region._id %><br>
-                                    <%= region.name %>
-                            </li>
-                            <li>
-                                <strong>Birds: <%= region.birds.length %></strong>
+    <div class="region-page-content">
+        <div class="region-header">
+            <h1>Regions</h1>
+            <h2>Check out birds commonly found in these US Regions</h2>
+        </div>
+        <main>
+            <section class="nestQuest-regions">
+                <!--for each us region -->
+                <% regions.forEach(function(region) { %>
+                    <div class="region-card">
+                        <a href="/regions/<%=region._id%>">
+                            <ul>
+                                <li><strong>Region:</strong>
+                                    <%= region._id %><br>
+                                        <%= region.name %>
+                                </li>
+                                <li>
+                                    <strong>Birds: <%= region.birds.length %></strong>
 
-                            </li>
-                        </ul>
-                    </a>
-                </div>
-                <% }); %>
-        </section>
+                                </li>
+                            </ul>
+                        </a>
+                    </div>
+                    <% }); %>
+            </section>
+    </div>
     </main>
     <script src="/public/js/nav.js"></script>
     <%- include('./partials/footer.ejs') %>

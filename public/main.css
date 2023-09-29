@@ -18,21 +18,25 @@ body {
 
 }
 
+
 .bird-card {
     width: 300px;
     margin: 10px;
     padding: 10px;
     border: 1px solid #ddd;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    background-color: white;
     transition: transform 0.2s;
     border-radius: 10px;
 }
+
+
 
 .bird-card-grid {
     display: grid;
     gap: 20px;
 }
+
 
 .img-container {
     width: 100%;
@@ -49,9 +53,6 @@ body {
     transform: translateY(-5px);
 }
 
-.region-birds-header {
-    text-align: center;
-}
 
 .region-sort-button {
     color: white;
@@ -76,12 +77,7 @@ li {
     margin-bottom: 5px;
 }
 
-.nestQuest-regions {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-bottom: 40px;
-}
+
 
 @media (max-width: 768px) {
     .bird-card {
