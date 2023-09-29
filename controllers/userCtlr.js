@@ -97,6 +97,7 @@ router.get("/user-profile", authMiddleware, async (req, res) => {
       "bird",
       "region",
     ]);
+    console.log("user sightings", sightings);
     res.render("user-profile", { user, sightings });
   } catch (err) {
     console.error(err);

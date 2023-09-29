@@ -1,14 +1,14 @@
 const sightingSeed = [
   {
-    bird: "emu1",
+    bird: "bbwduc",
     region: "US-ID",
     user: "Lloyd",
   },
   {
-    bird: "ostric2",
+    bird: "bbwduc",
     region: "US-ID",
     user: "Lloyd",
-    description: "wtf! in idaho?",
+    description: "in idaho?",
   },
   {
     bird: "bbwduc",
@@ -21,12 +21,12 @@ const sightingSeed = [
     user: "Lloyd",
   },
   {
-    bird: "cangoo3",
+    bird: "cangoo",
     region: "US-ID",
     user: "Cami",
   },
   {
-    bird: "cangoo1",
+    bird: "cangoo",
     region: "US-ID",
     user: "Cami",
   },

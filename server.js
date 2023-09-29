@@ -93,7 +93,7 @@ app.get("/", authMiddleware, function (req, res) {
 app.get("/seed", async function (req, res) {
   // Remove any existing birds list
   const deletionPromises = [
-    db.Bird.deleteMany({}),
+    // db.Bird.deleteMany({}),
     // db.Sighting.deleteMany({}),
     // db.User.deleteMany({}),
     // db.Region.deleteMany({}),
@@ -105,7 +105,7 @@ app.get("/seed", async function (req, res) {
 
   // insert seed data
   const insertPromises = [
-    db.Bird.insertMany(db.seedBirds),
+    // db.Bird.insertMany(db.seedBirds),
     // db.Sighting.insertMany(db.seedSightings),
     // db.User.insertMany(db.seedUsers),
     // db.Region.insertMany(db.seedRegions),
