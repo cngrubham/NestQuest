@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div class="region-birds-header">
     <h1>
         <%=region.name%> Region Birds
     </h1>
@@ -22,15 +23,16 @@
             <form action="/regions/<%=region._id %>" method="GET">
                 <label for="familyComName">Select by Family:</label>
                 <select name="familyComName" id="familyComName">
+                    <option value="">All</option>
                     <% uniqueFamilyComNames.forEach(function(familyComName) { %>
                         <option value="<%= familyComName %>">
                             <%= familyComName %>
                         </option>
                         <% }); %>
                 </select>
-                <button type="submit">Filter Results</button>
+                <button class="region-sort-button" type="submit">Filter Results</button>
             </form>
-            <h2>Bird Information</h2>
+        </div>
             <!-- Display bird cards in a grid -->
             <div class="bird-card-grid">
                 <section class="nestQuest-regions">

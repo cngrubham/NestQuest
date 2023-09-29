@@ -17,12 +17,7 @@
     <div>
         <% sightingsList.forEach(function(sighting) { %>
             <!-- sighting info -->
-            <div style="
-  border: 1px solid black;
-  border-radius: 8px;
-  padding: 8px;
-  margin-bottom: 16px;
-">
+            <div>
                 <p>
                     <%= sighting.user._id %> saw a <%= sighting.bird.comName %> in <%= sighting.region.name %>
                 </p>
