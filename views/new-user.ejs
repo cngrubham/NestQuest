@@ -10,7 +10,7 @@
 </head>
 
 <body>
-
+<div class="form-page-container">
     <section class="form-head">
         <h2>New to NestQuest?</h2>
         <h4><i>Enter your information below</i></h4>
@@ -30,12 +30,13 @@
             <input type="text" id="password" name="password" class="form-input" required>
             <br>
             <!-- Profile Pic input -->
-            <label for="profile-pic" class="form-label">Profile Picture Url:</label>
+            <label for="profile-pic" class="form-label">Optional Profile Picture Url:</label>
             <input type="text" id="profile-pic" name="profilePic" class="form-input">
             <input type="submit" value="Submit">
             <br>
         </form>
     </div>
+</div>
     <script src="/public/js/nav.js"></script>
     <%- include('./partials/footer.ejs') %>
 </body>
