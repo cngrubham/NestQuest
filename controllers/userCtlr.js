@@ -62,7 +62,10 @@ router.post("/user-profile/edit", authMiddleware, (req, res) => {
     (err, updatedUser) => {
       if (err) {
         console.error(err);
-        res.render("error");
+        res.render("custom-error", {
+          title: "Unable to edit",
+          message: "Please check your info",
+        });
       } else {
         res.redirect("/user-profile");
       }
@@ -84,7 +87,10 @@ router.post("/user-profile", authMiddleware, async (req, res) => {
     res.redirect("/user/user-profile");
   } catch (err) {
     console.error(err);
-    res.render("404");
+    res.render("custom-error", {
+      title: "Unable to Create Uer Profile",
+      message: "Please check your info and try again.",
+    });
   }
 });
 
@@ -101,7 +107,10 @@ router.get("/user-profile", authMiddleware, async (req, res) => {
     res.render("user-profile", { user, sightings });
   } catch (err) {
     console.error(err);
-    res.render("404");
+    res.render("custom-error", {
+      title: "Profile not found",
+      message: "Please check your info and try again",
+    });
   }
 });
 
