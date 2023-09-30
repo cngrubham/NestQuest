@@ -1,0 +1,27 @@
+.page-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px;
+}
+
+.birds-container {
+    background-color: #736572;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.submit-button {
+    border-radius: 4px;
+    background-color: #52BD7F;
+    border-color: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.submit-button a {
+    text-decoration: none;
+    color: white;
+}

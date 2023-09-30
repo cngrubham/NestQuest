@@ -7,39 +7,46 @@
     <%- include('./partials/head.ejs', {title: 'Bird Details | NestQuest' }) %>
         <title>NestQuest | Bird Details</title>
         <link rel="stylesheet" href="/public/nav.css">
+        <link rel="stylesheet" href="/public/bird-details.css">
         <%- include('./partials/nav.ejs') %>
 
 </head>
 
 <body>
     <main>
-        <h1>Details</h1>
-        <div class="birds-container">
-            <h2>Bird Information</h2>
-            <ul>
-                <li>Name: <%= bird.comName %>
-                </li>
-                <li>Scientific Name: <%= bird.sciName %>
-                </li>
-                <li>Family: <%= bird.familyComName %>
-                </li>
-            </ul>
-            <p>Sightings: <%= sightings.length %>
-            </p>
+        <div class="page-container">
+            <h1><%= bird.comName %> Details</h1>
+            <div class="birds-container">
+                </p>
+                <img style="height: 200px; width: 250px;"
+                    src=" <%= bird.previewImg || '/public/assets/imgs/bunting.png' %>" alt="<%= bird.comName %>" />
+                <p>
+                <h2>Bird Information</h2>
+                <ul>
+                    <li>Name: <%= bird.comName %>
+                    </li>
+                    <li>Scientific Name: <%= bird.sciName %>
+                    </li>
+                    <li>Family: <%= bird.familyComName %>
+                    </li>
+                </ul>
+                <p>Sightings: <%= sightings.length %>
+                </p>
 
-            <a href="/sightings/new/bird/<%= bird._id %>"><button>Add a Sighting!</button></a>
+                <button class="submit-button"><a href="/sightings/new/bird/<%= bird._id %>">Add a Sighting!</a></button>
 
-            <% sightings.forEach(function(sighting) { %>
-                <div class="sighting-tile">
-                    <p>Region: <%= sighting.region %>
-                    </p>
-                    <p>User: <%= sighting.user %>
-                    </p>
-                </div>
-                <% }); %>
+                <% sightings.forEach(function(sighting) { %>
+                    <div class="sighting-tile">
+                        <p>Region: <%= sighting.region %>
+                        </p>
+                        <p>User: <%= sighting.user %>
+                        </p>
+                    </div>
+                    <% }); %>
 
+            </div>
+            </section>
         </div>
-        </section>
     </main>
     <script src="/public/js/nav.js"></script>
     <%- include('./partials/footer.ejs') %>

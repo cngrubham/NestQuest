@@ -66,10 +66,16 @@ footer {
 
 .submit-button {
     border-radius: 4px;
+    background-color: #52BD7F;
+    color: white;
+    border-color: none;
+    padding: 5px;
 }
+
 .drop-down {
     border-radius: 4px;
 }
+
 .form-container .form-items {
     border-radius: 10px;
     padding: 20px;
