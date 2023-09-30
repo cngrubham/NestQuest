@@ -42,7 +42,7 @@
             <section class="nestQuest-regions">
                 <% birdData.forEach(function(bird) { %>
                     <div class="bird-card">
-                        <div class="img-container"><img src="<%= bird.img || '/public/assets/imgs/A1.png' %>"
+                        <div class="img-container"><img src="<%= bird.previewImg || '/public/assets/imgs/A1.png' %>"
                                 alt="bird picture"></div>
                         <div class="info">
                             <p>Common Name: <%= bird.comName %>

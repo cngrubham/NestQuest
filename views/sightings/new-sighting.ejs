@@ -10,43 +10,47 @@
 </head>
 
 <body>
-
+<div class="page-container">
     <section class="form-head">
-        <h2>New Sighting!</h2>
-        <h1>You're creating a sighting for <%= bird.comName %>
-        </h1>
+        <h1>New Sighting!</h1>
+        <h2>You're creating a sighting for <%= bird.comName %>
+        </h2>
     </section>
     <section class="form-body">
         <div class="form-container">
             <form method="POST" action="/sightings">
                 <!-- might need to change link -->
                 <!-- Region -->
-                <label for="sightingRegion">Region:</label>
-                <select name="region" id="sightingRegion" autocomplete="off" required>
-                    <option value="">Please Select a Region</option>
-                    <% regionList.forEach(function(region) { %>
-                        <option value="<%= region._id %>">
-                            <%= region.name %>
-                        </option>
-                        <% }); %>
-                </select>
-                </br>
+                <div class="label-group"><label for="sightingRegion">Region:</label>
+                    <select name="region" id="sightingRegion" autocomplete="off" required>
+                        <option value="">Please Select a Region</option>
+                        <% regionList.forEach(function(region) { %>
+                            <option value="<%= region._id %>">
+                                <%= region.name %>
+                            </option>
+                            <% }); %>
+                    </select>
+                </div>
                 <!-- Details -->
-                <label for="content">Details:</label><br>
-                <textarea class="form-items" type="text" id="content" name="description" required></textarea><br>
+                <div class="label-group">
+                    <label for="content">Details:</label>
+                    <textarea class="form-items" type="text" id="content" name="description" required></textarea>
+                </div>
                 <!-- Bird Pic input -->
-                <label for="profile-pic" class="form-label">Optional Image Url:</label>
-                <input class="form-items"type="text" id="profile-pic" name="picture" class="form-input">
+                <div class="label-group"><label for="profile-pic" class="form-label">Optional Image Url:</label>
+                    <input class="form-items" type="text" id="profile-pic" name="picture" class="form-input">
+                </div>
                 <input type="hidden" id="birdInput" name="bird" value="<%= bird._id %>">
                 <input type="submit" value="Submit">
                 <br>
 
             </form>
-
+            
         </div>
     </section>
-    <script src="/public/js/nav.js"></script>
     <%- include('../partials/footer.ejs') %>
+</div>
+    <script src="/public/js/nav.js"></script>
 </body>
 
 </html>

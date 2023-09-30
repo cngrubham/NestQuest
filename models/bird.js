@@ -9,6 +9,8 @@ const birdSchema = new mongoose.Schema({
   comName: String,
   familyComName: String,
   img: { type: String, default: "" },
+  previewImg: { type: String, default: "" },
+  imgId: { type: Number, default: 0 },
   //   sightings: [sightingSchema],
 });
 
