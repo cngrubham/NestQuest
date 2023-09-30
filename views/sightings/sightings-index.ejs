@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%- include('../partials/head.ejs', {title: 'Sightings | NestQuest' }) %>
         <link rel="stylesheet" href="/public/nav.css">
+        <link rel="stylesheet" href="/public/sightings-index.css">
         <title>Sightings</title>
         <%- include('../partials/nav.ejs') %>
 
@@ -14,28 +15,21 @@
 <body>
     <h1>Sightings-index</h1>
 
-    <div>
+    <div class="page-container">
         <% sightingsList.forEach(function(sighting) { %>
             <!-- sighting info -->
-            <div>
+            <div class="sightings-card">
                 <p>
                     <%= sighting.user._id %> saw a <%= sighting.bird.comName %> in <%= sighting.region.name %>
                 </p>
-                <img style="height: 100px; width: 100px;"
-                    src="<%= sighting.picture || '/public/assets/imgs/bunting.png' %>"
+                <img class="sightings-card-img" src="<%= sighting.picture || '/public/assets/imgs/bunting.png' %>"
                     alt="<%= sighting.bird.comName %>" />
-                <p>
-                    <%= sighting.description %>
-                </p>
-                <p>
-                    <%= sighting.dateAdded%>
-                </p>
-                <div>
-                    <div class="sighting-action">
-                        <a href="/sightings/<%= sighting._id %>">View</a>
-                    </div>
 
+                <div class="sighting-action">
+                    <button><a href="/sightings/<%= sighting._id %>">View Details</a></button>
                 </div>
+
+
             </div>
 
             <% }) %>
