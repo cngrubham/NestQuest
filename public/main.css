@@ -4,7 +4,7 @@ body {
     padding: 0;
     background-color: #292d3a;
     color: white;
-
+    font-family: 'Poppins', sans-serif;
 }
 
 .footer-info {
@@ -31,6 +31,3 @@ ul {
 li {
     margin-bottom: 5px;
 }
-
-
-

@@ -9,6 +9,7 @@ body {
     height: 100vh;
     box-sizing: border-box;
     justify-content: center;
+    font-family: 'EB Garamond', serif;
 }
 
 main {
@@ -20,6 +21,10 @@ main {
     justify-content: center;
     height: 100%;
     background-color: #292d2c;
+}
+
+h1 {
+    font-family: 'Young Serif', serif;
 }
 
 
@@ -125,24 +130,11 @@ main {
     }
 }
 
-.bird-logo-2 {
-    display: none;
-}
 
 .image-container {
     height: 300px;
 }
 
-/* .image-container:hover .bird-logo {
-    display: none;
-}
-
-.image-container:hover .bird-logo-2 {
-    display: inline-block;
-    height: 200px;
-    width: auto;
-    padding-top: 20px;
-} */
 
 #open-modal-button {
     margin-bottom: 20px;
