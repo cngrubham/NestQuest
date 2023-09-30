@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/nav.css">
+    <link rel="stylesheet" href="/public/sighting-details.css">
     <%- include('../partials/head.ejs', {title: 'Sighting Details | NestQuest' }) %>
         <title>NestQuest | Sighting Details</title>
         <%- include('../partials/nav.ejs') %>
@@ -12,42 +13,45 @@
 </head>
 
 <body>
-    <h1>Details</h1>
+    <div class="page-container">
+        <h1>Sighting Details</h1>
 
-    <ul>
-        <li>
-
-            <%= bird.comName %>
-                <span style="font-style: italic;">
-                    <%= bird.sciName %>
-                </span>
-        </li>
-        <li>
-            <%= bird.familyComName %>
-        </li>
-        <!-- Sighting Details -->
-        <%= user._id %>
-            <div>
-                <%= region.name %>
-            </div>
-            <img src="<%= picture || '/public/assets/imgs/bunting.png' %>" />
+        <div class="bird-info">
+            <h3>
+                <%= user._id %> saw a <%= bird.comName %> in <%= region.name %>
+            </h3>
             <ul>
-
-                <li>Date Added:
-                    <%= dateAdded %>
+                <li>
+                    <%= bird.familyComName %>
+                        <span style="font-style: italic;">
                 </li>
+                <li>
+                    <%= bird.sciName %>
+                        </span>
+                </li>
+            </ul>
+        </div>
+        <div class="sightings-detail-card">
+            <!-- Sighting Details -->
+            <p>User Image: </p>
+            <img class="details-img" style="height:200px; width:200px;"
+                src="<%= picture || '/public/assets/imgs/A1.png' %>" />
+            <ul>
                 <li>Description:
                     <%= description||"none" %>
                 </li>
-                <li>
-                    <%= region.name %>
+                <li>Region:
+                    <%= region.name %>, <%= region._id %>
+                </li>
+                <li>Date Added: </br></br>
+                    <%= dateAdded %>
                 </li>
 
             </ul>
-
-    </ul>
+        </div>
+    </div>
     <script src="../public/js/nav.js"></script>
-    <%- include('../partials/footer.ejs') %>
+  
 </body>
 
 </html>
