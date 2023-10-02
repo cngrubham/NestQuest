@@ -16,6 +16,7 @@ CSS
 # Installation Instructions
 
 $ npm init -y
+run $ node server.js to run on local server 3000
 
 # User stories
 
