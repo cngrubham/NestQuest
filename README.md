@@ -1,6 +1,6 @@
 # NestQuest
 
-![Home page](https://file%252B.vscode-resource.vscode-cdn.net/Users/)
+![Home page](/public/assets/imgs/nestquesthome.png)
 
 # Technologies used
 
@@ -27,9 +27,9 @@ This application will allow users to record and organize the bird species they e
 
 # Wireframes
 
-![Wireframes 1](https://file%252B.vscode-resource.vscode-cdn.net/Users/camillegrubham/Pictures/Photos%2520Library.photoslibrary/resources/renders/B/BE64EAD5-658A-48A8-B7A5-DFA5EAEA1424_1_201_a.jpeg?version%253D1696219162505)
+![Wireframes 1](/public/assets/imgs/wireframe1.png)
 
-![Wireframes 2](https://file%252B.vscode-resource.vscode-cdn.net/Users/camillegrubham/Pictures/Photos%2520Library.photoslibrary/resources/derivatives/9/9E540AB5-369D-4890-BBCD-2339869C77E2_1_105_c.jpeg?version%253D1696219192581)
+![Wireframes 2](/public/assets/imgs/wireframe2.jpeg)
 
 #Unsolved Issues
 -User login information is not very secure
@@ -38,4 +38,5 @@ This application will allow users to record and organize the bird species they e
 -No good bird info API found.
 
 # Github repo
+
 https://github.com/cngrubham/NestQuest.git
